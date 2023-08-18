@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Tatiana Mathy](https://up.htmlacademy.ru/htmlcss-individual/1/user/2344959).
-* Наставник: [Анна Лисененкова].
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
