@@ -8,9 +8,9 @@
   <body>
 
 <header class="page-header">
-
+    <nav class="navigation"></nav>
       <a href="#"><img class="logo" src="images/logo-black.svg" alt="Логотип интернет-магазина девайсов."></a>
-
+      <img src="images/yellow-background.png" alt="желтый фон">
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
            <a class="navigation-link">Войти</a>
@@ -23,8 +23,7 @@
          </li>
        </ul>
 
-      <nav class="navigation">
-       <a href="catalog.html">Каталог товаров</a>
+       <a href="catalog.html" class="navigation-link">Каталог товаров</a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link button" href="#">Доставка</a>
@@ -36,8 +35,8 @@
             <a class="navigation-link button" href="#">Контакты</a>
           </li>
         </ul>
-        <img src="images/yellow-background.png" alt="желтый фон">
-      </nav>
+
+    </nav>
 
 </header>
 <main>
@@ -48,7 +47,7 @@
     <section class="slide-active">
       <h2 class="title">Порхает как бабочка, жалит как пчела!</h2>
       <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-      <a href="#">Подробнее</a>
+      <a href="#" class="button-button">Подробнее</a>
       <table>
       <tr>
       <td>800 м</td>
@@ -63,7 +62,7 @@
     <section class="slide">
       <h2 class="title">Худеем правильно!</h2>
       <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-      <a href="#">Подробнее</a>
+      <a href="#" class="button-button">Подробнее</a>
       <table>
       <tr>
       <td>48 часов</td>
@@ -74,7 +73,7 @@
     <section class="slide">
       <h2 class="title">Делай селфи, как Бен Стиллер!</h2>
       <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-      <a href="#">Подробнее</a>
+      <a href="#" class="button-button">Подробнее</a>
       <table>
       <tr>
       <td>8,5 м</td>
@@ -100,10 +99,10 @@
       <li><button><span class="visually-hidden">на третий слайд</span></button></li>
     </ul>
  </section>
- <section>
+ <section class="list-products">
 <h2>Разделы каталога</h2>
 <ul>
-      <li>
+      <li class="product">
         <a>Виртуальная реальность</a>
       </li>
         <li>
@@ -126,9 +125,9 @@
 
 <section class="slider-advantages">
   <ul>
-    <li><button type="button" class="button" href="#">Доставка</button></li>
-    <li><button type="button" class="button" href="#">Гарантия</button></li>
-    <li><button type="button" class="button" href="#">Кредит</button></li>
+    <li><button type="button" class="button button-current" href="#">Доставка</button></li>
+    <li><button type="button" class="button-button" href="#">Гарантия</button></li>
+    <li><button type="button" class="button-button" href="#">Кредит</button></li>
   </ul>
   <section class="slide-active">
     <h2 class="title">Доставка</h2>
@@ -137,15 +136,15 @@
        мы неплохо заработаем, поднимая его на ваш этаж.</p>
   </section>
     <section class="slide">
-      <h2 class="title">Гарантия</h2>
+    <h2 class="title">Гарантия</h2>
      <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
     </section>
     <section class="slide">
-      <h2 class="title">Кредит</h2>
+    <h2 class="title">Кредит</h2>
      <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
-    </section>
-     <p>Доставим редкий товар под заказ</p>
+  </section>
 </section>
+<div class="delivery"><p>Доставим редкий товар под заказ</p></div>
 <section class="appointment">
   <section>
     <h2 class="title">О нас</h2>
@@ -154,11 +153,11 @@
 <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:
 </p>
 <ul>
-  <li>Меловые линии</li>
-  <li>СДИК</li>
-  <li>ТоксБерри</li>
+  <li class="item">Меловые линии</li>
+  <li class="item">СДИК</li>
+  <li class="item">ТоксБерри</li>
 </ul>
-<a href="#" class="button">Подробнее о нас</a>
+<a href="#" class="button-button">Подробнее о нас</a>
   </section>
 <section>
   <h2 class="title">Контакты</h2>
@@ -176,7 +175,7 @@
           <dt>сб—вс:</dt>
           <dd>с 10:00 до 19:00</dd>
         </dl>
-        <a class="button" href="#">Напишите нам</a>
+        <a href="#" class="button-button" >Напишите нам</a>
 </section>
 </section>
 <section>
@@ -185,7 +184,7 @@
 
   <form action="#">
     <input type="email" placeholder="E-mail">
-    <button type="submit" class="button">Подписаться</button>
+    <button type="submit">Подписаться</button>
   </form>
     <p>Это бесплатно</p>
   </section>
@@ -196,9 +195,9 @@
   <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
 </address>
 <ul>
-  <li><a class="button" href="#">Доставка</a></li>
-  <li><a class="button" href="#">Гарантия</a></li>
-  <li><a class="button" href="#">Контакты</a></li>
+  <li><a class="button-footer" href="#">Доставка</a></li>
+  <li><a class="button-footer" href="#">Гарантия</a></li>
+  <li><a class="button-footer" href="#">Контакты</a></li>
 </ul>
 <a class="footer-contacts-address-phone" href="tel:+78005558628">+7 800 555-86-28</a>
 <ul class="">
