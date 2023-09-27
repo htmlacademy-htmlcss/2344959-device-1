@@ -1,3 +1,52 @@
 @font-face {
-
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+body {
+  font-family: "Rubik";
+  font-size: 18px;
+  line-height: 30px;
+}
+navigation-user {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+navigation-list {
+  display: flex;
+  font-weight: 800;
+  line-height: 30px;
+  color: black;
+  align-items: center;
+  text-decoration: none;
+}
+navigation {
+  background-image: url("../images/yellow-background.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+title {
+  font-family: "Raleway";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 50px;
+  text-transform: none;
 }
