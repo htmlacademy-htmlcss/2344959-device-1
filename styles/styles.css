@@ -19,18 +19,31 @@
   src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
   font-display: swap;
 }
+html {
+  height: 100%;
+}
 body {
-  font-family: "Rubik";
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
 }
 .navigation-user {
-
+display: flex;
+}
+.navigation-servis {
+  display: flex;
+  }
+.navigation-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
   align-items: center;
   font-size: 18px;
 }
 .navigation-link {
-
   font-weight: 800;
   line-height: 30px;
   color: black;
@@ -41,8 +54,37 @@ body {
   background-image: url("../images/yellow-background.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  margin: 0 auto;
 }
-title {
+.main-container {
+  flex-grow: 1;
+}
+.page-container {
+  width: 1450px;
+  margin: 0 auto;
+}
+.logo {
+  display: block;
+  margin-right: auto;
+}
+.slide-active {
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+}
+.slide {
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+}
+.img-quadcopter {
+
+}
+.slide-slide {
+  display: flex;
+  flex-direction: column;
+}
+.title {
   font-family: "Raleway";
   font-size: 50px;
   font-style: normal;
@@ -51,14 +93,13 @@ title {
   text-transform: none;
 }
 .list-products {
-
-font-family: Raleway;
-font-size: 18px;
-font-style: normal;
-font-weight: 800;
-line-height: 24px;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px;
 }
-button {
+.button {
   text-align: center;
   font-family: Raleway;
   font-size: 18px;
@@ -68,16 +109,16 @@ button {
   border-color: transparent;
 }
 .button-button {
-background-color: #FFE17F;
-color: #000000;
-text-align: center;
-font-size: 18px;
-font-style: normal;
-font-weight: 800;
-line-height: normal;
-text-transform: uppercase;
-text-decoration: none;
-border-color: transparent;
+  background-color: #FFE17F;
+  color: #000000;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-color: transparent;
 }
 a.button-button {
   background-color: #FFE17F;
@@ -89,18 +130,20 @@ a.button-button {
   line-height: normal;
   text-transform: uppercase;
   text-decoration: none;
-
   }
-button.button-current {
-background-color: #000000;
-color: #FFE17F;
-text-align: center;
-font-family: Raleway;
-font-size: 18px;
-font-style: normal;
-font-weight: 800;
-line-height: normal;
-text-transform: uppercase;
+  .box-sizing {
+  border-box;
+  }
+  button.button-current {
+  background-color: #000000;
+  color: #FFE17F;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
 }
 .product {
   background-color: #FFE17F;
@@ -108,13 +151,13 @@ text-transform: uppercase;
   height: 160px;
 }
 .delivery {
-text-align: center;
-font-family: Raleway;
-font-size: 20px;
-font-style: normal;
-font-weight: 800;
-line-height: normal;
-text-transform: uppercase;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
 }
 .item {
 font-family: Rubik;
@@ -145,13 +188,13 @@ background-color: #444;
   }
 .pagination-link {
   font-family: Rubik;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 20px;
-text-transform: uppercase;
-color: #444;
-text-decoration: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #444;
+  text-decoration: none;
 }
 .pagination-link.pagination-next {
   font-family: Raleway;
@@ -162,19 +205,19 @@ text-decoration: none;
   color: #000000;
   text-decoration: none;
   }
-  .pagination-link.pagination-current {
-    font-family: Raleway;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-    color: #000000;
-    text-decoration: none;
+.pagination-link.pagination-current {
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  color: #000000;
+  text-decoration: none;
   }
-  .pagination {
-    background-color: #EBEBEB;
+.pagination {
+  background-color: #EBEBEB;
   }
-  button.button-catalog {
+button.button-catalog {
     border-color: #E5E5E5;
     background-color: #ffffff;
     text-align: center;
@@ -186,11 +229,11 @@ text-decoration: none;
     text-transform: uppercase;
     }
 
-    .contacts-address-text {
+.contacts-address-text {
       font-style: normal;
 
   }
-  .footer-contacts-address-phone {
+.footer-contacts-address-phone {
     text-transform: none;
     color: rgb(255, 255, 255);
     text-decoration: none;
