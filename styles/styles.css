@@ -85,7 +85,7 @@ display: flex;
   flex-direction: column;
 }
 .title {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 50px;
   font-style: normal;
   font-weight: 800;
@@ -93,7 +93,7 @@ display: flex;
   text-transform: none;
 }
 .list-products {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -101,7 +101,7 @@ display: flex;
 }
 .button {
   text-align: center;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -120,25 +120,15 @@ display: flex;
   text-decoration: none;
   border-color: transparent;
 }
-a.button-button {
-  background-color: #FFE17F;
-  color: #000000;
-  text-align: center;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  text-transform: uppercase;
-  text-decoration: none;
-  }
-  .box-sizing {
-  border-box;
+*::before
+*::after {
+ box-sizing: border-box;
   }
   button.button-current {
   background-color: #000000;
   color: #FFE17F;
   text-align: center;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -152,7 +142,7 @@ a.button-button {
 }
 .delivery {
   text-align: center;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 800;
@@ -160,7 +150,7 @@ a.button-button {
   text-transform: uppercase;
 }
 .item {
-font-family: Rubik;
+font-family: "Rubik", sans-serif;
 font-size: 18px;
 font-style: normal;
 font-weight: 700;
@@ -171,14 +161,20 @@ color: #ffffff;
 background-color: #444;
 
 }
+input {
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
 .button-footer {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
   }
 .product-card-link {
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -187,7 +183,7 @@ background-color: #444;
   color: #000000;
   }
 .pagination-link {
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -197,7 +193,7 @@ background-color: #444;
   text-decoration: none;
 }
 .pagination-link.pagination-next {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -206,7 +202,7 @@ background-color: #444;
   text-decoration: none;
   }
 .pagination-link.pagination-current {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -221,7 +217,7 @@ button.button-catalog {
     border-color: #E5E5E5;
     background-color: #ffffff;
     text-align: center;
-    font-family: Raleway;
+    font-family: "Raleway", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 800;
@@ -237,4 +233,7 @@ button.button-catalog {
     text-transform: none;
     color: rgb(255, 255, 255);
     text-decoration: none;
+}
+.select-control {
+  font-family: inherit;
 }
