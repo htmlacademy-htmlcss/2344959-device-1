@@ -161,8 +161,8 @@ color: #ffffff;
 background-color: #444;
 
 }
-input {
-  font-family: Rubik;
+.email {
+  font-family: "Rubik", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -192,28 +192,29 @@ input {
   color: #444;
   text-decoration: none;
 }
-.pagination-link.pagination-next {
+.pagination-next {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
-  font-style: normal;
   font-weight: 800;
   line-height: normal;
   color: #000000;
   text-decoration: none;
   }
-.pagination-link.pagination-current {
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
+  .pagination-disabled {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: normal;
+    color: #444;
+    text-decoration: none;
+    }
+  .pagination-current {
   color: #000000;
-  text-decoration: none;
   }
 .pagination {
   background-color: #EBEBEB;
   }
-button.button-catalog {
+.button-catalog {
     border-color: #E5E5E5;
     background-color: #ffffff;
     text-align: center;
@@ -227,7 +228,6 @@ button.button-catalog {
 
 .contacts-address-text {
       font-style: normal;
-
   }
 .footer-contacts-address-phone {
     text-transform: none;
