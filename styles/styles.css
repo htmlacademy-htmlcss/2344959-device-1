@@ -31,9 +31,9 @@ body {
   line-height: 30px;
 }
 .navigation-user {
-display: flex;
+  display: flex;
 }
-.navigation-servis {
+.navigation-service {
   display: flex;
   }
 .navigation-list {
@@ -77,9 +77,6 @@ display: flex;
   justify-content: space-between;
   width: 1160px;
 }
-.img-quadcopter {
-
-}
 .slide-slide {
   display: flex;
   flex-direction: column;
@@ -122,9 +119,13 @@ display: flex;
 }
 *::before
 *::after {
- box-sizing: border-box;
+  box-sizing: border-box;
   }
-  button.button-current {
+* {
+  box-sizing: border-box;
+  }
+
+.button-current {
   background-color: #000000;
   color: #FFE17F;
   text-align: center;
@@ -136,8 +137,8 @@ display: flex;
   text-transform: uppercase;
 }
 .table {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .product {
   background-color: #FFE17F;
@@ -154,15 +155,15 @@ flex-direction: column;
   text-transform: uppercase;
 }
 .item {
-font-family: "Rubik", sans-serif;
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: 20px;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
 }
 .page-footer {
-color: #ffffff;
-background-color: #444;
+  color: #ffffff;
+  background-color: #444;
 
 }
 .email {
@@ -204,39 +205,39 @@ background-color: #444;
   color: #000000;
   text-decoration: none;
   }
-  .pagination-disabled {
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    font-weight: 800;
-    line-height: normal;
-    color: #444;
-    text-decoration: none;
-    }
-  .pagination-current {
+.pagination-disabled {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: normal;
+  color: #444;
+  text-decoration: none;
+  }
+.pagination-current {
   color: #000000;
   }
 .pagination {
   background-color: #EBEBEB;
   }
 .button-catalog {
-    border-color: #E5E5E5;
-    background-color: #ffffff;
-    text-align: center;
-    font-family: "Raleway", sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-    text-transform: uppercase;
-    }
+  border-color: #E5E5E5;
+  background-color: #ffffff;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  }
 
 .contacts-address-text {
-      font-style: normal;
+  font-style: normal;
   }
 .footer-contacts-address-phone {
-    text-transform: none;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
+  text-transform: none;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 .select-control {
   font-family: inherit;
