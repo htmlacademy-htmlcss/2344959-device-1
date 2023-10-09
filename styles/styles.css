@@ -64,9 +64,10 @@ body {
 .main-container {
   flex-grow: 1;
 }
-.page-container {
-  width: 1450px;
-  margin: 0 auto;
+
+.catalog-container {
+display: flex;
+flex-wrap: wrap;
 }
 .logo {
   display: block;
@@ -140,14 +141,20 @@ display: flex;
 .products{
 display: flex;
 }
+.select {
+display: flex;
+}
 .product {
   background-color: #FFE17F;
   width: 160px;
   height: 160px;
 }
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  }
 .slider-advantages {
 display: flex;
-
 }
 
 .delivery {
@@ -168,9 +175,16 @@ margin: 70px 0;
 display: flex;
 flex-wrap: wrap;
 }
+.title-subscribe {
+font-family: "Raleway", sans-serif;
+font-size: 50px;
+font-style: normal;
+font-weight: 800;
+line-height: 50px;
+
+}
 .contacts {
   margin-left: 108px;
-
   }
 .item {
   font-family: "Rubik", sans-serif;
@@ -249,7 +263,19 @@ flex-wrap: wrap;
   line-height: normal;
   text-transform: uppercase;
   }
-
+  .inner-header {
+    display: flex;
+   }
+   .catalog-filter {
+    width: 320px;
+    margin: 0;
+   }
+   .catalog-products {
+    display: flex;
+   }
+   .breadcrumbs {
+    display: flex;
+   }
 .contacts-address-text {
   font-style: normal;
   }

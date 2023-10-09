@@ -53,8 +53,9 @@
       </li>
     </ul>
   </div>
+<div class="catalog-container">
   <section class="catalog-products">
-    <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+    <h2 class="visually-hidden" hidden>Список товаров с фильтрами</h2>
     <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
       <fieldset class="catalog-filter-group">
         <legend class="catalog-filter-title">Цвет</legend>
@@ -129,12 +130,14 @@
     </form>
   </section>
   <section class="products">
+  <div class="select">
+    <p>Сортировка</p>
     <select class="select-control" aria-label="Сортировка">
       <option value="popular">Сначала популярное</option>
       <option value="cheap">Сначала дешёвое</option>
       <option value="expensive">Сначала дорогое</option>
     </select>
-
+  </div>
     <ul class="product-list">
       <li class="product-card">
         <a class="product-card-link" href="#">
@@ -195,7 +198,7 @@
           </a>
     </section>
 </main>
-
+</div>
 <footer class="page-footer">
   <a href="#"><img class="logo" src="images/logo-yellow.svg" alt="Логотип интернет-магазина девайсов."></a>
   <address class="contacts-address">
