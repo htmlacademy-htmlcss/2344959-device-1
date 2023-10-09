@@ -22,6 +22,11 @@
 html {
   height: 100%;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -117,14 +122,6 @@ body {
   text-decoration: none;
   border-color: transparent;
 }
-*::before
-*::after {
-  box-sizing: border-box;
-  }
-* {
-  box-sizing: border-box;
-  }
-
 .button-current {
   background-color: #000000;
   color: #FFE17F;
@@ -138,13 +135,21 @@ body {
 }
 .table {
   display: flex;
-  flex-direction: column;
+
+}
+.products{
+display: flex;
 }
 .product {
   background-color: #FFE17F;
   width: 160px;
   height: 160px;
 }
+.slider-advantages {
+display: flex;
+
+}
+
 .delivery {
   text-align: center;
   font-family: "Raleway", sans-serif;
@@ -154,6 +159,10 @@ body {
   line-height: normal;
   text-transform: uppercase;
 }
+.slide-active {
+
+}
+
 .item {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
