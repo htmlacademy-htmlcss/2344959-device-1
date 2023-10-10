@@ -59,7 +59,11 @@ body {
   background-image: url("../images/yellow-background.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
+
+}
+.container {
   margin: 0 auto;
+  width: 1160px;
 }
 .main-container {
   flex-grow: 1;
@@ -85,7 +89,7 @@ flex-wrap: wrap;
 }
 
 .slide-active {
-display: flex;
+  display: flex;
 }
 
 .title {
@@ -196,8 +200,10 @@ line-height: 50px;
 .page-footer {
   color: #ffffff;
   background-color: #444;
-display: flex;
-flex-wrap: wrap;
+}
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
 }
 .email {
   font-family: "Rubik", sans-serif;
