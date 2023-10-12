@@ -71,7 +71,6 @@ body {
 
 .catalog-container {
 display: flex;
-flex-wrap: wrap;
 }
 .logo {
   display: block;
@@ -142,9 +141,7 @@ flex-wrap: wrap;
 .table {
   display: flex;
 }
-.products{
-display: flex;
-}
+
 .select {
 display: flex;
 }
@@ -156,6 +153,8 @@ display: flex;
 .product-list {
   display: flex;
   flex-wrap: wrap;
+  width: 840px;
+  margin: 0 auto;
   }
 .slider-advantages {
 display: flex;
@@ -257,6 +256,7 @@ line-height: 50px;
   }
 .pagination {
   background-color: #EBEBEB;
+  display: flex;
   }
 .button-catalog {
   border-color: #E5E5E5;
@@ -276,9 +276,7 @@ line-height: 50px;
     width: 320px;
     margin: 0;
    }
-   .catalog-products {
-    display: flex;
-   }
+
    .breadcrumbs {
     display: flex;
    }
