@@ -133,9 +133,9 @@
   <div class="select">
     <p>Сортировка</p>
     <select class="select-control" aria-label="Сортировка">
-      <option value="popular">Сначала популярное</option>
-      <option value="cheap">Сначала дешёвое</option>
-      <option value="expensive">Сначала дорогое</option>
+      <option value="popular">Популярные</option>
+      <option value="cheap">Дешёвые</option>
+      <option value="expensive">Дорогие</option>
     </select>
   </div>
     <ul class="product-list">
@@ -172,7 +172,8 @@
       </ul>
 
       <button class="button-catalog" type="button">Загрузить ещё</button>
-      <div class="pagination">
+      <section class="pagination">
+        <h3 class="visually-hidden" hidden>Пагинация</h3>
           <a class="pagination-link pagination-disabled">
             Назад
           </a>
@@ -196,7 +197,7 @@
           <a class="pagination-link pagination-next" href="#">
             Вперёд
           </a>
-      </div>
+      </section>
     </section>
 </main>
 </div>
