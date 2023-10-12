@@ -95,6 +95,8 @@ body {
   font-style: normal;
   font-weight: 800;
   line-height: 24px;
+  width: 1160px;
+  margin: 0 auto;
   }
 .button {
   text-align: center;
@@ -137,9 +139,13 @@ body {
   }
 .catalog-container {
   display: flex;
+  width: 1160px;
   }
 .main-container {
-    flex-grow: 1;
+  flex-grow: 1;
+  }
+.catalog-products {
+  padding: 60px;
   }
 .product-list {
   display: flex;
@@ -161,8 +167,12 @@ body {
   }
 .appointment {
   display: flex;
-  margin: 70px 0;
+  margin: 70px auto;
   }
+.pagination-page {
+  margin: 0 auto;
+  width: 100px;
+    }
 .subscribe {
   display: flex;
   flex-wrap: wrap;
