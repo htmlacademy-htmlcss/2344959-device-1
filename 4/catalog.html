@@ -7,7 +7,7 @@
     <base href="https://htmlacademy-htmlcss.github.io/2344959-device-1/4/">
 </head>
   <body>
-    <header class="page-header">
+    <header class="page-header container">
 
       <a href="index.html"><img class="logo" src="images/logo-black.svg" alt="Логотип интернет-магазина девайсов."></a>
 
@@ -39,7 +39,7 @@
         </ul>
       </nav>
     </header>
-<main>
+<main class="main-container">
   <div class="inner-header">
     <h1 class="inner-header-title title">Моноподы для селфи</h1>
     <ul class="breadcrumbs">
@@ -134,9 +134,9 @@
   <div class="select">
     <p>Сортировка</p>
     <select class="select-control" aria-label="Сортировка">
-      <option value="popular">Сначала популярное</option>
-      <option value="cheap">Сначала дешёвое</option>
-      <option value="expensive">Сначала дорогое</option>
+      <option value="popular">Популярные</option>
+      <option value="cheap">Дешёвые</option>
+      <option value="expensive">Дорогие</option>
     </select>
   </div>
     <ul class="product-list">
@@ -173,11 +173,12 @@
       </ul>
 
       <button class="button-catalog" type="button">Загрузить ещё</button>
-
+      <section class="pagination">
+        <h3 class="visually-hidden" hidden>Пагинация</h3>
           <a class="pagination-link pagination-disabled">
             Назад
           </a>
-        <ul class="pagination">
+        <ul class="pagination pagination-list">
         <li class="pagination-item">
           <a class="pagination-link pagination-current">1</a>
         </li>
@@ -197,10 +198,12 @@
           <a class="pagination-link pagination-next" href="#">
             Вперёд
           </a>
+      </section>
     </section>
 </main>
 </div>
 <footer class="page-footer">
+  <div class="footer-inner container">
   <a href="#"><img class="logo" src="images/logo-yellow.svg" alt="Логотип интернет-магазина девайсов."></a>
   <address class="contacts-address">
     <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
@@ -229,6 +232,7 @@
     </li>
   </ul>
   <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img class="" src="images/html-academy.svg" alt="Логотип htmlacademy">.html academy</a></p>
-  </footer>
-  </body>
+  </div>
+ </footer>
+</body>
 </html>
