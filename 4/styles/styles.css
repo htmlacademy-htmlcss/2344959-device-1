@@ -68,18 +68,13 @@ body {
   display: block;
   margin-right: auto;
   }
-.slide-active {
-  display: flex;
-  justify-content: space-between;
-  width: 1160px;
-  }
+
 .slide {
-  display: flex;
-  justify-content: space-between;
-  width: 1160px;
+  display: none;
   }
 .slide-active {
   display: flex;
+  justify-content: space-between;
   }
 .title {
   font-family: "Raleway", sans-serif;
@@ -95,6 +90,8 @@ body {
   font-style: normal;
   font-weight: 800;
   line-height: 24px;
+  width: 1160px;
+  margin: 0 auto;
   }
 .button {
   text-align: center;
@@ -133,13 +130,17 @@ body {
   }
 .select {
   display: flex;
-  padding: 20px 40px;
+  padding: px px;
   }
 .catalog-container {
   display: flex;
+  width: 1160px;
   }
 .main-container {
-    flex-grow: 1;
+  flex-grow: 1;
+  }
+.filter-catalog {
+  padding: px;
   }
 .product-list {
   display: flex;
@@ -161,8 +162,12 @@ body {
   }
 .appointment {
   display: flex;
-  margin: 70px 0;
+  margin: 70px auto;
   }
+.pagination-page {
+  margin: 0 auto;
+  width: 100px;
+    }
 .subscribe {
   display: flex;
   flex-wrap: wrap;
@@ -174,7 +179,7 @@ body {
   font-weight: 800;
   line-height: 50px;
   }
-.contacts {
+.contact {
   margin-left: 108px;
   }
 .item {
