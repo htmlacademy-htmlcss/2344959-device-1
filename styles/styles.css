@@ -68,7 +68,6 @@ body {
   display: block;
   margin-right: auto;
   }
-
 .slide {
   display: none;
   }
@@ -90,7 +89,6 @@ body {
   font-style: normal;
   font-weight: 800;
   line-height: 24px;
-  width: 1160px;
   margin: 0 auto;
   }
 .button {
@@ -134,7 +132,6 @@ body {
   }
 .catalog-container {
   display: flex;
-  width: 1160px;
   }
 .main-container {
   flex-grow: 1;
