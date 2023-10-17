@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header container">
 
       <a href="index.html"><img class="logo" src="images/logo-black.svg" alt="Логотип интернет-магазина девайсов."></a>
 
@@ -38,8 +38,9 @@
         </ul>
       </nav>
     </header>
-<main>
-  <div class="inner-header">
+
+<main class="main-container">
+ <section class="inner-header container">
     <h1 class="inner-header-title title">Моноподы для селфи</h1>
     <ul class="breadcrumbs">
       <li class="breadcrumbs-item">
@@ -52,9 +53,11 @@
         <a class="breadcrumbs-link">Моноподы для селфи</a>
       </li>
     </ul>
-  </div>
-  <section class="catalog-products">
-    <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+ </section>
+ <section class="catalog-container">
+ <section class="container">
+  <section class="filter-catalog">
+    <h2 class="visually-hidden" hidden>Список товаров с фильтрами</h2>
     <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
       <fieldset class="catalog-filter-group">
         <legend class="catalog-filter-title">Цвет</legend>
@@ -129,12 +132,14 @@
     </form>
   </section>
   <section class="products">
+  <div class="select">
+    <p>Сортировка</p>
     <select class="select-control" aria-label="Сортировка">
-      <option value="popular">Сначала популярное</option>
-      <option value="cheap">Сначала дешёвое</option>
-      <option value="expensive">Сначала дорогое</option>
+      <option value="popular">Популярные</option>
+      <option value="cheap">Дешёвые</option>
+      <option value="expensive">Дорогие</option>
     </select>
-
+  </div>
     <ul class="product-list">
       <li class="product-card">
         <a class="product-card-link" href="#">
@@ -169,11 +174,12 @@
       </ul>
 
       <button class="button-catalog" type="button">Загрузить ещё</button>
-
+      <section class="pagination">
+        <h3 class="visually-hidden" hidden>Пагинация</h3>
           <a class="pagination-link pagination-disabled">
             Назад
           </a>
-        <ul class="pagination">
+        <ul class="pagination pagination-list">
         <li class="pagination-item">
           <a class="pagination-link pagination-current">1</a>
         </li>
@@ -193,10 +199,14 @@
           <a class="pagination-link pagination-next" href="#">
             Вперёд
           </a>
-    </section>
+      </section>
+  </section>
+</section>
+</section>
 </main>
 
 <footer class="page-footer">
+  <div class="footer-inner container">
   <a href="#"><img class="logo" src="images/logo-yellow.svg" alt="Логотип интернет-магазина девайсов."></a>
   <address class="contacts-address">
     <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
@@ -225,6 +235,7 @@
     </li>
   </ul>
   <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img class="" src="images/html-academy.svg" alt="Логотип htmlacademy">.html academy</a></p>
-  </footer>
-  </body>
+  </div>
+ </footer>
+</body>
 </html>

@@ -7,7 +7,7 @@
   </head>
   <body>
 
-<header class="page-header">
+<header class="page-header container">
     <nav class="navigation">
       <a href="#"><img class="logo" src="images/logo-black.svg" alt="Логотип интернет-магазина девайсов."></a>
       <div class="navigation-user">
@@ -43,9 +43,10 @@
     </nav>
 </header>
 <main class="main-container">
-  <div class="page-container">
+
+
+ <section class="slider container">
   <h1 class="visually-hidden">Интернет-магазин Device</h1>
- <section class="slider">
   <section class="slide-active">
       <img class="img-quadcopter" src="images/quadcopter.png" alt="квадрокоптер на желто-белом фоне">
    <div class="slide-slide">
@@ -98,49 +99,50 @@
         <td>Материал</td>
         </tr>
       </table>
-    </div>
-    </section>
-    <div>
+   </div>
+  </section>
+   <div class="pagination-page">
       <button><span class="visually-hidden">на предыдущий слайд</span></button>
       <button><span class="visually-hidden">на следующий слайд</span></button>
-    </div>
     <ul>
       <li><button><span class="visually-hidden">на первый слайд</span></button></li>
       <li><button><span class="visually-hidden">на второй слайд</span></button></li>
       <li><button><span class="visually-hidden">на третий слайд</span></button></li>
     </ul>
- </section>
- <section class="list-products">
+  </div>
+</section>
+ <section class="list-products container">
 <h2>Разделы каталога</h2>
 <ul class="products">
-      <li class="product">
+      <li class="product-item">
         <a>Виртуальная реальность</a>
       </li>
-        <li class="product">
+        <li class="product-item">
         <a>Моноподы для селфи</a>
       </li>
-        <li class="product">
+        <li class="product-item">
         <a>Экшн-камеры</a>
       </li>
-        <li class="product">
+        <li class="product-item">
         <a>Фитнес-браслеты</a>
       </li>
-        <li class="product">
+        <li class="product-item">
         <a>Умные часы</a>
       </li>
-        <li class="product">
+        <li class="product-item">
         <a>Квадрокоптеры</a>
       </li>
     </ul>
  </section>
 
-<section class="slider-advantages">
+<section class="slider-services">
+<div class="service-inner container">
   <ul>
     <li><button type="button" class="button button-current">Доставка</button></li>
     <li><button type="button" class="button-button">Гарантия</button></li>
     <li><button type="button" class="button-button">Кредит</button></li>
   </ul>
-  <section class="slide-active">
+  <section class="slide slide-active">
     <h2 class="title">Доставка</h2>
      <p>Мы с удовольствием доставим ваш товар прямо
        к вашему подъезду совершенно бесплатно! Ведь
@@ -154,10 +156,11 @@
     <h2 class="title">Кредит</h2>
      <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
   </section>
+</div>
 </section>
-<div class="delivery"><p>Доставим редкий товар под заказ</p></div>
-<section class="appointment">
-  <section>
+<a href="#" class="delivery container">Доставим редкий товар под заказ</a>
+<div class="appointment container">
+<div class="about">
     <h2 class="title">О нас</h2>
 <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
 </p>
@@ -169,8 +172,8 @@
   <li class="item">ТоксБерри</li>
 </ul>
 <a href="#" class="button-button">Подробнее о нас</a>
-  </section>
-<section>
+</div>
+<div class="contact">
   <h2 class="title">Контакты</h2>
 <p>Вы можете забрать товар сами, заехав в наш офис.
   Заодно сможете проверить работоспособность покупки</p>
@@ -187,10 +190,10 @@
           <dd>с 10:00 до 19:00</dd>
         </dl>
         <a href="#" class="button-button" >Напишите нам</a>
-</section>
-</section>
-<section>
-  <h2 class="title">Подпишитесь на рассылку</h2>
+  </div>
+</div>
+<section class="subscribe container">
+  <h2 class="title-subscribe">Подпишитесь на рассылку</h2>
     <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
 
   <form action="#">
@@ -198,11 +201,12 @@
     <button class="button" type="submit">Подписаться</button>
   </form>
     <p>Это бесплатно</p>
-  </section>
-</div>
+</section>
+
 </main>
 <footer class="page-footer">
-<a href="#"><img class="logo" src="images/logo-yellow.svg" alt="Логотип интернет-магазина девайсов."></a>
+  <div class="footer-inner container">
+<a href="#"><img class="logo-footer" src="images/logo-yellow.svg" alt="Логотип интернет-магазина девайсов."></a>
 <address class="contacts-address">
   <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
 </address>
@@ -230,6 +234,7 @@
   </li>
 </ul>
 <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img class="" src="images/html-academy.svg" alt="Логотип htmlacademy">.html academy</a></p>
+</div>
 </footer>
 </body>
 </html>
