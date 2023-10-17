@@ -68,18 +68,13 @@ body {
   display: block;
   margin-right: auto;
   }
-.slide-active {
-  display: flex;
-  justify-content: space-between;
-  width: 1160px;
-  }
+
 .slide {
-  display: flex;
-  justify-content: space-between;
-  width: 1160px;
+  display: none;
   }
 .slide-active {
   display: flex;
+  justify-content: space-between;
   }
 .title {
   font-family: "Raleway", sans-serif;
@@ -135,7 +130,7 @@ body {
   }
 .select {
   display: flex;
-  padding: 20px 40px;
+  padding: px px;
   }
 .catalog-container {
   display: flex;
@@ -144,8 +139,8 @@ body {
 .main-container {
   flex-grow: 1;
   }
-.catalog-products {
-  padding: 60px;
+.filter-catalog {
+  padding: px;
   }
 .product-list {
   display: flex;
@@ -184,7 +179,7 @@ body {
   font-weight: 800;
   line-height: 50px;
   }
-.contacts {
+.contact {
   margin-left: 108px;
   }
 .item {
