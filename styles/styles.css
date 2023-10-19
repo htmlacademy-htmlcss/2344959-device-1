@@ -27,6 +27,16 @@ html {
 *::after {
   box-sizing: border-box;
   }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 body {
   display: flex;
   flex-direction: column;
@@ -35,8 +45,35 @@ body {
   font-size: 18px;
   line-height: 30px;
   }
+  .search {
+  font-family: Rubik, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  list-style-type: none;
+  text-decoration: none;
+  border-radius: 50px 0px 0px 50px;
+  border: 2px solid #000;
+  width: 359px;
+  height: 40px;
+  align-items: center;
+  }
+  .button-search {
+    font-family: Rubik, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    list-style-type: none;
+    text-decoration: none;
+    border-radius: 0px 50px 50px 0px;
+    border: 2px solid #000;
+    width: 160px;
+    height: 40px;
+  }
 .navigation-user {
   display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
   }
 .navigation-service {
   display: flex;
@@ -47,14 +84,32 @@ body {
   padding: 0;
   align-items: center;
   font-size: 18px;
+  list-style-type: none;
   }
-.navigation-link {
+.navigation-link
   font-weight: 800;
   line-height: 30px;
   color: black;
   align-items: center;
   text-decoration: none;
   }
+.navigation-item {
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  padding-left: 45px;
+  list-style-type: none;
+}
+.navigation-item-user {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  padding-left: 12px;
+  margin-left: 36px;
+}
 .navigation {
   background-image: url("../images/yellow-background.png");
   background-size: 100% auto;
