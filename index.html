@@ -46,7 +46,6 @@
 </header>
 <main class="main-container">
 
-
  <section class="slider container">
   <h1 class="visually-hidden">Интернет-магазин Device</h1>
   <section class="slide-active">
@@ -114,7 +113,7 @@
   </div>
 </section>
  <section class="list-products container">
-<h2>Разделы каталога</h2>
+<h2 class="visually-hidden">Разделы каталога</h2>
 <ul class="products">
       <li class="product-item">
         <a>Виртуальная реальность</a>
@@ -139,14 +138,14 @@
 
 <section class="slider-services">
 <div class="service-inner container">
-  <ul>
-    <li><button type="button" class="button button-current">Доставка</button></li>
-    <li><button type="button" class="button-button">Гарантия</button></li>
-    <li><button type="button" class="button-button">Кредит</button></li>
+  <ul class="service-list">
+    <li class="service-item"><button type="button" class="button button-current">Доставка</button></li>
+    <li class="service-item"><button type="button" class="button-button">Гарантия</button></li>
+    <li class="service-item"><button type="button" class="button-button">Кредит</button></li>
   </ul>
-  <section class="slide slide-active">
+  <section class="slide slide-service">
     <h2 class="title">Доставка</h2>
-     <p>Мы с удовольствием доставим ваш товар прямо
+     <p class="slide-service-text">Мы с удовольствием доставим ваш товар прямо
        к вашему подъезду совершенно бесплатно! Ведь
        мы неплохо заработаем, поднимая его на ваш этаж.</p>
   </section>
@@ -195,31 +194,42 @@
   </div>
 </div>
 <section class="subscribe container">
+ <div class="subscribe1">
   <h2 class="title-subscribe">Подпишитесь на рассылку</h2>
-    <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-
+    <p class="text-subscribe">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+ </div>
+ <div class="subscribe2">
   <form action="#">
     <input class="email" type="email" placeholder="E-mail">
     <button class="button" type="submit">Подписаться</button>
   </form>
-    <p>Это бесплатно</p>
+    <p class="subscribe2-text">Это бесплатно</p>
+ </div>
 </section>
 
 </main>
 <footer class="page-footer">
   <div class="footer-inner container">
+
+  <div class="footer-logo-address">
 <a href="#"><img class="logo-footer" src="images/logo-yellow.svg" alt="Логотип интернет-магазина девайсов."></a>
 <address class="contacts-address">
   <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
 </address>
-<ul>
+  </div>
+
+  <div class="footer-list-phone">
+<ul class="footer-list">
   <li><a class="button-footer" href="#">Доставка</a></li>
   <li><a class="button-footer" href="#">Гарантия</a></li>
   <li><a class="button-footer" href="#">Контакты</a></li>
 </ul>
 <a class="footer-contacts-address-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-<ul class="">
-  <li class="">
+ </div>
+
+ <div class="social-footer">
+<ul class="social-list">
+  <li class="social-item">
     <a class="button" href="#">
       <span class="visually-hidden">Телеграмм</span>
     </a>
@@ -235,7 +245,9 @@
     </a>
   </li>
 </ul>
-<p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img class="" src="images/html-academy.svg" alt="Логотип htmlacademy">.html academy</a></p>
+<a class="htmlacademy-link" href="https://htmlacademy.ru/"><img src="images/html-academy.svg" alt="Логотип htmlacademy">.html academy</a>
+</div>
+
 </div>
 </footer>
 </body>
