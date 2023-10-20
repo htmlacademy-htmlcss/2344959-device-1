@@ -78,7 +78,7 @@ body {
 .navigation-service {
   display: flex;
   }
-.navigation-item {
+.navigation-link {
   font-family: Raleway, sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -154,7 +154,6 @@ body {
   list-style-type: none;
   }
 .products {
-  display: flex;
   list-style-type: none;
   }
 .service-inner {
@@ -205,7 +204,10 @@ body {
   }
 .select {
   display: flex;
-  padding: px px;
+  padding: 20px 40px;
+  }
+.select-control {
+  font-family: inherit;
   }
 .catalog-container {
   display: flex;
@@ -220,7 +222,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 840px;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
   }
 .slider-advantages {
  display: flex;
@@ -284,7 +288,7 @@ body {
   line-height: 20px;
   }
 .item:nth-last-child(n+2) {
-margin-bottom: 19px;
+  margin-bottom: 19px;
   }
 .page-footer {
   color: #ffffff;
@@ -361,10 +365,19 @@ margin-bottom: 19px;
   }
 .catalog-filter {
   width: 320px;
+  margin: 0;
   }
 .breadcrumbs {
   display: flex;
-  color: #000000;
+  list-style-type: none;
+  color: #000;
+  text-decoration: none;
+  }
+.breadcrumbs-link {
+  color: #000;
+  list-style-type: none;
+  padding-right: 32px;
+  text-decoration: none;
   }
 .contacts-address-text {
   font-style: normal;
@@ -372,9 +385,6 @@ margin-bottom: 19px;
 .footer-contacts-address-phone {
   text-transform: none;
   color: rgb(255, 255, 255);
-  }
-.select-control {
-  font-family: inherit;
   }
 .logo-footer {
   margin-top: 35px;
