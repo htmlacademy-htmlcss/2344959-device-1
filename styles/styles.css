@@ -400,22 +400,7 @@ body {
   text-transform: none;
   color: rgb(255, 255, 255);
   }
-.logo-footer {
-  margin-top: 35px;
-  }
-.footer-logo-address {
-display: block;
- }
- .footer-list-phone {
-  display: flex;
- }
  .footer-list {
   display: flex;
-  list-style-type: none;
- }
- .social-footer {
-  display: flex;
- }
- .social-list {
   list-style-type: none;
  }
