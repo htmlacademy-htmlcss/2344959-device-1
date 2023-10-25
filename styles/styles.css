@@ -305,9 +305,7 @@ body {
   }
 .footer-inner {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-  grid-column-start: 2;
+  grid-template-columns: 400px 1fr 400px;
   }
 .email {
   font-family: "Rubik", sans-serif;
@@ -398,12 +396,24 @@ body {
   }
 .contacts-address-text {
   font-style: normal;
+}
+.contacts-address {
+  grid-column: 1/-3;
+}
+  .logo-footer {
+    grid-column: 1/-1;
   }
 .footer-contacts-address-phone {
   text-transform: none;
   color: rgb(255, 255, 255);
+  grid-column: 3/-1;
   }
  .footer-list {
   display: flex;
   list-style-type: none;
+  grid-column: 2/-2;
  }
+.social-list {
+  grid-column: 2/2;
+  list-style-type: none;
+  }
