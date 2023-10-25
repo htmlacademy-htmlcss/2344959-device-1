@@ -223,10 +223,11 @@ body {
   grid-template-columns: 360px 360px;
   gap: 40px;
   width: 840px;
-  margin: 0;
-  padding: 0;
   list-style-type: none;
   margin-bottom: 44px;
+  padding-top: 70px;
+  padding-left: 40px;
+  padding-right: 40px;
   }
 .product-card {
   display: grid;
@@ -303,8 +304,10 @@ body {
   background-color: #444;
   }
 .footer-inner {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-column-start: 2;
   }
 .email {
   font-family: "Rubik", sans-serif;
