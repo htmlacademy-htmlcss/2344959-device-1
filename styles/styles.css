@@ -210,19 +210,41 @@ body {
 .select-control {
   font-family: inherit;
   width: 141px;
-    height: 30px;
-    font-family: Rubik;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-    border: none;
+  height: 30px;
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  border: none;
   }
-  .select-text {
-    margin-right: 260px;
+  .button-cards {
+    text-align: center;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    padding: 18px 39px;
+    margin: 0;
+    width: 760px;
+    border: 3px solid #E5E5E5;
+  }
+.select-text {
+  margin-right: 260px;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
   }
 .catalog-container {
   display: flex;
+  background-color: #F0F0F0;
   }
 .main-container {
   flex-grow: 1;
@@ -387,7 +409,9 @@ body {
   display: flex;
   list-style-type: none;
   align-items: center;
-  padding: 25px;
+  /* padding: 25px; */
+  margin-bottom: 60px;
+  margin-top: 44px;
   }
   .pagination-item {
     width: 40px;
