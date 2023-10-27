@@ -221,6 +221,13 @@ body {
   border: none;
   background-color: #F0F0F0;
   }
+  .catalog-filter-title {
+    font-family: Rubik, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+  }
   .button-cards {
     text-align: center;
     font-family: Raleway;
@@ -248,16 +255,14 @@ body {
 .catalog-container {
   display: flex;
   background-color: #F0F0F0;
-  }
+}
 .main-container {
   flex-grow: 1;
-  background-color: ;
   }
 .filter-catalog {
   padding: px;
   }
 .product-list {
-  FONT-WEIGHT: 100;
   display: grid;
   grid-template-columns: 360px 360px;
   gap: 40px;
@@ -267,7 +272,7 @@ body {
   padding-top: 70px;
   padding-left: 40px;
   padding-right: 40px;
-  background-color: 1;
+  background-color: rgb(255, 255, 255);
   }
 .slider-advantages {
  display: flex;
@@ -302,9 +307,15 @@ body {
   display: flex;
   }
   .subscribe2 {
+  margin: 0 auto;
+  width: 1400px;
   display: flex;
   margin-bottom: 56px;
-    }
+  margin-left: 141px;
+  }
+  .form-subscribe {
+  display: flex;
+  }
 .title-subscribe {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
@@ -312,13 +323,16 @@ body {
   font-weight: 800;
   line-height: 50px;
   margin-top: 64px;
+  margin-left: 147px;
   }
 .text-subscribe {
   margin-top: 74px;
+  /* color: blue; */
+  width: 560px;
   }
   .subscribe2-text {
   margin: 0;
-  margin-left: 550px;
+  margin-left: 370px;
   }
 .contact {
   margin-left: 108px;
@@ -340,6 +354,9 @@ body {
 .footer-inner {
   display: grid;
   grid-template-columns: 400px 1fr 400px;
+  }
+.footer-list-item {
+  padding-left: 35px;
   }
 .email {
   font-family: "Rubik", sans-serif;
@@ -415,7 +432,6 @@ body {
   display: flex;
   list-style-type: none;
   align-items: center;
-  /* padding: 25px; */
   margin-bottom: 60px;
   margin-top: 44px;
   }
@@ -463,13 +479,20 @@ body {
   text-transform: none;
   color: rgb(255, 255, 255);
   grid-column: 3/-1;
+  margin-left: 4;
+  justify-self: end;
   }
  .footer-list {
   display: flex;
   list-style-type: none;
   grid-column: 2/-2;
+  padding: 3;
+  justify-self: s;
  }
 .social-list {
   grid-column: 2/2;
   list-style-type: none;
   }
+.htmlacademy-link {
+justify-self: end;
+}
