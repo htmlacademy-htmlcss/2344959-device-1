@@ -205,9 +205,21 @@ body {
 .select {
   display: flex;
   padding: 20px 40px;
+  align-items: center;
   }
 .select-control {
   font-family: inherit;
+  width: 141px;
+    height: 30px;
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    border: none;
+  }
+  .select-text {
+    margin-right: 260px;
   }
 .catalog-container {
   display: flex;
@@ -228,12 +240,6 @@ body {
   padding-top: 70px;
   padding-left: 40px;
   padding-right: 40px;
-  }
-.product-card {
-  display: grid;
-  grid-template-rows: 380px 1fr;
-  justify-items: end;
-  gap: 32px;
   }
 .slider-advantages {
  display: flex;
@@ -320,6 +326,9 @@ body {
   text-decoration: none;
   }
 .product-card-link {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 30px;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -328,7 +337,23 @@ body {
   text-decoration: none;
   color: #000000;
   }
+  .product-card-image {
+  grid-column: 1/3;
+  }
+  .product-card-title {
+  max-width: 225px;
+  margin: 0;
+  }
+  .product-card-price {
+  margin: 0;
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
 .pagination-link {
+  margin: 44px;
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -360,8 +385,9 @@ body {
 .pagination {
   background-color: #EBEBEB;
   display: flex;
-  margin-top: 44px;
   list-style-type: none;
+  align-items: center;
+  padding: 25px;
   }
   .pagination-item {
     width: 40px;
