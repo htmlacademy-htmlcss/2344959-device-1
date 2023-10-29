@@ -130,11 +130,14 @@ body {
   margin: 72px 100px;
   }
 .slide-service {
-  display: block;
+  display: flex;
   margin-left: 123px;
   }
 .slide-service-text {
-  max-width: 452px;
+  max-width: 530px;
+  }
+  .slide-service-image {
+margin-left: 180px;
   }
 .title {
   font-family: "Raleway", sans-serif;
@@ -158,6 +161,7 @@ body {
   display: flex;
   list-style-type: none;
   padding-left: 0;
+  margin-bottom: 70px;
   }
   .product-item:nth-last-child(n+2) {
   margin-right: 40px;
@@ -286,18 +290,25 @@ body {
 .slider-advantages {
  display: flex;
   }
+.delivery-delivery {
+  margin: 70px;
+  }
 .delivery {
-  display: block;
+  display: flex;
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
-  font-style: normal;
-  font-weight: 800;
   line-height: normal;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
-  margin: 70px;
+  background-color: #F0F0F0;
+  }
+.delivery-image {
+  margin-right: 180px;
+  }
+  .delivery-text {
+  align-self: center;
   }
 .appointment {
   display: flex;
