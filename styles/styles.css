@@ -45,6 +45,11 @@ body {
   font-size: 18px;
   line-height: 30px;
   }
+  .logo {
+  display: block;
+  margin-right: auto;
+  margin-left: 60px;
+  }
   .search {
   font-family: Rubik, sans-serif;
   font-size: 16px;
@@ -57,6 +62,8 @@ body {
   width: 359px;
   height: 40px;
   align-items: center;
+  background-color: #FFE17F;
+  margin-left: 60px;
   }
   .button-search {
     font-family: Rubik, sans-serif;
@@ -69,6 +76,7 @@ body {
     border: 2px solid #000;
     width: 160px;
     height: 40px;
+    background-color: #FFE17F;
   }
 .navigation-user {
   display: flex;
@@ -78,30 +86,45 @@ body {
 .navigation-service {
   display: flex;
   }
+  .navigation-link.link {
+    margin-left: 20px;
+    }
+
 .navigation-link {
   font-family: Raleway, sans-serif;
   font-size: 18px;
   font-style: normal;
-  font-weight: 800;
-  line-height: normal;
   padding-left: 45px;
-  list-style-type: none;
   text-decoration: none;
   color: black;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  }
+
+.navigation-link-user {
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  }
+.div-user {
+  display: flex;
+  margin-left: 140px;
+  margin-top: 10px;
   }
 .navigation-list {
   display: flex;
   margin: 0;
   padding: 0;
   align-items: center;
-  font-size: 18px;
   list-style-type: none;
   }
+.div-navigation-list {
+display: flex;
+margin-left: 270px;
+}
 .navigation-item-user {
-  font-family: Raleway, sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
   padding-left: 12px;
   margin-left: 36px;
 }
@@ -118,10 +141,7 @@ body {
   margin: 0 auto;
   width: 1160px;
   }
-.logo {
-  display: block;
-  margin-right: auto;
-  }
+
 .slide {
   display: none;
   }
@@ -162,6 +182,7 @@ margin-left: 180px;
   list-style-type: none;
   padding-left: 0;
   margin-bottom: 70px;
+  background-color: #ffffff;
   }
   .product-item:nth-last-child(n+2) {
   margin-right: 40px;
@@ -436,16 +457,13 @@ margin-left: 180px;
   line-height: normal;
   color: #000000;
   text-decoration: none;
-  /* justify-content: end; */
-  /* display: flex; */
+  margin-left: 100px;
   }
 .pagination-disabled {
-  /* display: flex; */
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: normal;
-  color: 444;
   text-decoration: none;
   justify-content: start;
   }
@@ -457,9 +475,7 @@ margin-left: 180px;
   display: flex;
   list-style-type: none;
   align-items: center;
-  margin-bottom: 60px;
-  margin-top: 44px;
-  /* justify-content: center; */
+  margin: 44px 40px 80px 44px;
   padding: 0;
   }
   .pagination-item {
