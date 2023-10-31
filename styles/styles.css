@@ -48,7 +48,6 @@ body {
   .logo {
   display: block;
   margin-right: auto;
-  margin-left: 60px;
   }
   .search {
   font-family: Rubik, sans-serif;
@@ -59,11 +58,8 @@ body {
   text-decoration: none;
   border-radius: 50px 0 0 50px;
   border: 2px solid #000;
-  width: 360px;
-  height: 40px;
-  align-items: center;
   background-color: #FFE17F;
-  margin-left: 60px;
+  flex-grow: 1;
   }
   .button-search {
     font-family: Rubik, sans-serif;
@@ -88,7 +84,6 @@ body {
   display: flex;
   }
   .navigation-link.link {
-    margin-left: 20px;
     padding-top: 10px;
     }
 
@@ -96,7 +91,6 @@ body {
   font-family: Raleway, sans-serif;
   font-size: 18px;
   font-style: normal;
-  padding-left: 45px;
   text-decoration: none;
   color: black;
   text-transform: uppercase;
@@ -159,6 +153,8 @@ body {
   background-image: url("../images/yellow-background.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  padding-left: 60px;
+  padding-right: 60px;
   }
 .container {
   margin: 0 auto;
