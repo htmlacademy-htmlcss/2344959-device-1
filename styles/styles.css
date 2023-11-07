@@ -128,7 +128,6 @@ body {
   padding: 0;
   align-items: center;
   list-style-type: none;
-  margin-left: 20px;
   }
   .navigation-list-service {
   display: flex;
@@ -441,7 +440,6 @@ margin-left: 180px;
   height: 40px;
   align-items: center;
   background-color: #FFE17F;
-  margin-left: 60px;
 }
 .authorization-catalog {
   display: flex;
@@ -451,7 +449,6 @@ margin-left: 180px;
   font-weight: 400;
   line-height: 30px;
   list-style-type: none;
-  margin-left: 40px;
   align-self: center;
 }
 .div-user-catalog {
