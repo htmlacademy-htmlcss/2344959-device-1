@@ -85,6 +85,7 @@ body {
   }
 .navigation-link.link {
     padding-top: 10px;
+    padding-left: 10px;
   }
 
 .navigation-link {
@@ -131,11 +132,9 @@ body {
   }
   .navigation-list-service {
   display: flex;
-  margin: 0;
-  padding: 0;
   align-items: center;
   list-style-type: none;
-  margin-left: 320px;
+  margin-left: auto;
   margin-top: 10px;
   margin-bottom: 34px;
   }
