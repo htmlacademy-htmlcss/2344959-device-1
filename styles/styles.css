@@ -71,9 +71,9 @@ body {
     border-radius: 0 50px 50px 0;
     border: 2px solid #000;
     min-width: 160px;
+    max-width: 200px;
     background-color: #FFE17F;
     border-left: none;
-    padding: 16px;
   }
 .navigation-user {
   display: flex;
@@ -83,9 +83,9 @@ body {
 .navigation-service {
   display: flex;
   }
-  .navigation-link.link {
+.navigation-link.link {
     padding-top: 10px;
-    }
+  }
 
 .navigation-link {
   font-family: Raleway, sans-serif;
@@ -106,7 +106,7 @@ body {
   line-height: 30px;
   color: black;
   text-decoration: none;
-  padding-left: 20px;
+  padding-left: 27px;
 
   }
   .navigation-form {
@@ -119,7 +119,7 @@ body {
     padding: 0;
     align-items: center;
     list-style-type: none;
-    margin-left: 160px;
+    margin-left: auto;
   }
 .navigation-list-catalog {
   display: flex;
@@ -140,7 +140,7 @@ body {
   margin-bottom: 34px;
   }
   .authorization {
-  margin-left: 55px;
+  margin-left: 26px;
   align-self: center;
   }
 
