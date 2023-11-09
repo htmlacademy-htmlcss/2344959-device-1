@@ -274,6 +274,10 @@ margin-left: 180px;
   border: none;
   background-color: #F0F0F0;
   }
+.icons-catalog {
+margin-left: auto;
+
+}
 .catalog-filter-title {
   font-family: Rubik, sans-serif;
   font-size: 18px;
