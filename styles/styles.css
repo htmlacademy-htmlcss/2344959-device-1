@@ -449,6 +449,22 @@ list-style-type: none;
   max-width: 253px;
   border: 3px solid #C4C4C4;
   }
+  .button:hover {
+ background-color: #000000;
+ color: #F0F0F0;
+ border-color: #000000;
+  }
+.button:active {
+  background-color: #000000;
+  color: #837f7f;
+  border-color: #000000;
+  }
+  .button:focus {
+    box-shadow:
+    0 0 0 1px rgb(158, 63, 202),
+    0 0 0 3px rgb(50, 53, 50);
+    border-color: transparent;
+    }
 .title-subscribe {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
