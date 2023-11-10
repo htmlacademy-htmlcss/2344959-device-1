@@ -48,6 +48,13 @@ body {
   .logo {
   display: block;
   }
+  .logo:hover {
+  color: rgb(99, 97, 97);
+  }
+  .logo:active {
+    color: rgb(187, 183, 183);
+    }
+
   .search {
   font-family: Rubik, sans-serif;
   font-size: 16px;
@@ -309,19 +316,6 @@ margin-left: 20px;
   font-weight: 700;
   line-height: 20px;
   }
-  .button-cards {
-  display: block;
-  text-align: center;
-  font-family: Raleway;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  letter-spacing: 3.2px;
-  text-transform: uppercase;
-  padding: 18px 39px;
-  border: 3px solid #E5E5E5;
-  }
 .select-text {
    margin-right: 260px;
    font-family: Raleway;
@@ -578,6 +572,7 @@ list-style-type: none;
   padding: 10px;
   }
 .button-catalog {
+  display: block;
   border-color: #E5E5E5;
   background-color: #ffffff;
   text-align: center;
@@ -587,9 +582,16 @@ list-style-type: none;
   font-weight: 800;
   line-height: normal;
   text-transform: uppercase;
+  letter-spacing: 3.2px;
   width: 760px;
   margin-left: 40px;
+  padding: 18px 39px;
+  border: 3px solid #E5E5E5;
   }
+  .button:hover {
+  border: #000000;
+  }
+
 .catalog-filter {
   width: 320px;
   margin: 0;
@@ -598,6 +600,15 @@ list-style-type: none;
   border: none;
   padding-left: 0;
   }
+  .control:hover {
+  color:rgb(58, 57, 57)
+  }
+  .control:active {
+    color:rgb(117, 115, 115)
+  }
+ .control-input {
+  border: blueviolet;
+ }
 .breadcrumbs {
   display: flex;
   list-style-type: none;
@@ -622,6 +633,15 @@ list-style-type: none;
   list-style-type: none;
   padding-right: 32px;
   text-decoration: none;
+  }
+  .breadcrumbs-link:hover {
+  color: #575454;
+  }
+  .breadcrumbs-link:active {
+  color: #aca8a8;
+  }
+  .breadcrumbs-link:focus {
+  border: 1px rgb(129, 53, 192);
   }
 .contacts-address-text {
   font-style: normal;
