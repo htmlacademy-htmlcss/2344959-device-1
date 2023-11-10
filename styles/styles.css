@@ -53,8 +53,7 @@ body {
   }
   .logo:active {
     color: rgb(187, 183, 183);
-    }
-
+  }
   .search {
   font-family: Rubik, sans-serif;
   font-size: 16px;
@@ -67,6 +66,10 @@ body {
   background-color: #FFE17F;
   flex-grow: 1;
   min-height: 40px;
+  background-image: url(../images/search-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 5%;
+  padding-left: 40px;
   }
   .button-search {
     font-family: Rubik, sans-serif;
@@ -257,7 +260,9 @@ margin-left: 180px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
-  border-color: transparent;
+  border-color: #C4C4C4;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
   }
 .button-button {
   background-color: #FFE17F;
@@ -345,6 +350,10 @@ margin-left: 20px;
   }
 .filter-catalog {
 margin-left: 60px;
+}
+.range {
+  margin-top: 20px;
+  margin-bottom: 35px;
 }
 .product-list {
   display: grid;
@@ -456,6 +465,7 @@ list-style-type: none;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
+  border: transparent;
   }
 .button-footer {
   font-family: "Raleway", sans-serif;
@@ -476,6 +486,10 @@ list-style-type: none;
   height: 40px;
   align-items: center;
   background-color: #FFE17F;
+  background-image: url(../images/search-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 5%;
+    padding-left: 40px;
 }
 .authorization-catalog {
   display: flex;
@@ -598,12 +612,16 @@ list-style-type: none;
   border: 3px solid #E5E5E5;
   }
   .button-catalog:hover  {
-  border: #0c0b0b;
+  border-color: #0c0b0b;
   }
   .button-catalog:active  {
-    border: #aca8a8;
+    border-color:#aca8a8;
     color: #aca8a8;
-    }
+  }
+  .button-catalog:focus  {
+    border: 3px solid #8b2ba3;
+    color: #aca8a8;
+  }
 
 .catalog-filter {
   width: 320px;
