@@ -303,6 +303,15 @@ margin-left: 180px;
   border: none;
   background-color: #F0F0F0;
   }
+  .select-control:hover {
+  color: #575454;
+  }
+  .select-control:active {
+    color: #c5c3c3;
+  }
+  .select-control:focus {
+    color: #c5c3c3;
+  }
 .icons-catalog {
 margin-left: auto;
 }
@@ -588,9 +597,13 @@ list-style-type: none;
   padding: 18px 39px;
   border: 3px solid #E5E5E5;
   }
-  .button:hover {
-  border: #000000;
+  .button-catalog:hover  {
+  border: #0c0b0b;
   }
+  .button-catalog:active  {
+    border: #aca8a8;
+    color: #aca8a8;
+    }
 
 .catalog-filter {
   width: 320px;
@@ -606,7 +619,7 @@ list-style-type: none;
   .control:active {
     color:rgb(117, 115, 115)
   }
- .control-input {
+ .control-input:focus {
   border: blueviolet;
  }
 .breadcrumbs {
