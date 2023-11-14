@@ -414,10 +414,12 @@ margin-left: 20px;
    text-transform: uppercase;
   }
 .catalog-container {
-  display: flex;
+
   background-color: #F0F0F0;
 }
-
+.catalog-inner {
+  display: flex;
+}
 .main-container {
   flex-grow: 1;
   }
