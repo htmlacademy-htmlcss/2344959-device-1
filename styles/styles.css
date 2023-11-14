@@ -308,6 +308,10 @@ margin-left: 180px;
 .product-image:active {
     background-color: #FFE17F;
   }
+.slider-services {
+  background-color: #F0F0F0;
+}
+
 .service-inner {
   display: flex;
   }
