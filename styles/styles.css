@@ -424,7 +424,9 @@ margin-left: 20px;
   flex-grow: 1;
   }
 .filter-catalog {
-margin-left: 60px;
+padding-left: 60px;
+padding-right: 60px;
+width: 320px;
 }
 .range {
   margin-top: 20px;
@@ -743,10 +745,6 @@ list-style-type: none;
   .button-catalog:focus  {
     border: 3px solid #8b2ba3;
     color: #aca8a8;
-  }
- .catalog-filter {
-  width: 320px;
-  margin: 0;
   }
 .catalog-filter-group {
   border: none;
