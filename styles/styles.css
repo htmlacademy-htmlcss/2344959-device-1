@@ -103,9 +103,11 @@ body {
     background-color: #000000;
     color: #444;
     border-color: #000000;
+    outline: none;
   }
   .button-search:focus {
-  outline: 2px solid #8b2ba3;
+  border: 2px solid #8b2ba3;
+  outline: 2px solid gray;
  }
 .button-search:disabled {
   color: #EBEBEB;
