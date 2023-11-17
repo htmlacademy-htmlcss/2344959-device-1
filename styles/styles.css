@@ -325,7 +325,6 @@ margin-left: 180px;
 .service-item:nth-last-child(n+2) {
   margin-bottom: 35px;
   }
-
 .button-button {
   background-color: #FFE17F;
   color: #000000;
@@ -341,6 +340,15 @@ margin-left: 180px;
   height: 40px;
   display: inline-block;
   width: 230px;
+  }
+.button-button:hover {
+  background-color: #FFE17F;
+  }
+.button-button:active {
+    background-color: #FFC700;
+  }
+  .button-button:focus-visible {
+    border-color: #AF4FFF;
   }
 .button-current {
   background-color: #000000;
@@ -747,8 +755,9 @@ list-style-type: none;
     color: #aca8a8;
   }
   .button-catalog:focus-visible  {
-    border: 3px solid #8b2ba3;
-    color: #aca8a8;
+    box-shadow:
+    0 0 0 2px #AF4FFF,
+    0 0 0 3px #000000;
   }
 .catalog-filter-group {
   border: none;
