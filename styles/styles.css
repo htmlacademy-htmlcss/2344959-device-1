@@ -74,7 +74,7 @@ body {
   .search:hover {
   color: black;
   }
-  .search:focus {
+  .search:focus-visible {
     outline: 2px solid #8b2ba3;
     }
   .search:disabled {
@@ -105,7 +105,7 @@ body {
     border-color: #000000;
     outline: none;
   }
-  .button-search:focus {
+  .button-search:focus-visible {
   border: 2px solid #8b2ba3;
   outline: 2px solid #DCDCDC;
  }
@@ -173,7 +173,7 @@ body {
 .navigation-link:active {
   color: #F0F0F0;
   }
-.navigation-link:focus {
+.navigation-link:focus-visible {
   outline: 3px solid #AF4FFF;
   }
 .navigation-link-user {
@@ -192,7 +192,7 @@ body {
 .navigation-link-user:active {
   color: #F0F0F0;
   }
-.navigation-link-user:focus {
+.navigation-link-user:focus-visible {
   outline: 3px solid #8b2ba3;
   }
   .navigation-form {
@@ -325,20 +325,7 @@ margin-left: 180px;
 .service-item:nth-last-child(n+2) {
   margin-bottom: 35px;
   }
-.button {
-  text-align: center;
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  border-color: #C4C4C4;
-  letter-spacing: 3.6px;
-  text-transform: uppercase;
-  min-width: 200px;
-  max-width: 253px;
-  border: 3px solid #C4C4C4;
-  }
+
 .button-button {
   background-color: #FFE17F;
   color: #000000;
@@ -393,7 +380,7 @@ margin-left: 180px;
   .select-control:active {
     color: #c5c3c3;
   }
-  .select-control:focus {
+  .select-control:focus-visible {
     color: #c5c3c3;
   }
 .icons-catalog {
@@ -529,7 +516,7 @@ list-style-type: none;
   max-width: 253px;
   border: 3px solid #C4C4C4;
   }
-  .button:hover {
+.button:hover {
  background-color: #000000;
  color: #F0F0F0;
  border-color: #000000;
@@ -539,10 +526,10 @@ list-style-type: none;
   color: #837f7f;
   border-color: #000000;
   }
-  .button:focus {
-    box-shadow:
-    0 0 0 1px rgb(158, 63, 202),
-    0 0 0 3px rgb(50, 53, 50);
+.button:focus-visible {
+  box-shadow:
+  0 0 0 2px #AF4FFF,
+  0 0 0 3px #000000;
     }
 .title-subscribe {
   font-family: "Raleway", sans-serif;
@@ -599,7 +586,7 @@ list-style-type: none;
     color: #FFC700;
     border-bottom: 2px solid #FFC700;
   }
-  .button-footer:focus {
+  .button-footer:focus-visible {
     color: #ffffff;
     outline: 2px solid #AF4FFF;
   }
@@ -759,7 +746,7 @@ list-style-type: none;
     border-color:#aca8a8;
     color: #aca8a8;
   }
-  .button-catalog:focus  {
+  .button-catalog:focus-visible  {
     border: 3px solid #8b2ba3;
     color: #aca8a8;
   }
@@ -773,7 +760,7 @@ list-style-type: none;
   .control:active {
     color:rgb(117, 115, 115)
   }
- .control-input:focus {
+ .control-input:focus-visible {
   border: blueviolet;
  }
 .breadcrumbs {
@@ -807,7 +794,7 @@ list-style-type: none;
   .breadcrumbs-link:active {
   color: #aca8a8;
   }
-  .breadcrumbs-link:focus {
+  .breadcrumbs-link:focus-visible {
   border: 1px rgb(129, 53, 192);
   }
 .contacts-address-text {
