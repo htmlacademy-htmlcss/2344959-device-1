@@ -186,6 +186,16 @@ body {
   text-decoration: none;
   padding-left: 15px;
   }
+  .authorization::before {
+  background-image: url(../images/icon-authorization-1.svg);
+  content: "";
+  position: relative;
+  width: 15px;
+  height: 12px;
+  top: 20px;
+  right: 10%;
+  display: block;
+  }
 .navigation-link-user:hover {
   color: #444;
   }
@@ -231,6 +241,16 @@ padding-right: 12px;
   }
 .navigation-item-user {
   padding-left: 10px;
+}
+.navigation-item-user::before {
+background-image: url(../images/icon-navigation-1.svg);
+content: "";
+position: relative;
+width: 10px;
+height: 12px;
+top: 20px;
+right: 10%;
+display: block;
 }
 .navigation-user.navigation-link {
   min-width: 16px;
