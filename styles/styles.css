@@ -326,7 +326,6 @@ margin-left: 180px;
   margin-bottom: 35px;
   }
 .button-button {
-  background-color: #FFE17F;
   color: #000000;
   text-align: center;
   font-size: 18px;
@@ -336,19 +335,19 @@ margin-left: 180px;
   text-transform: uppercase;
   text-decoration: none;
   border-color: transparent;
-  background: linear-gradient(to top, white 20%, white 65%, #FFE17F 65%, #FFE17F 80%, white 80%, white 20%);
+  background: linear-gradient(to top, transparent 20%, transparent 65%, #FFE17F 65%, #FFE17F 80%, transparent 80%, transparent 20%);
   height: 40px;
   display: inline-block;
   width: 230px;
   }
 .button-button:hover {
-  background-color: #FFE17F;
+  background: #FFE17F;
   }
 .button-button:active {
-    background-color: #FFC700;
+  background: #FFC700;
   }
-  .button-button:focus-visible {
-    border-color: #AF4FFF;
+.button-button:focus-visible {
+  outline: #AF4FFF solid 2px;
   }
 .button-current {
   background-color: #000000;
