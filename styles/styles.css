@@ -275,6 +275,16 @@ display: block;
   display: flex;
   margin: 72px 100px;
   }
+  .slide-active::before {
+  content: "";
+  position: relative;
+  background-image: url(../images/arrow.svg);
+  width: 20px;
+  height: 60px;
+  top: 230px;
+  right: 50px;
+  display: block;
+  }
 .slide-service {
   display: flex;
   margin-left: 123px;
@@ -514,15 +524,15 @@ list-style-type: none;
   margin-bottom: 56px;
   padding-right: 50px;
   }
-  .subscribe2-text::before {
-content: "";
-position: relative;
-width: 16px;
-height: 17px;
-background-image: url(../images/icon-green.svg);
-top: 10px;
-right: 10px;
-display: block;
+.subscribe2-text::before {
+  content: "";
+  position: relative;
+  width: 16px;
+  height: 17px;
+  background-image: url(../images/icon-green.svg);
+  top: 23px;
+  right: 30px;
+  display: block;
   }
 .form-subscribe {
   display: flex;
