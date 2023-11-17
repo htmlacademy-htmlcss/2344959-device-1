@@ -107,7 +107,7 @@ body {
   }
   .button-search:focus {
   border: 2px solid #8b2ba3;
-  outline: 2px solid gray;
+  outline: 2px solid #DCDCDC;
  }
 .button-search:disabled {
   color: #EBEBEB;
@@ -350,6 +350,10 @@ margin-left: 180px;
   text-transform: uppercase;
   text-decoration: none;
   border-color: transparent;
+  background: linear-gradient(to top, white 20%, white 65%, #FFE17F 65%, #FFE17F 80%, white 80%, white 20%);
+  height: 40px;
+  display: inline-block;
+  width: 230px;
   }
 .button-current {
   background-color: #000000;
