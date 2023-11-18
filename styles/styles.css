@@ -151,7 +151,7 @@ body {
    opacity: 1;
   }
   .link:active::after {
-    border: 2px solid #000000;
+   border: 2px solid #000000;
    opacity: 1;
    }
    .link:focus {
@@ -267,22 +267,28 @@ display: block;
   margin: 0 auto;
   width: 1160px;
   }
-
-.slide {
-  display: none;
-  }
 .slide-active {
   display: flex;
-  margin: 72px 100px;
+  background: linear-gradient(to bottom,  #FFE17F 27%, #FFFFFF 27%, #FFFFFF 70%);
   }
-  .slide-active::before {
+.slide {
+  display: none;
+  background: linear-gradient(to bottom,  #FFE17F 27%, #FFFFFF 27%, #FFFFFF 70%);
+  }
+.slide-text {
+  margin-bottom: 50px;
+  }
+.img-slider-1 {
+  margin-right: 40px;
+}
+.slide-active::before {
   content: "";
   position: relative;
   background-image: url(../images/arrow.svg);
   width: 20px;
   height: 60px;
   top: 230px;
-  right: 50px;
+  right: -50px;
   display: block;
   }
 .slide-service {
@@ -302,8 +308,8 @@ margin-left: 180px;
   font-weight: 800;
   line-height: 50px;
   text-transform: none;
-  margin-bottom: 0;
-  margin-left: 60px;
+  margin-bottom: 29px;
+  margin-top: 121px;
   }
 .list-products {
   font-family: "Raleway", sans-serif;
@@ -341,6 +347,7 @@ margin-left: 180px;
     background-color: #FFE17F;
   }
 .slider-services {
+
   background-color: #F0F0F0;
 }
 
@@ -358,6 +365,8 @@ margin-left: 180px;
 .button-button {
   color: #000000;
   text-align: center;
+  font-family: Raleway, sans-serif;
+  letter-spacing: 3.6px;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -391,8 +400,30 @@ margin-left: 180px;
   text-transform: uppercase;
   }
 .table {
+  margin-top: 50px;
+  }
+tbody {
   display: flex;
   }
+.table-column {
+ display: flex;
+ flex-direction: column;
+ margin-right: 20px;
+}
+.table-row-1 {
+ font-family: Rubik, sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+.table-row-2 {
+  font-family: Rubik, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
 .select {
   display: flex;
   padding: 20px 40px;
