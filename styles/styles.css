@@ -188,7 +188,7 @@ body {
   outline: 3px solid #AF4FFF;
   }
 .navigation-link-user {
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -203,17 +203,21 @@ body {
     width: 15px;
     height: 12px;
     top: 20px;
-    right: 10%;
+    right: 20px;
     display: block;
   }
-  .authorization::before {
+  .exit {
+    color: #DCDCDC;
+  }
+
+.authorization::before {
   background-image: url(../images/icon-authorization-1.svg);
   content: "";
   position: relative;
   width: 15px;
   height: 12px;
   top: 20px;
-  right: 10%;
+  right: 20px;
   display: block;
   }
 .navigation-link-user:hover {
@@ -225,12 +229,12 @@ body {
 .navigation-link-user:focus-visible {
   outline: 3px solid #8b2ba3;
   }
-  .navigation-form {
+.navigation-form {
    display: flex;
    width: 517px;
   }
-  .navigation-icon {
-padding-right: 12px;
+.navigation-icon {
+   padding-right: 12px;
   }
   .navigation-list {
     display: flex;
@@ -246,6 +250,7 @@ padding-right: 12px;
   padding: 0;
   align-items: center;
   list-style-type: none;
+  margin-left: auto;
   }
 .navigation-list-service {
   display: flex;
@@ -259,7 +264,7 @@ padding-right: 12px;
   align-self: center;
   }
 .navigation-item-user {
-  padding-left: 36px;
+  padding-left: 45px;
 }
 .user-1::before {
   background-image: url(../images/icon-navigation-1.svg);
@@ -268,7 +273,7 @@ padding-right: 12px;
   width: 10px;
   height: 12px;
   top: 20px;
-  right: 5%;
+  right: 20px;
   display: block;
 }
 .user-2::before {
@@ -278,7 +283,7 @@ padding-right: 12px;
   width: 16px;
   height: 14px;
   top: 20px;
-  right: 5%;
+  right: 20px;
   display: block;
  }
 .navigation-user.navigation-link {
@@ -797,6 +802,7 @@ list-style-type: none;
   line-height: 30px;
   list-style-type: none;
   align-self: center;
+  margin-left: auto;
 }
 .div-user-catalog {
   display: flex;
@@ -838,9 +844,7 @@ list-style-type: none;
   font-weight: 400;
   line-height: normal;
   }
-  .pagination-button.pagination-disabled {
-  color: #DCDCDC;
-  }
+
 .pagination-link {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
@@ -901,6 +905,20 @@ list-style-type: none;
   text-decoration: none;
   padding: 25px;
   }
+  .pagination-button:hover {
+   background-color: #DCDCDC;
+  }
+  .pagination-button:active {
+    color: #444;
+   }
+   .pagination-button:focus-visible {
+    box-shadow:
+    0 0 0 2px #AF4FFF,
+    0 0 0 3px #000000;
+   }
+  .pagination-button.pagination-disabled {
+    color: #DCDCDC;
+    }
 
 .button-catalog {
   display: block;
@@ -985,6 +1003,16 @@ list-style-type: none;
   list-style-type: none;
   padding-right: 32px;
   text-decoration: none;
+  }
+  .breadcrumbs-link::after:not(:last-child) {
+  background-image: url(../images/breadcrumbs.svg);
+  content: "";
+  position: relative;
+  width: 4px;
+  height: 7px;
+  top: 20%;
+  right: 10%;
+  display: block;
   }
   .breadcrumbs-link:hover {
   color: #575454;
