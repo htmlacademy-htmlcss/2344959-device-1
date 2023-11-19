@@ -1004,7 +1004,7 @@ list-style-type: none;
   padding-right: 32px;
   text-decoration: none;
   }
-  .breadcrumbs-link::after:not(:last-child) {
+  .breadcrumbs-item:not(:last-child)::after {
   background-image: url(../images/breadcrumbs.svg);
   content: "";
   position: relative;
