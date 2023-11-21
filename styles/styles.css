@@ -1064,6 +1064,18 @@ margin-bottom: 70px;
   grid-column: 3/-1;
   margin-left: 4;
   justify-self: end;
+  height: 25px;
+  }
+  .footer-contacts-address-phone:hover {
+    color: #FFC700;
+  }
+  .footer-contacts-address-phone:active {
+    color: #FFC700;
+    opacity: 0.3;
+  }
+  .footer-contacts-address-phone:focus {
+    border: #8b2ba3 solid 2px;
+    outline: none;
   }
  .footer-list {
   display: flex;
