@@ -502,6 +502,16 @@ margin-left: 180px;
   display: inline-block;
   width: 160px;
   }
+  .button-block:hover {
+    background-color: #FFE17F;
+  }
+  .button-block:active {
+    background: linear-gradient(to bottom, #FFC700 100%, #FFC700 100%);
+  }
+  .button-block:focus-visible {
+    border: solid 2px #8b2ba3;
+    outline: none;
+  }
 .button-block-current {
   background-color: #000000;
   color: #FFE17F;
@@ -539,6 +549,10 @@ margin-left: 180px;
   .button-main:active {
     background-color: #FFC700;
     background: linear-gradient(to top, #FFC700 100%, #FFC700 100%);
+  }
+  .button-main:focus-visible {
+    border: solid 2px #8b2ba3;
+    outline: none;
   }
 .button-button:hover {
   background: #FFE17F;
@@ -1033,6 +1047,10 @@ margin-bottom: 70px;
   .button-catalog-filter:active {
     background-color: #FFC700;
     background: linear-gradient(to bottom, #FFC700 100%, #FFC700 100%);
+  }
+  .button-catalog-filter:focus-visible {
+    border: solid 2px #8b2ba3;
+    outline: none;
   }
   .control:hover {
   color:rgb(58, 57, 57)
