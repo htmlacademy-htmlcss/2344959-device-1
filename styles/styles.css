@@ -373,6 +373,19 @@ opacity: 0.6;
    background-color: transparent;
    background-image: url(../images/arrow.svg);
   }
+  .slider-arrow:hover {
+    opacity: 0.6;
+  }
+  .slider-arrow:active {
+    opacity: 0.3;
+  }
+  .slider-arrow:focus-visible {
+    border: 2px solid #AF4FFF;
+    outline: none;
+  }
+  .slider-arrow:disabled {
+    opacity: 0.1;
+  }
   .slider-prew {
     left: 30px;
   }
@@ -388,8 +401,27 @@ opacity: 0.6;
     background-color: transparent;
     padding: 0;
   }
+  .slider-point:hover {
+    opacity: 0.6;
+  }
+  .slider-point:active {
+    opacity: 0.1;
+  }
+  .slider-point:disabled {
+    opacity: 0.3;
+  }
   .slider-point-current {
     background-color: #000;
+  }
+   .slider-point-current:hover {
+    opacity: 0.6;
+  }
+  .slider-point-current:active {
+    opacity: 0.3;
+  }
+  .slider-point-current:focus-visible {
+    border: 2px solid #AF4FFF;
+    outline: none;
   }
 .block-active {
   display: flex;
@@ -622,6 +654,9 @@ tbody {
   }
   .select-control:active {
     color: #c5c3c3;
+  }
+  .select-control:focus-visible {
+    border: 2px solid #AF4FFF;
   }
   .select-control:focus-visible {
     color: #c5c3c3;
