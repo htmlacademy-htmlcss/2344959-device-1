@@ -354,16 +354,15 @@ body {
    left: 540px;
   }
   .slider-point {
-    position: absolute;
     bottom: 10px;
     width: 12px;
     height: 12px;
-    border: none;
-    background-image: url(../images/point.svg);
+    border: 2px solid #000;
+    border-radius: 6px;
+    background-color: transparent;
   }
   .slider-point-current {
-    full: #000000;
-    background-image: url(../images/point.svg);
+    background-color: #000;
   }
 .block-active {
   display: flex;
@@ -664,6 +663,8 @@ width: 320px;
   }
   .pagination-page-list {
 list-style-type: none;
+display: flex;
+gap: 14px;
   }
 .subscribe {
   background-color: #F0F0F0;
