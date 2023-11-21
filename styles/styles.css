@@ -878,7 +878,6 @@ margin-bottom: 70px;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
-  color: #444;
   text-decoration: none;
   height: 40px;
   min-width: 40px;
@@ -1079,7 +1078,6 @@ margin-bottom: 70px;
   grid-column: 2/2;
   list-style-type: none;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-column: 2/2;
   }
   .social-item {
 padding-right: 15px;
@@ -1091,13 +1089,24 @@ padding-right: 15px;
     background-repeat: no-repeat;
     background-position: center;
     border: 2px solid #444;
-    border-radius: 50px;
+    border-radius: 50%;
     width: 40px;
     height: 40px;
     margin-left: 10px;
     opacity: 0.3;
-    border-radius: 50%;
     background-color: #DCDCDC;
+  }
+  .telegramm:hover::after {
+    background-color: #FFC700;
+    opacity: 1;
+  }
+  .telegramm:active::after {
+    background-color: #FFC700;
+    opacity: 0.3;
+  }
+  .telegramm:focus-visible::after {
+    outline: #8b2ba3 solid 2px;
+
   }
   .youtube::after {
     content: "";
@@ -1111,8 +1120,11 @@ padding-right: 15px;
     height: 40px;
     margin-left: 10px;
     opacity: 0.3;
-    border-radius: 50%;
     background-color: #DCDCDC;
+  }
+  .youtube:hover::after {
+    background-color: #FFC700;
+    opacity: 1;
   }
   .twitter::after {
     content: "";
@@ -1126,8 +1138,11 @@ padding-right: 15px;
     height: 40px;
     margin-left: 10px;
     opacity: 0.3;
-    border-radius: 50%;
     background-color: #DCDCDC;
+  }
+  .twitter:hover::after {
+    background-color: #FFC700;
+    opacity: 1;
   }
 .htmlacademy-link {
 justify-self: end;
