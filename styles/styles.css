@@ -50,23 +50,17 @@ body {
   margin-top: 20px;
   }
   .navigation-logo:hover {
+  opacity: 0.3;
+  }
+  .navigation-logo:active {
+    opacity: 0.6;
+  }
+  .navigation-logo:focus-visible {
+    outline: 2px solid #AF4FFF;
+  }
+
+  .navigation-logo:hover {
     opacity: 0,3;
-  }
-  .logo::before {
-  content: "";
-  position: relative;
-  width: 9px;
-  height: 11px;
-  background-image: url(../images/point-logo.svg);
-  top: 5px;
-  right: 10px;
-  display: block;
-  }
-  .logo:hover {
-  color: rgb(99, 97, 97);
-  }
-  .logo:active {
-    color: rgb(187, 183, 183);
   }
   .search {
   font-family: Rubik, sans-serif;
