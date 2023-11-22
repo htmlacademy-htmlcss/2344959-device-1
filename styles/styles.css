@@ -27,7 +27,7 @@ html {
 *::after {
   box-sizing: border-box;
   }
-  .visually-hidden {
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -45,24 +45,30 @@ body {
   font-size: 18px;
   line-height: 30px;
   }
-  .logo {
+.navigation {
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    padding-left: 60px;
+    padding-right: 60px;
+    background: linear-gradient(to bottom, #FFFFFF 10%,#FFE17F 10%, #FFE17F 100%);
+    }
+.navigation-logo {
+  display: inline-block;
+}
+.logo {
   display: block;
-  margin-top: 20px;
+  margin-bottom: 20px;
   }
-  .navigation-logo:hover {
+.navigation-logo:hover {
   opacity: 0.3;
   }
-  .navigation-logo:active {
+.navigation-logo:active {
     opacity: 0.6;
   }
-  .navigation-logo:focus-visible {
+.navigation-logo:focus-visible {
     outline: 2px solid #AF4FFF;
   }
-
-  .navigation-logo:hover {
-    opacity: 0,3;
-  }
-  .search {
+.search {
   font-family: Rubik, sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -79,17 +85,17 @@ body {
   background-position: 5%;
   padding-left: 40px;
   }
-  .search:hover {
+.search:hover {
   color: black;
   }
-  .search:focus-visible {
+.search:focus-visible {
     outline: 2px solid #8b2ba3;
     }
-  .search:disabled {
+.search:disabled {
   color: #EBEBEB;
   border-color: #EBEBEB;
   }
-  .button-search {
+.button-search {
     font-family: Rubik, sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -103,11 +109,11 @@ body {
     background-color: #FFE17F;
     border-left: none;
   }
-  .button-search:hover {
+.button-search:hover {
     background-color: #000000;
     color: #ffffff;
   }
-  .button-search:active {
+.button-search:active {
     background-color: #000000;
     color: #444;
     border-color: #000000;
@@ -309,13 +315,6 @@ opacity: 0.6;
   min-width: 16px;
   min-height: 22px;
 }
-.navigation {
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  padding-left: 60px;
-  padding-right: 60px;
-  background: linear-gradient(to bottom, #FFFFFF 10%,#FFE17F 10%, #FFE17F 100%);
-  }
 .container {
   margin: 0 auto;
   width: 1160px;
