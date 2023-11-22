@@ -1300,5 +1300,17 @@ padding-right: 15px;
     opacity: 1;
   }
 .htmlacademy-link {
-justify-self: end;
-}
+  justify-self: end;
+  display: block;
+  width: 115px;
+  height: 33px;
+ }
+.htmlacademy-link:hover {
+  background-color: white;
+ }
+.htmlacademy-link:active {
+
+  }
+.htmlacademy-link:focus-visible {
+
+  }
