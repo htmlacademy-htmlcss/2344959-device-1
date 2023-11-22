@@ -1130,8 +1130,8 @@ margin-bottom: 70px;
   .control:active {
     color:rgb(117, 115, 115)
   }
- .control-input:focus-visible {
-  border: blueviolet;
+ .control:focus-visible {
+  outline: solid 2px #8b2ba3;
  }
 .breadcrumbs {
   display: flex;
@@ -1176,7 +1176,7 @@ margin-bottom: 70px;
   color: #aca8a8;
   }
   .breadcrumbs-link:focus-visible {
-  border: 1px rgb(129, 53, 192);
+  outline: 2px solid rgb(129, 53, 192);
   }
 .contacts-address-text {
   font-style: normal;
@@ -1306,7 +1306,7 @@ padding-right: 15px;
   height: 33px;
  }
 .htmlacademy-link:hover {
-  background-color: white;
+
  }
 .htmlacademy-link:active {
 
