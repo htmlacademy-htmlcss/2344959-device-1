@@ -55,10 +55,6 @@ body {
 .navigation-logo {
   display: inline-block;
 }
-.logo {
-  display: block;
-  margin-bottom: 20px;
-  }
 .navigation-logo:hover {
   opacity: 0.3;
   }
@@ -68,6 +64,13 @@ body {
 .navigation-logo:focus-visible {
     outline: 2px solid #AF4FFF;
   }
+.logo {
+    display: inline-block;
+    }
+.navigation-user {
+    display: flex;
+    margin-top: 30px;
+    }
 .search {
   font-family: Rubik, sans-serif;
   font-size: 16px;
@@ -127,10 +130,6 @@ body {
   color: #EBEBEB;
   border-color: #595959;
 }
-.navigation-user {
-  display: flex;
-  margin-top: 30px;
-  }
 .navigation-service {
   display: flex;
   }
@@ -1186,8 +1185,17 @@ margin-bottom: 70px;
 .logo-footer {
     grid-column: 1/-1;
   }
-  .logo-footer-link:hover {
-
+.logo-footer-link {
+  display: inline-block;
+  }
+.logo-footer-link:hover {
+  opacity: 0.6;
+  }
+.logo-footer-link:active {
+  opacity: 0.3;
+  }
+.logo-footer-link:focus-visible {
+  opacity: 0.3;
   }
 .footer-contacts-address-phone {
   text-transform: none;
