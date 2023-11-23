@@ -388,12 +388,19 @@ opacity: 0.6;
    left: 540px;
   }
   .slider-point {
+    position: relative;
     width: 12px;
     height: 12px;
     border: 2px solid #000;
     border-radius: 6px;
     background-color: transparent;
     padding: 0;
+  }
+  .slider-point:focus-visible::after {
+   content: "";
+   position: absolute;
+   inset: -4px;
+   outline: 2px solid #AF4FFF;
   }
   .slider-point:hover {
     opacity: 0.6;
@@ -406,16 +413,6 @@ opacity: 0.6;
   }
   .slider-point-current {
     background-color: #000;
-  }
-   .slider-point-current:hover {
-    opacity: 0.6;
-  }
-  .slider-point-current:active {
-    opacity: 0.3;
-  }
-  .slider-point-current:focus-visible {
-    border: 2px solid #AF4FFF;
-    outline: none;
   }
 .block-active {
   display: flex;
