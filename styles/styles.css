@@ -1240,6 +1240,7 @@ margin-bottom: 70px;
   margin-left: 4;
   justify-self: end;
   height: 25px;
+  margin-right: 100px;
   }
   .footer-contacts-address-phone:hover {
     color: #FFC700;
@@ -1260,14 +1261,11 @@ margin-bottom: 70px;
   justify-self: s;
  }
 .social-list {
-  display: grid;
-  margin-left: 150px;
+  display: flex;
   grid-column: 2/2;
   list-style-type: none;
-  grid-template-columns: 1fr 1fr 1fr;
-  }
-  .social-item {
-padding-right: 15px;
+  justify-content: center;
+  gap: 15px;
   }
   .telegramm::after {
     content: "";
@@ -1279,7 +1277,6 @@ padding-right: 15px;
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    margin-left: 10px;
     opacity: 0.3;
     background-color: #DCDCDC;
   }
@@ -1304,7 +1301,6 @@ padding-right: 15px;
     border-radius: 50px;
     width: 40px;
     height: 40px;
-    margin-left: 10px;
     opacity: 0.3;
     background-color: #DCDCDC;
   }
@@ -1322,7 +1318,6 @@ padding-right: 15px;
     border-radius: 50px;
     width: 40px;
     height: 40px;
-    margin-left: 10px;
     opacity: 0.3;
     background-color: #DCDCDC;
   }
@@ -1335,9 +1330,10 @@ padding-right: 15px;
   display: block;
   width: 115px;
   height: 33px;
+  margin-right: 100px;
  }
 .htmlacademy-link:hover {
-
+ fill: #8b2ba3;
  }
 .htmlacademy-link:active {
 
