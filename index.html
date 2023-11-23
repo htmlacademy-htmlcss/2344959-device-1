@@ -12,10 +12,15 @@
       <a class="navigation-logo" href="#"><img class="logo" src="images/logo-black.svg" alt="Логотип интернет-магазина девайсов."></a>
 
       <div class="navigation-user">
+
         <form class="navigation-form" action="#">
-          <input class="search" type="search" placeholder="Текст поиска">
+          <label class="search-label" for="search">
+          <input class="search" id="search" type="search" placeholder="Текст поиска">
+          <span class="visually-hidden">Поиск</span>
+          </label>
           <button class="button-search" type="submit">Найти</button>
         </form>
+
        <section class="authorization">
         <h2 class="visually-hidden">Авторизация</h2>
            <a href="#" class="navigation-link-user">
