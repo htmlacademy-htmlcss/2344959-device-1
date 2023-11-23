@@ -8,16 +8,21 @@
   <body>
     <header class="page-header container">
       <nav class="navigation">
-        <a href="index.html"><img class="logo" src="images/logo-black.svg" alt="Логотип интернет-магазина девайсов."></a>
+        <a class="navigation-logo" href="index.html"><img class="logo" src="images/logo-black.svg" alt="Логотип интернет-магазина девайсов."></a>
 
       <div class="navigation-user">
           <form class="navigation-form" action="#">
+            <label class="search-label" for="search">
             <input class="search-catalog" type="search" placeholder="Поиск по сайту">
-            <button class="button-search" type="submit"><span>Найти</span></button>
-          </form>
+            <span class="visually-hidden">Поиск</span>
+          </label>
+          <div class="search-div">
+          <button class="button-search" type="submit"><span>Найти</span></button>
+        </div>
+        </form>
          <section class="authorization-catalog">
             <h2 class="visually-hidden">Авторизация</h2>
-            <a href="#" class="navigation-link-user user-name">
+            <a class="navigation-link-user user-name" href="#">
               <span>Коля Петухов</span>
             </a>
             <a href="#" class="navigation-link-user exit"><span>Выйти</span></a>

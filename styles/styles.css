@@ -959,10 +959,10 @@ margin-bottom: 70px;
   opacity: 0;
   }
   .product-card-link:hover .product-card-detail {
-    opacity: 0.6;
+    opacity: 0.3;
   }
   .product-card-link:active .product-card-detail {
-    opacity: 0.3;
+    opacity: 0.6;
   }
   .product-card-link:focus-visible .product-card-detail {
     outline: 2px solid #AF4FFF;
@@ -979,8 +979,9 @@ margin-bottom: 70px;
     opacity: 0.3;
   }
 .product-card-link:focus-visible {
-    border: 2px solid #AF4FFF;
-    outline: none;
+    outline: 2px solid #AF4FFF;
+
+    outline-offset: 3px;
   }
 .product-card-image {
   grid-column: 1/2;
