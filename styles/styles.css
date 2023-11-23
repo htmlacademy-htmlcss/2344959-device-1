@@ -956,6 +956,22 @@ margin-bottom: 70px;
   line-height: normal;
   letter-spacing: 3.6px;
   text-transform: uppercase;
+  opacity: 0;
+  }
+  .product-card-link:hover {
+    opacity: 0.6;
+  }
+  .product-card-link:active {
+    opacity: 0.3;
+  }
+  .product-card-link:focus-visible {
+    outline: 2px solid #AF4FFF;
+  }
+  .product-card-detail:hover {
+    opacity: 1;
+  }
+  .product-card-detail:active {
+    opacity: 1;
   }
 .div-product-card {
   display: grid;
