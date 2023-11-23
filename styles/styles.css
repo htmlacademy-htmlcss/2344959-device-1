@@ -958,21 +958,16 @@ margin-bottom: 70px;
   text-transform: uppercase;
   opacity: 0;
   }
-  .product-card-link:hover {
+  .product-card-link:hover .product-card-detail {
     opacity: 0.6;
   }
-  .product-card-link:active {
+  .product-card-link:active .product-card-detail {
     opacity: 0.3;
   }
-  .product-card-link:focus-visible {
+  .product-card-link:focus-visible .product-card-detail {
     outline: 2px solid #AF4FFF;
   }
-  .product-card-detail:hover {
-    opacity: 1;
-  }
-  .product-card-detail:active {
-    opacity: 1;
-  }
+
 .div-product-card {
   display: grid;
   grid-column: 1/3;
