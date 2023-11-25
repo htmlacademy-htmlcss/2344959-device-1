@@ -624,6 +624,16 @@ tbody {
   font-weight: 400;
   line-height: 30px;
 }
+.inner-header {
+  padding-left: 60px;
+}
+.inner-header-title {
+  font-family: Raleway, sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 50px;
+}
 .select {
   display: flex;
   padding: 20px 40px;
@@ -642,16 +652,16 @@ tbody {
   border: none;
   background-color: #F0F0F0;
   }
-  .select-control:hover {
+.select-control:hover {
   color: #575454;
   }
-  .select-control:active {
+.select-control:active {
     color: #c5c3c3;
   }
-  .select-control:focus-visible {
+.select-control:focus-visible {
     border: 2px solid #AF4FFF;
   }
-  .select-control:focus-visible {
+.select-control:focus-visible {
     color: #c5c3c3;
   }
 .icons-catalog {
@@ -912,10 +922,6 @@ margin-bottom: 70px;
   padding-left: 0;
   background-color: #ffffff;
   }
-.catalog-filter-list {
-  list-style-type: none;
-  padding-left: 0;
-}
 .product-card-link {
   display: grid;
   grid-template-columns: auto auto;
@@ -1149,28 +1155,84 @@ margin-bottom: 70px;
     background-color: #FFC700;
     background: linear-gradient(to bottom, #FFC700 100%, #FFC700 100%);
   }
-  .button-catalog-filter:focus-visible {
+.button-catalog-filter:focus-visible {
     border: solid 2px #8b2ba3;
     outline: none;
   }
-  .button-catalog-filter:disabled {
+.button-catalog-filter:disabled {
     opacity: 0.3;
   }
-  .control:hover {
+  .catalog-filter-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+.control-input {
+    display: inline-block;
+    appearance: none;
+    border: 2px solid #CCCCCC;
+    width: 20px;
+    height: 20px;
+}
+.control {
+  display: flex;
+  gap: 16px;
+
+}
+.control:hover {
   color:rgb(58, 57, 57)
   }
-  .control:active {
+.control:active {
     color:rgb(117, 115, 115)
   }
- .control-input:focus-visible {
+.control-input.current {
+    background-image: url(../images/tick-filter-list.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-color: #000000;
+  }
+
+.control-input:focus-visible {
   outline: solid 2px #8b2ba3;
  }
+ .control-input-radio {
+  display: flex;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #CCCCCC;
+ }
+ .control-input-radio:hover {
+  opacity: 0.6;
+ }
+ .control-input-radio:active{
+  opacity: 0.3;
+ }
+ .control-input-radio:disabled{
+  opacity: 0.1;
+ }
+ .control-input-radio:focus-within{
+  outline: 2px solid #AF4FFF;
+  border-radius: 100%;
+ }
+ .control-input-radio.current {
+    border-color: #000000;
+ }
+.control-input-radio.current::before {
+  display: flex;
+  content: "";
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  background-color: #000000;
+}
 .breadcrumbs {
   display: flex;
   list-style-type: none;
   color: #000;
   text-decoration: none;
-  margin-left: 60px;
   padding-left: 0;
   }
   .breadcrumbs-icons {
