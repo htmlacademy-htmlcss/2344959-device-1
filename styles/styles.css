@@ -1162,7 +1162,7 @@ margin-bottom: 70px;
   .control:active {
     color:rgb(117, 115, 115)
   }
- .control:focus-visible {
+ .control-input:focus-visible {
   outline: solid 2px #8b2ba3;
  }
 .breadcrumbs {
@@ -1333,7 +1333,7 @@ margin-bottom: 70px;
   margin-right: 100px;
  }
 .htmlacademy-link:hover {
- fill: #8b2ba3;
+
  }
 .htmlacademy-link:active {
 
