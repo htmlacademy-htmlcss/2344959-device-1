@@ -1393,12 +1393,13 @@ margin-bottom: 70px;
   width: 115px;
   height: 33px;
   margin-right: 100px;
+  fill: #FFC700;
  }
 .htmlacademy-link:hover {
-
+  fill: #FFFFFF;
  }
 .htmlacademy-link:active {
-
+  opacity: 0.3;
   }
 .htmlacademy-link:focus-visible {
   outline: 2px #8b2ba3 solid;
