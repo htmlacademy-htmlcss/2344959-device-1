@@ -1327,6 +1327,11 @@ margin-bottom: 70px;
   justify-content: center;
   gap: 15px;
   }
+.footer-social-link:active {
+  background-color: #FFC700;
+
+}
+
 .telegramm::after {
     content: "";
     display: block;
@@ -1345,11 +1350,11 @@ margin-bottom: 70px;
     opacity: 1;
   }
 .telegramm:active::after {
-    background-color: #FFC700;
-    opacity: 0.3;
+    opacity: 0.1;
   }
 .telegramm:focus-visible::after {
-    outline: 2px #8b2ba3 solid;
+    border: 2px #8b2ba3 solid;
+    outline: none;
   }
 .youtube::after {
     content: "";
