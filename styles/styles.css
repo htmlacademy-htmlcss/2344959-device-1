@@ -1327,68 +1327,51 @@ margin-bottom: 70px;
   justify-content: center;
   gap: 15px;
   }
-.footer-social-link:active {
-  background-color: #FFC700;
-
+.social-link {
+  display: block;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #444;
+  border-radius: 50%;
+  outline: none;
 }
-
+.social-link:hover {
+  background: #FFC700;
+}
+.social-link:active {
+  background: #FFC700;
+}
+.social-link::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+}
+.social-link::before {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: -3px;
+}
+.social-link:focus-visible:before {
+   border: 2px solid #AF4FFF;
+   outline: none;
+}
+.social-link:active::after {
+  opacity: 0.3;
+}
 .telegramm::after {
-    content: "";
-    display: block;
-    background-image: url(../images/youtube.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 2px solid #444;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    opacity: 0.3;
-    background-color: #DCDCDC;
-  }
-.telegramm:hover::after {
-    background-color: #FFC700;
-    opacity: 1;
-  }
-.telegramm:active::after {
-    opacity: 0.1;
-  }
-.telegramm:focus-visible::after {
-    border: 2px #8b2ba3 solid;
-    outline: none;
+   background-image: url(../images/telegramm.svg);
   }
 .youtube::after {
-    content: "";
-    display: block;
-    background-image: url(../images/twitter.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 2px solid #444;
-    border-radius: 50px;
-    width: 40px;
-    height: 40px;
-    opacity: 0.3;
-    background-color: #DCDCDC;
-  }
-.youtube:hover::after {
-    background-color: #FFC700;
-    opacity: 1;
+    background-image: url(../images/youtube.svg);
   }
 .twitter::after {
-    content: "";
-    display: block;
-    background-image: url(../images/telegramm.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 2px solid #444;
-    border-radius: 50px;
-    width: 40px;
-    height: 40px;
-    opacity: 0.3;
-    background-color: #DCDCDC;
-  }
-.twitter:hover::after {
-    background-color: #FFC700;
-    opacity: 1;
+    background-image: url(../images/twitter.svg);
   }
 .htmlacademy-link {
   justify-self: end;
