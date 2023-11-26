@@ -1304,18 +1304,18 @@ margin-bottom: 70px;
   height: 25px;
   margin-right: 100px;
   }
-  .footer-contacts-address-phone:hover {
+.footer-contacts-address-phone:hover {
     color: #FFC700;
   }
-  .footer-contacts-address-phone:active {
+.footer-contacts-address-phone:active {
     color: #FFC700;
     opacity: 0.3;
   }
-  .footer-contacts-address-phone:focus {
+.footer-contacts-address-phone:focus {
     border: #8b2ba3 solid 2px;
     outline: none;
   }
- .footer-list {
+.footer-list {
   display: flex;
   list-style-type: none;
   grid-column: 2/-2;
@@ -1329,7 +1329,7 @@ margin-bottom: 70px;
   justify-content: center;
   gap: 15px;
   }
-  .telegramm::after {
+.telegramm::after {
     content: "";
     display: block;
     background-image: url(../images/youtube.svg);
@@ -1342,18 +1342,18 @@ margin-bottom: 70px;
     opacity: 0.3;
     background-color: #DCDCDC;
   }
-  .telegramm:hover::after {
+.telegramm:hover::after {
     background-color: #FFC700;
     opacity: 1;
   }
-  .telegramm:active::after {
+.telegramm:active::after {
     background-color: #FFC700;
     opacity: 0.3;
   }
-  .telegramm:focus-visible::after {
+.telegramm:focus-visible::after {
     outline: 2px #8b2ba3 solid;
   }
-  .youtube::after {
+.youtube::after {
     content: "";
     display: block;
     background-image: url(../images/twitter.svg);
@@ -1366,11 +1366,11 @@ margin-bottom: 70px;
     opacity: 0.3;
     background-color: #DCDCDC;
   }
-  .youtube:hover::after {
+.youtube:hover::after {
     background-color: #FFC700;
     opacity: 1;
   }
-  .twitter::after {
+.twitter::after {
     content: "";
     display: block;
     background-image: url(../images/telegramm.svg);
@@ -1383,7 +1383,7 @@ margin-bottom: 70px;
     opacity: 0.3;
     background-color: #DCDCDC;
   }
-  .twitter:hover::after {
+.twitter:hover::after {
     background-color: #FFC700;
     opacity: 1;
   }
