@@ -58,10 +58,10 @@ body {
   height: 40px;
 }
 .navigation-logo:hover {
-  opacity: 0.3;
+  opacity: 0.6;
   }
 .navigation-logo:active {
-    opacity: 0.6;
+    opacity: 0.3;
   }
 .navigation-logo:focus-visible {
     outline: 2px solid #AF4FFF;
@@ -1283,12 +1283,15 @@ margin-bottom: 70px;
   display: block;
     width: 145px;
     height: 36px;
+    fill: #FFC700;
   }
 .logo-footer-link:hover {
   opacity: 0.6;
+
   }
 .logo-footer-link:active {
   opacity: 0.3;
+
   }
 .logo-footer-link:focus-visible {
   outline: 2px solid #AF4FFF;
