@@ -99,7 +99,11 @@ body {
   position: relative;
     outline: 2px solid #AF4FFF;
     outline-offset: 2px;
+    z-index: 1;
   }
+.search:focus {
+  outline: none;
+}
 
 .search:disabled {
   color: #EBEBEB;
@@ -128,24 +132,20 @@ body {
     outline: 2px solid #AF4FFF;
   }
 
-  .button-search:hover {
+  .button-search:not(:disabled):hover {
     background-color: #000000;
     color: #ffffff;
   }
-.button-search:active {
-    background-color: #000000;
-    color: #ffffff;
-    border-color: #000000;
-    outline: none;
-    opacity: 0.3;
+  .button-search:not(:disabled):active {
+    color: rgb(255, 255, 255, 0.3);
+
   }
-.button-search:focus-visible {
-  border: 2px solid #AF4FFF;
+.button-search:focus {
+  outline: none;
 
   }
 .button-search:disabled {
-  color: #EBEBEB;
-  border-color: #595959;
+  opacity: 0.3;
 }
 .navigation-service {
   display: flex;
