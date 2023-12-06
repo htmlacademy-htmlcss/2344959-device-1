@@ -383,8 +383,8 @@ opacity: 0.6;
     opacity: 0.3;
   }
   .slider-arrow:focus-visible {
-    border: 2px solid #AF4FFF;
-    outline: none;
+    outline: 2px solid #AF4FFF;
+
   }
   .slider-arrow:disabled {
     opacity: 0.1;
