@@ -1216,7 +1216,8 @@ margin-bottom: 70px;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  outline: 2px solid #444;
+  border: 2px solid #444;
+  outline: none;
  }
 .control-input-radio:hover {
   opacity: 0.6;
@@ -1231,9 +1232,10 @@ margin-bottom: 70px;
  .control-input-radio:focus-visible::after {
   content: "";
   position: absolute;
-  width: 30px;
-  height: 30px;
-  outline: 2px solid #AF4FFF;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #AF4FFF;
+  outline: none;
   inset: -5px;
 }
 .control-input-radio:checked {
