@@ -572,9 +572,11 @@ margin-left: 180px;
   text-transform: uppercase;
   text-decoration: none;
   border-color: transparent;
-  background: linear-gradient(to top, transparent 20%, transparent 65%, #FFE17F 65%, #FFE17F 80%, transparent 80%, transparent 20%);
+  background: linear-gradient(to top, transparent 40%, #FFE17F 40%, #FFE17F 60%, transparent 20%);
   height: 40px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 230px;
   }
   .button-main:hover {
