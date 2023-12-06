@@ -752,6 +752,7 @@ width: 320px;
   }
   .delivery-text {
   align-self: center;
+  margin-left: 230px;
   }
 .appointment {
   display: flex;
@@ -1233,7 +1234,6 @@ margin-bottom: 70px;
   width: 30px;
   height: 30px;
   outline: 2px solid #AF4FFF;
-
   inset: -5px;
 }
 .control-input-radio:checked {
