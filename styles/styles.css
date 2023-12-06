@@ -1207,6 +1207,7 @@ margin-bottom: 70px;
   outline: solid 2px #8b2ba3;
  }
 .control-input-radio {
+  position: relative;
   display: flex;
   appearance: none;
   width: 20px;
@@ -1214,7 +1215,7 @@ margin-bottom: 70px;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  border: 2px solid #CCCCCC;
+  outline: 2px solid #444;
  }
 .control-input-radio:hover {
   opacity: 0.6;
@@ -1225,14 +1226,20 @@ margin-bottom: 70px;
 .control-input-radio:disabled{
   opacity: 0.1;
  }
-.control-input-radio:focus-within{
+
+ .control-input-radio:focus-visible::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
   outline: 2px solid #AF4FFF;
-  border-radius: 100%;
- }
-.control-input-radio.current {
+
+  inset: -5px;
+}
+.control-input-radio:checked {
     border-color: #000000;
  }
-.control-input-radio.current::before {
+.control-input-radio:checked::before {
   display: flex;
   content: "";
   border-radius: 50%;
