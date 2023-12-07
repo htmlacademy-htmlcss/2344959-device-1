@@ -1405,23 +1405,23 @@ tbody {
   list-style-type: none;
   padding-left: 0;
 }
+
 .filter-title {
   margin: 0;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    font-family: Raleway, sans-serif;
-font-size: 16px;
-font-style: normal;
-font-weight: 800;
-line-height: normal;
-letter-spacing: 3.2px;
-text-transform: uppercase;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
 }
 
 .range {
   margin-top: 30px;
 }
-
 
 .range-scale {
   position: relative;
@@ -1430,11 +1430,13 @@ text-transform: uppercase;
   background-color: rgba(220, 220, 220, 1);
   border-radius: 2px;
 }
+
 .range-bar {
   position: absolute;
   height: 2px;
   background-color: #000;
 }
+
 .range-toggle {
   position: absolute;
   width: 20px;
@@ -1466,20 +1468,20 @@ text-transform: uppercase;
 }
 
 .range-wrapper-inputs {
-         display: flex;
-         justify-content: center;
-       }
+  display: flex;
+  justify-content: center;
+}
 
 .catalog-filter-label {
   display: flex;
   margin-right: auto;
   font-family: Rubik, sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    opacity: 0.3;
-    color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  opacity: 0.3;
+  color: #000;
 }
 
 .range-input {
@@ -1491,11 +1493,11 @@ text-transform: uppercase;
   border: none;
   appearance: textfield;
   font-family: Rubik, sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: #000;
 }
 
 
@@ -1527,15 +1529,19 @@ text-transform: uppercase;
 .control:active {
   color: rgb(117, 115, 115)
 }
+
 .control-input {
   border: 2px solid #000;
 }
+
 .control-input:hover {
   opacity: 0.6;
 }
+
 .control-input:active {
   opacity: 0.3;
 }
+
 .control-input:disabled {
   opacity: 0.1;
 }
@@ -1639,7 +1645,7 @@ text-transform: uppercase;
   position: relative;
   width: 4px;
   height: 7px;
-  right: 15px;
+  right: -15px;
   display: block;
 }
 
