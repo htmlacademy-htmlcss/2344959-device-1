@@ -90,12 +90,32 @@
           <section class="filter-catalog">
             <h2 class="visually-hidden" hidden>Список товаров с фильтрами</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-              <h3>Фильтр:</h3>
+              <h3 class="filter-title">Фильтр:</h3>
               <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Стоимость</legend>
-              </fieldset>
+                <legend class="catalog-filter-title">Стоимость:</legend>
 
-              <input type="range" min="0" max="100" value="50" class="slider" id="myRange">
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 2px; width: 119px">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="range-wrapper-inputs">
+                    <label class="catalog-filter-label">
+                      от <input class="range-input" type="number" value="0" name="min-price">
+                    </label>
+                    <label class="catalog-filter-label">
+                      до <input class="range-input" type="number" value="5000" name="max-price" style="width: 50px">
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
 
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Цвет</legend>
