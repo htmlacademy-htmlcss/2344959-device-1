@@ -1448,15 +1448,6 @@ tbody {
   top: -8px;
 }
 
-.range-toggle:hover {
-  background-color: #dbb590;
-}
-
-.range-toggle:active,
-.range-toggle:focus {
-  outline: 3px solid #dbb590;
-}
-
 .toggle-min {
   top: -8px;
   left: -6px;
