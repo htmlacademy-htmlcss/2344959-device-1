@@ -880,6 +880,20 @@ tbody {
   color: #000000;
   background-color: #F0F0F0;
 }
+.delivery-svg {
+  fill: #FFE17F;
+}
+.delivery-svg:hover {
+ fill: #FFC700;
+}
+
+.delivery:active {
+  opacity: 0.3;
+}
+
+.delivery:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
 
 .delivery-image {
   margin-right: 180px;
