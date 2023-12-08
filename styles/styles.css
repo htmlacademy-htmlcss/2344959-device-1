@@ -168,7 +168,6 @@ body {
 
 .button-search:focus {
   outline: none;
-
 }
 
 .button-search:disabled {
@@ -189,15 +188,15 @@ body {
   color: black;
   text-transform: uppercase;
   letter-spacing: 3.6px;
-  padding-left: 10px;
   display: flex;
   align-items: center;
-  height: 55px;
+  height: 53px;
+  width: 287px;
 }
 
 .link:focus-visible {
   outline: 2px solid #AF4FFF;
-  outline-offset: -2px;
+  outline-offset: 1px;
 }
 
 .link::after {
@@ -235,11 +234,11 @@ body {
 }
 
 .navigation-link:hover {
-  color: #444;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .navigation-link:active {
-  color: #F0F0F0;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .navigation-link:focus-visible {
@@ -1470,6 +1469,7 @@ tbody {
   cursor: pointer;
   top: -8px;
   background-color: rgba(235, 235, 235, 1);
+  outline: none;
 }
 
 .range-toggle:hover {
@@ -1486,8 +1486,9 @@ tbody {
 .range-toggle:focus-visible::after {
   content: "";
   position: absolute;
-  inset: -4px;
-  outline: 2px solid rgba(175, 79, 255, 1);
+  inset: -6px;
+  border: 2px solid rgba(175, 79, 255, 1);
+  outline: none;
 }
 
 .toggle-min {
@@ -1517,8 +1518,8 @@ tbody {
 }
 
 .catalog-filter-label:focus-within {
-  border: 2px solid rgb(175, 79, 255, 1);
-  outline: none;
+  outline: 2px solid rgb(175, 79, 255, 1);
+  border: none;
 }
 
 .range-input {
