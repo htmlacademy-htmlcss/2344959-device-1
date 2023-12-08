@@ -1393,7 +1393,7 @@ tbody {
 }
 
 .button-catalog-filter:focus-visible {
-  border: solid 2px #8b2ba3;
+  border: solid 2px #AF4FFF;
   outline: none;
 }
 
@@ -1580,7 +1580,7 @@ tbody {
 }
 
 .control-input:focus-visible {
-  outline: solid 2px #8b2ba3;
+  outline: solid 2px #AF4FFF;
 }
 
 .control-input-radio {
