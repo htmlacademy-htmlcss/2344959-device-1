@@ -1460,12 +1460,10 @@ tbody {
 
 .range-wrapper-inputs {
   display: flex;
-  justify-content: center;
 }
 
 .catalog-filter-label {
   display: flex;
-  margin-right: auto;
   font-family: Rubik, sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -1476,10 +1474,9 @@ tbody {
 }
 
 .range-input {
-  width: 20px;
-  padding: 0 2px;
+  width: 55px;
+  padding: 0 5px;
   font: inherit;
-  text-align: center;
   background-color: transparent;
   border: none;
   appearance: textfield;
@@ -1490,7 +1487,14 @@ tbody {
   line-height: 20px;
   color: #000;
 }
+.catalog-filter-label:nth-child(1) {
+  justify-self: start;
+}
 
+.catalog-filter-label:nth-child(2) {
+  justify-self: end;
+
+}
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
