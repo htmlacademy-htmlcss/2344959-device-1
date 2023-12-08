@@ -62,9 +62,10 @@ body {
 
 .navigation-logo {
   display: block;
-  width: 149px;
-  height: 40px;
   fill: #000;
+  vertical-align: top;
+  width: 145px;
+  height: 36px;
 }
 
 .navigation-logo:hover {
