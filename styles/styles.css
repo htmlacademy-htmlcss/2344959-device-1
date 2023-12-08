@@ -1342,6 +1342,7 @@ tbody {
   margin-left: 40px;
   padding: 18px 39px;
   border: 3px solid #E5E5E5;
+  outline: none;
 }
 
 .button-catalog:hover {
@@ -1354,9 +1355,8 @@ tbody {
 }
 
 .button-catalog:focus-visible {
-  box-shadow:
-    0 0 0 2px #AF4FFF,
-    0 0 0 3px #000000;
+  outline-offset: 2px;
+  outline: 2px solid #AF4FFF;
 }
 
 .catalog-filter-group {
