@@ -698,7 +698,7 @@ body {
 }
 
 .button-main:focus-visible {
-  border: solid 2px #8b2ba3;
+  border: solid 2px #AF4FFF;
   outline: none;
 }
 
