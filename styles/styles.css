@@ -1446,6 +1446,25 @@ tbody {
   border-radius: 50%;
   cursor: pointer;
   top: -8px;
+  background-color: rgba(235, 235, 235, 1);
+}
+
+.range-toggle:hover {
+  opacity: 0.5;
+}
+
+.range-toggle:active {
+  background-color: #000;
+  outline: none;
+  border: none;
+  opacity: 1;
+}
+
+.range-toggle:focus-visible::after {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  outline: 2px solid rgba(175, 79, 255, 1);
 }
 
 .toggle-min {
@@ -1469,8 +1488,14 @@ tbody {
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
-  opacity: 0.3;
-  color: #000;
+  color: #DCDCDC;
+  border: none;
+  outline: none;
+}
+
+.catalog-filter-label:focus-within {
+  border: 2px solid rgb(175, 79, 255, 1);
+  outline: none;
 }
 
 .range-input {
@@ -1485,8 +1510,11 @@ tbody {
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
-  color: #000;
+  color: #DCDCDC;
+  outline: none;
 }
+
+
 .catalog-filter-label:nth-child(1) {
   margin-left: -10px;
 }
