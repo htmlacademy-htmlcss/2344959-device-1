@@ -271,7 +271,7 @@ body {
 }
 
 .exit {
-  color: #8f8c8c;
+  color: rgba(0, 0, 0, 0.3);
   margin-left: 15px;
 }
 .navigation-link-user:hover {
