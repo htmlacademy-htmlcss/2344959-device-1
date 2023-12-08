@@ -1488,11 +1488,11 @@ tbody {
   color: #000;
 }
 .catalog-filter-label:nth-child(1) {
-  justify-self: start;
+  margin-left: -10px;
 }
 
 .catalog-filter-label:nth-child(2) {
-  justify-self: end;
+  margin-left: 35px;
 
 }
 
