@@ -1673,15 +1673,16 @@ tbody {
 }
 
 .breadcrumbs-link:hover {
-  color: #575454;
+  color: #DCDCDC;
 }
 
 .breadcrumbs-link:active {
-  color: #aca8a8;
+  color: #DCDCDC;
+  opacity: 0.8;
 }
 
 .breadcrumbs-link:focus-visible {
-  outline: 2px solid rgb(129, 53, 192);
+  outline: 2px solid rgba(175, 79, 255, 1);
 }
 
 .contacts-address-text {
