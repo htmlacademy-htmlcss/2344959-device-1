@@ -1073,6 +1073,7 @@ opacity: 1;
 .footer-inner {
   display: grid;
   grid-template-columns: 400px 1fr 400px;
+  margin-top: 62px;
 }
 
 .footer-list-item {
@@ -1343,10 +1344,8 @@ opacity: 1;
 }
 
 .pagination-button:focus-visible {
-  box-shadow:
-    0 0 0 2px #AF4FFF,
-    0 0 0 3px #000000;
-  outline: none;
+  outline-offset: 2px;
+  outline: 2px solid #AF4FFF;
 }
 
 .pagination-disabled {
@@ -1363,10 +1362,9 @@ opacity: 1;
 }
 
 .pagination-disabled:focus-visible {
-  box-shadow:
-    0 0 0 2px #AF4FFF,
-    0 0 0 3px #000000;
-  outline: none;
+  outline-offset: 2px;
+    outline: 2px solid #AF4FFF;
+    color: black;
 }
 
 .button-catalog {
@@ -1772,10 +1770,10 @@ opacity: 1;
   text-transform: none;
   color: rgb(255, 255, 255);
   grid-column: 3/-1;
-  margin-left: 4;
   justify-self: end;
   height: 25px;
   margin-right: 100px;
+  margin-top: 15px;
 }
 
 .footer-contacts-address-phone:hover {
