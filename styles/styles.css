@@ -1273,11 +1273,20 @@ opacity: 1;
   align-items: center;
   justify-content: center;
   padding: 10px;
-  color: #DCDCDC;
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.pagination-link:hover {
+  color: rgb(68, 68, 68, 1);
+}
+
+.pagination-link:active {
+  color: rgb(68, 68, 68, 0.1);
 }
 
 .pagination-link:focus-visible {
   outline: 2px solid #AF4FFF;
+  color: rgb(68, 68, 68, 0.3);
 }
 
 .pagination-next {
@@ -1301,10 +1310,8 @@ opacity: 1;
 }
 
 .pagination-current {
-  color: #444;
+  color: rgb(68, 68, 68, 0.6) ;
 }
-
-
 
 .pagination {
   background-color: #EBEBEB;
