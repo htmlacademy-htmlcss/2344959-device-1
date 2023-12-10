@@ -1568,6 +1568,10 @@ tbody {
   border: 2px solid #CCCCCC;
   width: 20px;
   height: 20px;
+  border-radius: 30%;
+  position: relative;
+  outline: none;
+  border-color: #000;
 }
 
 .control {
@@ -1581,10 +1585,6 @@ tbody {
 
 .control:active {
   color: rgb(117, 115, 115)
-}
-
-.control-input {
-  border: 2px solid #000;
 }
 
 .control-input:hover {
@@ -1609,8 +1609,11 @@ tbody {
   height: 10px;
 }
 
-.control-input:focus-visible {
-  outline: solid 2px #AF4FFF;
+.control-input:focus-visible::after {
+  content: "";
+  position: absolute;
+  border: 2px solid #AF4FFF;
+  inset: -6px;
 }
 
 .control-input-radio {
@@ -1690,10 +1693,6 @@ tbody {
   color: #000;
   list-style-type: none;
   text-decoration: none;
-  padding-bottom: 4px;
-}
-.breadcrumbs-link.current {
-  border-bottom: 1px solid #000;
 }
 
 .breadcrumbs-item:not(:last-child)::after {
