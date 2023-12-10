@@ -798,19 +798,16 @@ tbody {
 }
 
 .select-control:hover {
-  color: #575454;
+ opacity: 0.6;
 }
 
 .select-control:active {
-  color: #c5c3c3;
+  opacity: 0.3;
 }
 
 .select-control:focus-visible {
   outline: 2px solid #AF4FFF;
-}
-
-.select-control:focus-visible {
-  color: #c5c3c3;
+  color: #000;
 }
 
 .icons-catalog {
@@ -1102,6 +1099,7 @@ opacity: 1;
 .button-footer:focus-visible {
   color: #ffffff;
   outline: 2px solid #AF4FFF;
+  border-bottom: none;
 }
 
 .search-catalog {
