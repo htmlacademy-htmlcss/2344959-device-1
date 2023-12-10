@@ -1428,11 +1428,13 @@ opacity: 1;
 
 .button-catalog-filter:hover {
   background-color: #FFE17F;
+
 }
 
 .button-catalog-filter:active {
   background-color: #FFC700;
   background: linear-gradient(to bottom, #FFC700 100%, #FFC700 100%);
+
 }
 
 .button-catalog-filter:focus-visible {
