@@ -232,6 +232,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 3.6px;
   padding-bottom: 4px;
+  padding-top: 2px;
 }
 
 .navigation-link:hover {
@@ -818,6 +819,8 @@ tbody {
   border: none;
   fill: #000;
   opacity: 0.2;
+  width: 30px;
+    height: 30px;
 }
 .button-icons-catalog:hover {
   opacity: 0.5;
@@ -831,8 +834,7 @@ opacity: 1;
   fill: rgba(0, 0, 0, 0.2);
   opacity: 1;
   outline-offset: 4px;
-  height: 24px;
-  width: 24px;
+
   }
 
 
