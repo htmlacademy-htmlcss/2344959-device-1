@@ -817,9 +817,27 @@ tbody {
   margin-left: auto;
 }
 
-.icons-catalog-svg {
-  margin-left: 20px;
+.button-icons-catalog{
+  border: none;
+  fill: #000;
+  opacity: 0.2;
 }
+.button-icons-catalog:hover {
+  opacity: 0.5;
+}
+.button-icons-catalog:active {
+opacity: 1;
+  fill: #000;
+}
+.button-icons-catalog:focus-visible {
+  outline: 2px solid #AF4FFF;
+  fill: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  outline-offset: 4px;
+  height: 24px;
+  width: 24px;
+  }
+
 
 .catalog-filter-title {
   font-family: Rubik, sans-serif;
@@ -1426,6 +1444,7 @@ tbody {
 
 .button-catalog-filter:disabled {
   opacity: 0.3;
+  pointer-events: none;
 }
 
 .catalog-filter-list {
@@ -1771,7 +1790,7 @@ tbody {
 }
 
 .footer-contacts-address-phone:focus-visible {
-  border: #8b2ba3 solid 2px;
+  border:2px solid #AF4FFF;
   outline: none;
 }
 
