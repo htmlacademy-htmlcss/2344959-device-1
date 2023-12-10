@@ -231,6 +231,7 @@ body {
   color: black;
   text-transform: uppercase;
   letter-spacing: 3.6px;
+  padding-bottom: 4px;
 }
 
 .navigation-link:hover {
@@ -243,6 +244,10 @@ body {
 
 .navigation-link:focus-visible {
   outline: 2px solid #AF4FFF;
+}
+.navigation-link.current {
+ border-bottom: 2px solid #000;
+
 }
 
 .user-name::before {
@@ -1684,6 +1689,10 @@ tbody {
   color: #000;
   list-style-type: none;
   text-decoration: none;
+  padding-bottom: 4px;
+}
+.breadcrumbs-link.current {
+  border-bottom: 1px solid #000;
 }
 
 .breadcrumbs-item:not(:last-child)::after {
