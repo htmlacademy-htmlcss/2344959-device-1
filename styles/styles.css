@@ -1277,10 +1277,7 @@ opacity: 1;
 }
 
 .pagination-link:focus-visible {
-  box-shadow:
-    0 0 0 2px #AF4FFF,
-    0 0 0 3px transparent;
-  outline: none;
+  outline: 2px solid #AF4FFF;
 }
 
 .pagination-next {
@@ -1307,12 +1304,7 @@ opacity: 1;
   color: #444;
 }
 
-.pagination-current:focus-visible {
-  box-shadow:
-    0 0 0 2px #AF4FFF,
-    0 0 0 3px transparent;
-  outline: none;
-}
+
 
 .pagination {
   background-color: #EBEBEB;
@@ -1537,7 +1529,8 @@ opacity: 1;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
-  color: #DCDCDC;
+  color: #000;
+  opacity: 0.3;
   border: none;
   outline: none;
 }
@@ -1587,7 +1580,7 @@ opacity: 1;
   border: 2px solid #CCCCCC;
   width: 20px;
   height: 20px;
-  border-radius: 30%;
+  border-radius: 20%;
   position: relative;
   outline: none;
   border-color: #000;
