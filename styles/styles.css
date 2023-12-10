@@ -108,6 +108,7 @@ body {
   width: 359px;
 
 }
+
 .search::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
@@ -246,8 +247,9 @@ body {
 .navigation-link:focus-visible {
   outline: 2px solid #AF4FFF;
 }
+
 .navigation-link.current {
- border-bottom: 2px solid #000;
+  border-bottom: 2px solid #000;
 
 }
 
@@ -284,6 +286,7 @@ body {
   color: rgba(0, 0, 0, 0.3);
   margin-left: 15px;
 }
+
 .navigation-link-user:hover {
   color: #444;
 }
@@ -799,7 +802,7 @@ tbody {
 }
 
 .select-control:hover {
- opacity: 0.6;
+  opacity: 0.6;
 }
 
 .select-control:active {
@@ -815,27 +818,30 @@ tbody {
   margin-left: auto;
 }
 
-.button-icons-catalog{
+.button-icons-catalog {
   border: none;
   fill: #000;
   opacity: 0.2;
   width: 30px;
-    height: 30px;
+  height: 30px;
 }
+
 .button-icons-catalog:hover {
   opacity: 0.5;
 }
+
 .button-icons-catalog:active {
-opacity: 1;
+  opacity: 1;
   fill: #000;
 }
+
 .button-icons-catalog:focus-visible {
   outline: 2px solid #AF4FFF;
   fill: rgba(0, 0, 0, 0.2);
   opacity: 1;
   outline-offset: 4px;
 
-  }
+}
 
 
 .catalog-filter-title {
@@ -906,11 +912,13 @@ opacity: 1;
   color: #000000;
   background-color: #F0F0F0;
 }
+
 .delivery-svg {
   fill: #FFE17F;
 }
+
 .delivery-svg:hover {
- fill: #FFC700;
+  fill: #FFC700;
 }
 
 .delivery:active {
@@ -1310,7 +1318,7 @@ opacity: 1;
 }
 
 .pagination-current {
-  color: rgb(68, 68, 68, 0.6) ;
+  color: rgb(68, 68, 68, 0.6);
 }
 
 .pagination {
@@ -1364,8 +1372,8 @@ opacity: 1;
 
 .pagination-disabled:focus-visible {
   outline-offset: 2px;
-    outline: 2px solid #AF4FFF;
-    color: black;
+  outline: 2px solid #AF4FFF;
+  color: black;
 }
 
 .button-catalog {
@@ -1464,6 +1472,16 @@ opacity: 1;
   text-transform: uppercase;
 }
 
+.filter-title::after {
+  display: block;
+  content: "";
+  position: relative;
+  width: 200px;
+  border-bottom: 2px solid black;
+  top: 45px;
+  right: -5px;
+}
+
 .range {
   margin-top: 30px;
 }
@@ -1474,6 +1492,7 @@ opacity: 1;
   margin-bottom: 16px;
   background-color: rgba(220, 220, 220, 1);
   border-radius: 2px;
+  width: 200px;
 }
 
 .range-bar {
@@ -1790,7 +1809,7 @@ opacity: 1;
 }
 
 .footer-contacts-address-phone:focus-visible {
-  border:2px solid #AF4FFF;
+  border: 2px solid #AF4FFF;
   outline: none;
 }
 
