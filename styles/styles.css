@@ -852,6 +852,16 @@ tbody {
   line-height: 20px;
 }
 
+.range-bar::before {
+  display: block;
+  position: relative;
+  content: "";
+  width: 200px;
+  border-bottom: 2px solid #000;
+  right: -2px;
+  top: 66px;
+}
+
 .select-text {
   margin-right: 260px;
   font-family: Raleway;
@@ -1548,6 +1558,7 @@ tbody {
   display: flex;
 }
 
+
 .catalog-filter-label {
   display: flex;
   font-family: Rubik, sans-serif;
@@ -1555,8 +1566,7 @@ tbody {
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
-  color: #000;
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
   border: none;
   outline: none;
 }
@@ -1578,7 +1588,7 @@ tbody {
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
-  color: #DCDCDC;
+  color: rgba(0, 0, 0, 0.3);
   outline: none;
 }
 
