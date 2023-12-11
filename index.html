@@ -358,5 +358,43 @@
 </a>
 </div>
 </footer>
+
+<div class="modal-container">
+<div class="modal modal-auth">
+  <button class="modal-close-button">
+    <span class="visually-hidden">Закрыть</span>
+  </button>
+
+  <section class="modal-content">
+    <h2 class="modal-title">Доставка под заказ</h2>
+    <form action="https://echo.htmlacademy.ru/" method="post">
+      <p class="field-group">
+        <label class="label-modal" for="name">Ваше имя:</label>
+        <input class="input-modal" type="text" id="name" name="name" placeholder="Введите имя">
+        <span>Добавьте имя</span>
+      </p>
+      <p class="field-group">
+        <label class="label-modal" for="email">Ваш e-mail:</label>
+        <input class="input-modal" type="email" id="email" name="email" placeholder="почта">
+      <span>Забавный у вас адрес</span>
+      </p>
+      <div class="modal-div">
+      <p class="field-group">
+        <label class="label-modal" for="message">Что нужно привезти:</label>
+        <textarea class="comment-modal" id="message" name="comment" placeholder="В свободной форме"></textarea>
+      </p>
+     <span class="label-modal">Количество:</span>
+     <div class="div-button">
+     <button class="mini-button" type="">-</button>
+     <input>1
+     <button class="mini-button" type="">+</button>
+     </div>
+      </div>
+    </form>
+<button class="button-modal" type="submit">Отправить</button>
+</section>
+</div>
+</div>
+
 </body>
 </html>
