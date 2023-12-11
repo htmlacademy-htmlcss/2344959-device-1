@@ -301,11 +301,6 @@ body {
   outline: 2px solid #AF4FFF;
 }
 
-.authorization {
-  margin-left: 25px;
-}
-
-
 .navigation-form {
   display: flex;
   width: 517px;
@@ -701,6 +696,29 @@ margin-bottom: 10px;
 
 .service-item:nth-last-child(n+2) {
   margin-bottom: 35px;
+}
+
+.contact-title {
+  font-family: Raleway, sans-serif;
+font-size: 50px;
+font-style: normal;
+font-weight: 800;
+line-height: 50px;
+margin-bottom: 48px;
+}
+.text {
+  font-family: Rubik, sans-serif;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px;
+}
+.title {
+  font-family: Rubik, sans-serif;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 30px;
 }
 
 .button-main {
@@ -1110,6 +1128,18 @@ tbody {
   font-style: normal;
   font-weight: 700;
   line-height: 20px;
+  list-style-type: none;
+}
+.item::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 8px;
+height: 8px;
+border-radius: 50%;
+background-color: #FFC700;
+right: 38px;
+    top: 15px;
 }
 
 .item:nth-last-child(n+2) {
