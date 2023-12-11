@@ -1838,7 +1838,15 @@ right: 38px;
 .breadcrumbs-link:focus-visible {
   outline: 2px solid rgba(175, 79, 255, 1);
 }
-
+.contact-time1 {
+  display: flex;
+}
+.contact-time2 {
+  display: flex;
+}
+.time {
+  margin-left: 10px;
+}
 .contacts-address-text {
   font-style: normal;
 }
