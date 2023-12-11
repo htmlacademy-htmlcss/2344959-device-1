@@ -368,6 +368,16 @@ body {
   background: #000;
   min-height: 307px;
 }
+.popover::before {
+  display: block;
+  content: "";
+  position: relative;
+  background-image: url("../images/element-popover.svg");
+  background-color: #000;
+  inset: 30px;
+  border: 10px solid red;
+}
+
 .popover-content {
   height: 100%;
 }
@@ -382,7 +392,24 @@ body {
 .cart-item {
 display: flex;
 align-items: center;
-    justify-content: center;
+}
+.popover-link {
+  display: flex;
+  align-items: center;
+  color: white;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.popover-link:hover {
+  opacity: 0.6;
+}
+.popover-link:active {
+  opacity: 0.3;
+}
+.popover-link:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .popover-img {
@@ -398,8 +425,19 @@ align-items: center;
     background-color: transparent;
     border: none;
     margin-bottom: 30px;
-
 }
+
+.cart-item-button:hover {
+  opacity: 0.6;
+}
+.cart-item-button:active {
+  opacity: 0.3;
+}
+.cart-item-button:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
 .popover-svg {
   fill: #ffffff;
 }
@@ -449,6 +487,22 @@ text-transform: uppercase;
 color: #000000;
 background-color: #ffffff;
 padding: 10px 20px;
+border: none;
+}
+
+.popover-button:hover {
+  background-color: #FFE17F;
+}
+.popover-button:active {
+  background-color: rgba(255, 225, 127, 0.3);
+
+}
+.popover-button:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+.popover-button:disabled {
+  opacity: 0.3;
 }
 
 .user-1::before {
