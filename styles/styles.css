@@ -615,6 +615,7 @@ line-height: 24px;
 letter-spacing: -0.36px;
 color: #000;
 margin-top: 32px;
+margin-bottom: 10px;
 }
 
 .product-item:hover {
@@ -738,6 +739,11 @@ margin-top: 32px;
 .button-main:focus-visible {
   border: solid 2px #AF4FFF;
   outline: none;
+}
+
+.contacts-phone {
+  font-style: normal;
+    color: black;
 }
 
 .button-button:hover {
