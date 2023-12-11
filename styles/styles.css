@@ -706,6 +706,15 @@ font-weight: 800;
 line-height: 50px;
 margin-bottom: 48px;
 }
+.contact-title::before {
+  display: block;
+  content: "";
+  position: relative;
+  width: 84px;
+height: 7px;
+background-color: #000;
+bottom: 40px;
+}
 .text {
   font-family: Rubik, sans-serif;
 font-size: 18px;
