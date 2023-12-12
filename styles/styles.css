@@ -2157,13 +2157,11 @@ tbody {
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
-
 }
 
 .span-red {
   color: #FF3D3D;
 }
-
 
 .div-button {
   display: flex;
@@ -2180,8 +2178,6 @@ tbody {
   font-size: 16px;
   font-style: normal;
 }
-
-
 
 .div-div {
   display: block;
@@ -2212,10 +2208,7 @@ tbody {
 
 .auth-form .field-group {
   margin: 0;
-
 }
-
-
 
 .modal-div {
   display: flex;
