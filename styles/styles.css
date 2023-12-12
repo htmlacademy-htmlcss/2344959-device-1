@@ -2147,18 +2147,21 @@ tbody {
 .form-item-button {
   border: none;
   background: transparent;
+  width: 26px;
+    height: 26px;
+    padding: 0;
 }
 
 .form-item-button::after {
   content: "";
   display: block;
-  position: relative;
+  position: absolute;
   width: 26px;
   height: 26px;
   background-color: #FFE17F;
   border-radius: 50%;
-  top: 8px;
-  right: 4px;
+  top: 343px;
+    right: 105px;
 }
 .form-item-button::before {
   content: "";
@@ -2168,8 +2171,8 @@ tbody {
   background-repeat: no-repeat;
   width: 4px;
   height: 12px;
-  top: 26px;
-  right: -7px;
+  top: 1px;
+  right: -14px;
   z-index: 1;
 }
 
