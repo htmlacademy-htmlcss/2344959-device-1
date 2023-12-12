@@ -2091,14 +2091,25 @@ tbody {
   padding: 0;
   top: 12%;
   right: 7%;
-  width: 56px;
-  height: 44px;
+  width: 26px;
+  height: 26px;
   background-color: #ffffff;
   border: none;
   background-image: url("../images/close.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+}
+
+.modal-close-button:hover {
+  opacity: 0.6;
+}
+.modal-close-button:active {
+  opacity: 0.3;
+}
+.modal-close-button:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .modal-title {
