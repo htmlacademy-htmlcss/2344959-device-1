@@ -357,8 +357,8 @@ body {
 }
 .popover{
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 120%;
+  right: -50%;
   z-index: 1;
   width: 320px;
   padding: 20px;
@@ -367,7 +367,6 @@ body {
   background-color: #ffffff;
   background: #000;
   min-height: 307px;
-
 }
 .popover::before {
   display: block;
@@ -507,6 +506,7 @@ color: #000000;
 background-color: #ffffff;
 padding: 10px 20px;
 border: none;
+height: 50px;
 }
 
 .popover-button:hover {
