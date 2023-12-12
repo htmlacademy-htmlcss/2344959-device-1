@@ -2073,17 +2073,16 @@ tbody {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.modal {
+.modal-body {
   position: relative;
   margin: auto;
-  padding: 72px 80px;
+  padding: 72px 70px;
   background-color: #ffffff;
   border: 10px solid black;
 }
 
-.modal-auth {
-  width: 940px;
-  height: 588px;
+.modal-block {
+  width: 920px;
 }
 
 .modal-close-button {
@@ -2147,7 +2146,7 @@ tbody {
   margin-top: 14px;
 }
 
-.red {
+.error {
   border: 2px solid #FF3D3D;
 }
 
@@ -2159,7 +2158,7 @@ tbody {
   line-height: 20px;
 }
 
-.span-red {
+.span-error {
   color: #FF3D3D;
 }
 
@@ -2179,7 +2178,7 @@ tbody {
   font-style: normal;
 }
 
-.div-div {
+.modal-quantity {
   display: block;
 }
 
@@ -2193,18 +2192,6 @@ tbody {
   font-size: 16px;
   font-style: normal;
 }
-.div-button::after {
-  content: "";
-  display: block;
-  position: relative;
-  background-color: #FFE17F;
-  border-radius: 50%;
-  width: 26px;
-  height: 26px;
-  border: none;
-  top: -64%;
-  right: 21%;
- }
 
 .auth-form .field-group {
   margin: 0;

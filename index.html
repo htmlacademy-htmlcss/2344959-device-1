@@ -364,7 +364,7 @@
 </footer>
 
 <div class="modal-container">
-<div class="modal modal-auth">
+<div class="modal-body modal-block">
   <button class="modal-close-button">
     <span class="visually-hidden">Закрыть</span>
   </button>
@@ -380,8 +380,8 @@
       </p>
       <p class="field-group">
         <label class="label-modal" for="email">Ваш e-mail:</label>
-        <input class="input-modal red" type="email" id="email" name="email" placeholder="почта">
-      <span class="span-text span-red">Забавный у вас адрес</span>
+        <input class="input-modal error" type="email" id="email" name="email" placeholder="почта">
+      <span class="span-text span-error">Забавный у вас адрес</span>
       </p>
       </div>
       <div class="modal-div">
@@ -389,11 +389,11 @@
         <label class="label-modal" for="message">Что нужно привезти:</label>
         <textarea class="comment-modal" id="message" name="comment" placeholder="В свободной форме"></textarea>
       </p>
-    <div class="div-div">
-     <span class="label-modal">Количество:</span>
+    <div class="modal-quantity">
+     <lable class="label-modal">Количество:</lable>
      <div class="div-button">
      <button class="mini-button" type="">-</button>
-     <input class="mini-input" placeholder="1">
+     <input class="mini-input" value="1" placeholder="1">
      <button class="mini-button" type="">+</button>
      </div>
      </div>
