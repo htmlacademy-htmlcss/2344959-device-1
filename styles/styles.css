@@ -355,7 +355,8 @@ body {
   align-items: center;
   padding-left: 45px;
 }
-.popover{
+
+.popover {
   position: absolute;
   top: 120%;
   right: -50%;
@@ -369,6 +370,7 @@ body {
   min-height: 307px;
   display: none;
 }
+
 .popover::before {
   display: block;
   content: "";
@@ -382,27 +384,31 @@ body {
 
 .popover-content {
   height: 100%;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
- .popover-list {
+
+.popover-list {
   list-style-type: none;
   padding: 0;
- }
+}
 
 .popover-open {
   display: block;
 }
+
 .cart-item {
-display: flex;
-align-items: center;
-padding: 20px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
 
 }
+
 .cart-item:first-child {
- padding-top: 0;
+  padding-top: 0;
 }
+
 .popover-link {
   display: flex;
   align-items: center;
@@ -415,9 +421,11 @@ padding: 20px;
 .popover-link:hover {
   opacity: 0.6;
 }
+
 .popover-link:active {
   opacity: 0.3;
 }
+
 .popover-link:focus-visible {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
@@ -427,24 +435,27 @@ padding: 20px;
   width: 39px;
   height: 43px;
 }
+
 .cart-item-button {
   width: 10px;
-    height: 10px;
-    display: flex;
-    align-items: center;
-    padding: 0;
-    background-color: transparent;
-    border: none;
-    margin-bottom: 30px;
-    margin-left: auto;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 30px;
+  margin-left: auto;
 }
 
 .cart-item-button:hover {
   opacity: 0.6;
 }
+
 .cart-item-button:active {
   opacity: 0.3;
 }
+
 .cart-item-button:focus-visible {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
@@ -457,70 +468,75 @@ padding: 20px;
 .popover-div {
   display: flex;
   align-items: center;
-    justify-content: space-between;
-    width: 320px;
-    height: 44px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 20px;
-    margin-top: 10px;
-    background-color: #1A1A1A;;
-}
-.popover-div-text {
-  font-family: Rubik, sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
+  justify-content: space-between;
+  width: 320px;
+  height: 44px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 20px;
+  margin-top: 10px;
+  background-color: #1A1A1A;
+  ;
 }
 
-.popover-text{
+.popover-div-text {
   font-family: Rubik, sans-serif;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 20px;
-margin-left: 23px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.popover-text {
+  font-family: Rubik, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-left: 23px;
 }
 
 .cart-item-price {
   margin: 0;
   text-align: right;
-font-family: Rubik, sans-serif;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 20px;
+  font-family: Rubik, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
   color: #FFFFFF;
 }
 
 .popover-button {
   text-align: center;
-font-family: Raleway;
-font-size: 18px;
-font-style: normal;
-font-weight: 800;
-line-height: normal;
-letter-spacing: 3.6px;
-text-transform: uppercase;
-color: #000000;
-background-color: #ffffff;
-padding: 10px 20px;
-border: none;
-height: 50px;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  height: 50px;
 }
 
 .popover-button:hover {
   background-color: #FFE17F;
 }
+
 .popover-button:active {
   color: rgba(0, 0, 0, 0.3);
   background-color: rgba(255, 225, 127, 1);
 }
+
 .popover-button:focus-visible {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }
+
 .popover-button:disabled {
   opacity: 0.3;
 }
@@ -768,19 +784,20 @@ height: 50px;
   flex-direction: column;
   text-decoration: none;
   width: 164px;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
+
 .product-title {
   font-family: Raleway, sans-serif;
-font-size: 18px;
-font-style: normal;
-font-weight: 800;
-line-height: 24px;
-letter-spacing: -0.36px;
-color: #000;
-margin-top: 32px;
-margin-bottom: 10px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: -0.36px;
+  color: #000;
+  margin-top: 32px;
+  margin-bottom: 10px;
 }
 
 .product-item:hover {
@@ -790,6 +807,7 @@ margin-bottom: 10px;
 .product-link:active {
   opacity: 0.3;
 }
+
 .product-link:focus-visible {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
@@ -870,35 +888,38 @@ margin-bottom: 10px;
 
 .contact-title {
   font-family: Raleway, sans-serif;
-font-size: 50px;
-font-style: normal;
-font-weight: 800;
-line-height: 50px;
-margin-bottom: 48px;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 50px;
+  margin-bottom: 48px;
 }
+
 .contact-title::before {
   display: block;
   content: "";
   position: relative;
   width: 84px;
-height: 7px;
-background-color: #000;
-bottom: 40px;
+  height: 7px;
+  background-color: #000;
+  bottom: 40px;
 }
+
 .text {
   font-family: Rubik, sans-serif;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 30px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
 }
+
 .title {
   font-family: Rubik, sans-serif;
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: 30px;
-margin-bottom: 15px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 15px;
 }
 
 .button-main {
@@ -941,11 +962,13 @@ margin-bottom: 15px;
 
 .contacts-phone {
   font-style: normal;
-    color: black;
+  color: black;
 }
+
 .contacts-text {
   font-style: normal;
 }
+
 .button-button:hover {
   background: #FFE17F;
 }
@@ -1312,16 +1335,17 @@ tbody {
   line-height: 20px;
   list-style-type: none;
 }
+
 .item::before {
   content: "";
   display: block;
   position: relative;
   width: 8px;
-height: 8px;
-border-radius: 50%;
-background-color: #FFC700;
-right: 38px;
-    top: 15px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #FFC700;
+  right: 38px;
+  top: 15px;
 }
 
 .item:nth-last-child(n+2) {
@@ -2008,18 +2032,23 @@ right: 38px;
 .breadcrumbs-link:focus-visible {
   outline: 2px solid rgba(175, 79, 255, 1);
 }
+
 .contact-time1 {
   display: flex;
 }
+
 .contact-time2 {
   display: flex;
 }
+
 .time {
   margin-left: 10px;
 }
+
 .contacts-address-text {
   font-style: normal;
 }
+
 .contacts-address-text::after {
   display: block;
   content: "";
@@ -2042,22 +2071,21 @@ right: 38px;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
-
-
 }
+
 .modal {
   position: relative;
   margin: auto;
   padding: 72px 80px;
   background-color: #ffffff;
   border: 10px solid black;
-
 }
 
 .modal-auth {
   width: 940px;
   height: 588px;
 }
+
 .modal-close-button {
   position: absolute;
   padding: 0;
@@ -2079,10 +2107,10 @@ right: 38px;
   color: #000000;
   text-transform: uppercase;
   font-family: Raleway, sans-serif;
-font-size: 50px;
-font-style: normal;
-font-weight: 800;
-line-height: 50px;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 50px;
 }
 
 .div-field-group {
@@ -2097,12 +2125,12 @@ line-height: 50px;
 
 .label-modal {
   font-family: Rubik, sans-serif;
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: 20px; /* 111.111% */
-letter-spacing: -0.36px;
-margin-bottom: 14px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.36px;
+  margin-bottom: 14px;
 }
 
 .input-modal {
@@ -2112,25 +2140,26 @@ margin-bottom: 14px;
   border: none;
   padding: 20px;
   font-family: Rubik;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 20px;
-margin-top: 14px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 14px;
 }
 
 .red {
- border: 2px solid #FF3D3D;
+  border: 2px solid #FF3D3D;
 }
 
 .span-text {
   font-family: Rubik, sans-serif;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 20px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 
 }
+
 .span-red {
   color: #FF3D3D;
 }
@@ -2142,28 +2171,44 @@ line-height: 20px;
   height: 60px;
   margin-top: 14px;
 }
+
 .mini-button {
   width: 60px;
   height: 60px;
   border: none;
   font-family: Rubik;
-    font-size: 16px;
-    font-style: normal;
+  font-size: 16px;
+  font-style: normal;
 }
+
+
+
 .div-div {
   display: block;
 }
 
 .mini-input {
   width: 60px;
-    height: 60px;
-    background-color: #F0F0F0;
-    border: none;
-    padding: 20px;
-    font-family: Rubik;
-font-size: 16px;
-font-style: normal;
+  height: 60px;
+  background-color: #F0F0F0;
+  border: none;
+  padding: 20px;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
 }
+.div-button::after {
+  content: "";
+  display: block;
+  position: relative;
+  background-color: #FFE17F;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  border: none;
+  top: -64%;
+  right: 21%;
+ }
 
 .auth-form .field-group {
   margin: 0;
@@ -2175,40 +2220,40 @@ font-style: normal;
 .modal-div {
   display: flex;
   margin-top: 42px;
-    margin-bottom: 42px;
+  margin-bottom: 42px;
 }
 
 .comment-modal {
   width: 540px;
   margin-top: 14px;
-    width: 540px;
-    height: 60px;
-    border: none;
-    background-color: #F0F0F0;
-    font-family: Rubik;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    padding: 20px;
+  width: 540px;
+  height: 60px;
+  border: none;
+  background-color: #F0F0F0;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 20px;
 }
 
 .button-modal {
   width: 200px;
   color: #000000;
-    text-align: center;
-    font-family: Raleway, sans-serif;
-    letter-spacing: 3.6px;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-    text-transform: uppercase;
-    text-decoration: none;
-    border-color: transparent;
-    background: linear-gradient(to bottom, transparent 40%, #FFE17F 40%, #FFE17F 60%, transparent 60%);
-    height: 40px;
-    display: inline-block;
+  text-align: center;
+  font-family: Raleway, sans-serif;
+  letter-spacing: 3.6px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-color: transparent;
+  background: linear-gradient(to bottom, transparent 40%, #FFE17F 40%, #FFE17F 60%, transparent 60%);
+  height: 40px;
+  display: inline-block;
 }
 
 
@@ -2240,11 +2285,11 @@ font-style: normal;
 
 .footer-contacts-address-phone {
   font-family: Rubik, sans-serif;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 20px;
-text-decoration-line: underline;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration-line: underline;
   text-transform: none;
   color: rgb(255, 255, 255);
   grid-column: 3/-1;
