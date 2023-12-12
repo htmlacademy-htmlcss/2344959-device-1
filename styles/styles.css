@@ -356,7 +356,7 @@ body {
   padding-left: 45px;
 }
 .popover{
-  position: relative;
+  position: absolute;
   top: 0;
   right: 0;
   z-index: 1;
@@ -377,11 +377,14 @@ body {
   width: 14px;
   height: 6px;
   bottom: 100%;
-  right: 153px;
+  left: 50%;
 }
 
 .popover-content {
   height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
  .popover-list {
   list-style-type: none;
@@ -394,13 +397,19 @@ body {
 .cart-item {
 display: flex;
 align-items: center;
+padding: 20px;
+
+}
+.cart-item:first-child {
+ padding-top: 0;
 }
 .popover-link {
   display: flex;
   align-items: center;
   color: white;
-    text-decoration: none;
-    margin-right: 30px;
+  text-decoration: none;
+  height: 47px;
+  margin-right: 30px;
 }
 
 .popover-link:hover {
@@ -427,6 +436,7 @@ align-items: center;
     background-color: transparent;
     border: none;
     margin-bottom: 30px;
+    margin-left: auto;
 }
 
 .cart-item-button:hover {
@@ -448,6 +458,13 @@ align-items: center;
   display: flex;
   align-items: center;
     justify-content: space-between;
+    width: 320px;
+    height: 44px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px;
+    margin-top: 10px;
+    background-color: #1A1A1A;;
 }
 .popover-div-text {
   font-family: Rubik, sans-serif;
@@ -498,7 +515,6 @@ border: none;
 .popover-button:active {
   color: rgba(0, 0, 0, 0.3);
   background-color: rgba(255, 225, 127, 1);
-
 }
 .popover-button:focus-visible {
   outline: 2px solid #AF4FFF;
@@ -2031,6 +2047,7 @@ right: 38px;
   margin: auto;
   padding: 72px 80px;
   background-color: #ffffff;
+  display: none;
 }
 
 .modal-auth {
