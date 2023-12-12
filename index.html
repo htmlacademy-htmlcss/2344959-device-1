@@ -371,35 +371,37 @@
 
   <section class="modal-content">
     <h2 class="modal-title">Доставка под заказ</h2>
-    <form action="https://echo.htmlacademy.ru/" method="post">
-      <div class="div-field-group">
-      <p class="field-group">
+    <form action="https://echo.htmlacademy.ru/"  method="post">
+      <div class="field-group">
+      <p class="form-item">
         <label class="label-modal" for="name">Ваше имя:</label>
         <input class="input-modal" type="text" id="name" name="name" placeholder="Введите имя">
         <span class="span-text">Добавьте имя</span>
       </p>
-      <p class="field-group">
+      <p class="form-item">
         <label class="label-modal" for="email">Ваш e-mail:</label>
         <input class="input-modal error" type="email" id="email" name="email" placeholder="почта">
-      <span class="span-text span-error">Забавный у вас адрес</span>
+        <span class="span-text span-error">Забавный у вас адрес</span>
       </p>
       </div>
       <div class="modal-div">
-      <p class="field-group">
+      <p class="form-item">
         <label class="label-modal" for="message">Что нужно привезти:</label>
-        <textarea class="comment-modal" id="message" name="comment" placeholder="В свободной форме"></textarea>
+        <input class="comment-modal" type="text" id="message" name="comment" placeholder="В свободной форме">
       </p>
-    <div class="modal-quantity">
-     <lable class="label-modal">Количество:</lable>
-     <div class="div-button">
-     <button class="mini-button" type="">-</button>
-     <input class="mini-input" value="1" placeholder="1">
-     <button class="mini-button" type="">+</button>
-     </div>
-     </div>
+      <div class="form-item">
+        <label class="label-modal">Количество:</label>
+        <button type="button"></button>
+      <p class="div-button">
+        <button class="mini-button" type="button">-</button>
+        <input class="mini-input" value="1" placeholder="1">
+        <button class="mini-button" type="button">+</button>
+      </div>
     </div>
-    </form>
+
+
 <button class="button-modal" type="submit">Отправить</button>
+</form>
 </section>
 </div>
 </div>
