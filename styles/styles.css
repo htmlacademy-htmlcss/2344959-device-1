@@ -2041,13 +2041,13 @@ right: 38px;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
+  display: none;
 }
 .modal {
   position: relative;
   margin: auto;
   padding: 72px 80px;
   background-color: #ffffff;
-  display: none;
 }
 
 .modal-auth {
