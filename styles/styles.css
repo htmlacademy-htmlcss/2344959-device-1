@@ -356,7 +356,7 @@ body {
   padding-left: 45px;
 }
 .popover{
-  position: absolute;
+  position: relative;
   top: 0;
   right: 0;
   z-index: 1;
@@ -367,16 +367,17 @@ body {
   background-color: #ffffff;
   background: #000;
   min-height: 307px;
-  display: none;
+
 }
 .popover::before {
   display: block;
   content: "";
-  position: relative;
+  position: absolute;
   background-image: url("../images/element-popover.svg");
-  background-color: #000;
-  inset: 30px;
-  border: 10px solid red;
+  width: 14px;
+  height: 6px;
+  bottom: 100%;
+  right: 153px;
 }
 
 .popover-content {
@@ -495,7 +496,8 @@ border: none;
   background-color: #FFE17F;
 }
 .popover-button:active {
-  background-color: rgba(255, 225, 127, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 225, 127, 1);
 
 }
 .popover-button:focus-visible {
