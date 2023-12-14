@@ -2218,16 +2218,16 @@ tbody {
   height: 16px;
 }
 
-.tooltip::before {
+.tooltip-text::before {
 
   content: "";
   position: absolute;
   background-image: url("../images/element-popover.svg");
   width: 14px;
   height: 6px;
-  bottom: -144%;
-  left: 67%;
-
+  bottom: 100%;
+    left: 50%;
+  transform: translateX(-50%);
 }
 
 .tooltip-toggle {
@@ -2237,9 +2237,7 @@ tbody {
     height: 26px;
     padding: 0;
     border-radius: 50%;
-    position: relative;
-    top: -1%;
-    right: -25%;
+   align-items: center;
 }
 
 .tooltip-toggle::before {
@@ -2256,6 +2254,7 @@ tbody {
 }
 
 .tooltip-text {
+  position: absolute;
   background-color: #000000;
   color: #ffffff;
   font-family: Rubik, sans-serif;
@@ -2266,7 +2265,7 @@ tbody {
   text-transform: none;
   padding: 20px;
   width: 200px;
-  position: absolute;
+
   margin-bottom: 6px;
   left: -110%;
   top: 244%;
@@ -2298,7 +2297,7 @@ tbody {
   opacity: 0.3;
 }
 
-.input-modal:focus-visible {
+.input-modal:focus-within {
   border: 2px solid #AF4FFF;
   outline: none;
 }
