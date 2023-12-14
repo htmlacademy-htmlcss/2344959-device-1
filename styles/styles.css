@@ -2264,10 +2264,11 @@ tbody {
   padding: 20px;
   width: 200px;
   margin-bottom: 6px;
-  left: -80%;
+  left: 80%;
   top: 244%;
   transform: translateX(-50%);
   z-index: 1;
+  display: none;
 }
 
 .tooltip-toggle:hover + .tooltip-text,
@@ -2331,6 +2332,19 @@ tbody {
   font-style: normal;
 }
 
+.mini-button:hover {
+  opacity: 0.6;
+}
+
+.mini-button:active {
+  opacity: 0.3;
+}
+
+.mini-button:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: -2px;
+}
+
 .modal-quantity {
   display: block;
   margin-bottom: 42px;
@@ -2346,6 +2360,15 @@ tbody {
   font-family: Rubik;
   font-size: 16px;
   font-style: normal;
+}
+
+.mini-input:hover {
+  opacity: 0.3;
+}
+
+.mini-input:focus-visible {
+  border: 2px solid #AF4FFF;
+  outline: none;
 }
 
 .auth-form .field-group {
@@ -2369,6 +2392,15 @@ tbody {
   font-weight: 400;
   line-height: 20px;
   padding: 20px;
+}
+
+.comment-modal:hover {
+  opacity: 0.3;
+}
+
+.comment-modal:focus-within {
+  border: 2px solid #AF4FFF;
+  outline: none;
 }
 
 .button-modal {
