@@ -197,6 +197,8 @@ body {
   height: 53px;
   background-color: #FFE17F;
   border: none;
+  margin-top: 25px;
+  padding: 0;
 }
 
 .subnav:focus-within .subnav-content {
@@ -267,7 +269,7 @@ body {
   border-radius: 50px;
   width: 50px;
   height: 50px;
-  margin-left: 10px;
+  margin-left: 15px;
   opacity: 0.3;
 }
 
@@ -341,7 +343,7 @@ body {
 
 .exit {
   color: rgba(0, 0, 0, 0.3);
-  margin-left: 15px;
+  margin-left: 28px;
 }
 
 .navigation-link-user:hover {
@@ -378,24 +380,19 @@ body {
   align-items: center;
   list-style-type: none;
   margin-left: auto;
+  gap: 36px;
 }
 
-.navigation-list-catalog {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  align-items: center;
-  list-style-type: none;
-  margin-left: auto;
-}
+
 
 .navigation-list-service {
   display: flex;
   align-items: center;
   list-style-type: none;
   margin-left: auto;
-  margin-top: 30px;
-  gap: 50px;
+  margin-top: 40px;
+  gap: 45px;
+  padding: 0;
 }
 
 .authorization {
@@ -406,9 +403,7 @@ body {
 .navigation-item-user {
   display: flex;
   position: relative;
-  gap: 10px;
   align-items: center;
-  padding-left: 45px;
 }
 
 .popover {
@@ -658,7 +653,7 @@ body {
   height: 130px;
   display: block;
   margin-right: 60px;
-  margin-top: 20px;
+  margin-top: 15px;
   margin-left: auto;
 }
 
@@ -669,8 +664,8 @@ body {
   font-weight: 800;
   line-height: 50px;
   text-transform: none;
-  margin-bottom: 29px;
-  margin-top: -20px;
+  margin-bottom: 27px;
+  margin-top: -40px;
 }
 
 .slide {
@@ -1493,7 +1488,7 @@ tbody {
   background-image: url(../images/search-icon.svg);
   background-repeat: no-repeat;
   background-position: 5%;
-  padding-left: 40px;
+  padding-left: 45px;
 }
 
 .search-catalog:focus-visible {
@@ -1509,7 +1504,7 @@ tbody {
   line-height: 30px;
   list-style-type: none;
   align-self: center;
-  margin-left: auto;
+  margin-left: 28px;
 }
 
 .div-user-catalog {
