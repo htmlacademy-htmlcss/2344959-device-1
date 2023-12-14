@@ -757,7 +757,7 @@ body {
 
 .block-active {
   display: flex;
-  margin-left: 243px;
+  margin-left: 115px;
 }
 
 .block-active::after {
@@ -940,9 +940,15 @@ body {
 }
 
 .button-block-current {
+  display: inline-block;
+  text-align: start;
   background-color: #000000;
   color: #FFE17F;
   background: linear-gradient(to top, black 100%, black 100%);
+  padding-top: 9px;
+  padding-left: 15px;
+  width: 280px;
+  height: 40px;
 }
 
 .button-block-current::after {
@@ -952,8 +958,8 @@ body {
   width: 7px;
   height: 319px;
   background-color: #000;
-  bottom: 220%;
-  left: 185%;
+  bottom: 350%;
+  left: 101%;
 }
 
 .button-block-current:focus-visible {
@@ -1243,6 +1249,7 @@ tbody {
 
 .delivery-delivery {
   margin: 70px;
+  margin-right: 73px;
 }
 
 .delivery {
