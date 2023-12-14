@@ -757,15 +757,15 @@ body {
 
 .block-active {
   display: flex;
-  margin-left: 170px;
+  margin-left: 243px;
 }
 
 .block-active::after {
   content: "";
   position: relative;
   background-image: url(../images/delivery-human-images.svg);
-  left: 50px;
-  top: 40px;
+  left: 80px;
+  top: 48px;
   width: 136px;
   height: 165px;
 }
@@ -810,6 +810,7 @@ body {
 
 .block-text {
   max-width: 530px;
+  margin: 0;
 }
 
 .block-image {
@@ -886,11 +887,16 @@ body {
 }
 
 .service-inner {
-  display: block;
+  display: flex;
+  background: linear-gradient(to bottom, transparent 20%, #F0F0F0 20%, #F0F0F0 100%, transparent 100%);
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 120px;
 }
 
 .div-service-list {
   display: flex;
+  width: 1160px;
 }
 
 .service-list {
@@ -937,6 +943,17 @@ body {
   background-color: #000000;
   color: #FFE17F;
   background: linear-gradient(to top, black 100%, black 100%);
+}
+
+.button-block-current::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 7px;
+  height: 319px;
+  background-color: #000;
+  bottom: 220%;
+  left: 185%;
 }
 
 .button-block-current:focus-visible {
@@ -1226,7 +1243,6 @@ tbody {
 
 .delivery-delivery {
   margin: 70px;
-  margin-left: auto;
 }
 
 .delivery {
