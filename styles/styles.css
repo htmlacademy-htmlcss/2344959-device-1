@@ -943,7 +943,7 @@ body {
 }
 
 .button-block:focus-visible {
-  border: solid 2px #8b2ba3;
+  border: solid 2px #AF4FFF;
   outline: none;
 }
 
@@ -2570,8 +2570,8 @@ text-transform: uppercase;
 }
 
 .footer-contacts-address-phone:focus-visible {
-  border: 2px solid #AF4FFF;
-  outline: none;
+  outline: 2px solid #AF4FFF;
+  border: none;
 }
 
 .footer-list {
