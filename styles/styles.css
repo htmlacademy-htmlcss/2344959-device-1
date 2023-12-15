@@ -627,6 +627,22 @@ body {
   opacity: 0.3;
 }
 
+.user-2::after {
+  content: "2";
+  display: flex;
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 1);
+  border: none;
+  width: 21px;
+  height: 21px;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  right: 97%;
+  line-height: normal;
+}
+
 .navigation-user.navigation-link {
   min-width: 16px;
   min-height: 22px;
@@ -674,7 +690,7 @@ body {
 }
 
 .slide-text {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .img-slider-1 {
@@ -760,7 +776,7 @@ body {
   position: relative;
   background-image: url(../images/delivery-human-images.svg);
   left: 80px;
-  top: 48px;
+  top: 50px;
   width: 136px;
   height: 165px;
 }
@@ -801,6 +817,7 @@ body {
   line-height: 50px;
   text-transform: none;
   margin-bottom: 29px;
+  margin-top: 55px;
 }
 
 .block-text {
@@ -967,13 +984,17 @@ body {
   margin-bottom: 35px;
 }
 
+.contact {
+  margin-left: 145px;
+}
+
 .contact-title {
   font-family: Raleway, sans-serif;
   font-size: 50px;
   font-style: normal;
   font-weight: 800;
   line-height: 50px;
-  margin-bottom: 48px;
+  margin-bottom: 55px;
 }
 
 .contact-title::before {
@@ -986,12 +1007,18 @@ body {
   bottom: 40px;
 }
 
+.contacts-text {
+  font-style: normal;
+  margin-bottom: 0;
+}
+
 .text {
   font-family: Rubik, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
+  margin-bottom: 25px;
 }
 
 .title {
@@ -1001,6 +1028,7 @@ body {
   font-weight: 700;
   line-height: 30px;
   margin-bottom: 15px;
+  margin-top: 27px;
 }
 
 .button-main {
@@ -1046,8 +1074,17 @@ body {
   color: black;
 }
 
-.contacts-text {
-  font-style: normal;
+.contacts-phone:hover {
+  opacity: 0.6;
+}
+
+.contacts-phone:active {
+  opacity: 0.3;
+}
+
+.contacts-phone:focus-visible {
+  outline: 2px solid #AF4FFF;
+  border: none;
 }
 
 .button-button:hover {
@@ -1275,7 +1312,14 @@ tbody {
 
 .delivery-text {
   align-self: center;
-  margin-left: 230px;
+  margin-left: 200px;
+font-family: Raleway, sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+letter-spacing: 4px;
+text-transform: uppercase;
 }
 
 .appointment {
@@ -1294,7 +1338,6 @@ tbody {
   display: flex;
   gap: 14px;
   padding-left: 10px;
-  margin-bottom: 70px;
 }
 
 .subscribe {
@@ -1308,6 +1351,7 @@ tbody {
 
 .subscribe1 {
   display: flex;
+  padding-top: 15px;
 }
 
 .subscribe2 {
@@ -1390,17 +1434,14 @@ tbody {
 }
 
 .text-subscribe {
-  margin-top: 74px;
+  margin-top: 69px;
+  margin-right: 47px;
   width: 560px;
 }
 
 .subscribe2-text {
   margin: 0;
   margin-left: auto;
-}
-
-.contact {
-  margin-left: 108px;
 }
 
 .item {
@@ -1437,10 +1478,6 @@ tbody {
   display: grid;
   grid-template-columns: 400px 1fr 400px;
   margin-top: 62px;
-}
-
-.footer-list-item {
-  padding-left: 35px;
 }
 
 .button-footer {
@@ -1779,6 +1816,16 @@ tbody {
   height: 40px;
   display: inline-block;
   width: 220px;
+}
+
+.button-catalog-filter::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 200px;
+  border-bottom: 2px solid #000;
+  right: 3px;
+  bottom: 155px;
 }
 
 .button-catalog-filter:hover {
@@ -2531,9 +2578,10 @@ tbody {
   display: flex;
   list-style-type: none;
   grid-column: 2/-2;
-  margin-right: 55px;
+  margin-right: 85px;
   margin-top: 30px;
   padding-left: 0;
+  gap: 35px;
 }
 
 .social-list {
