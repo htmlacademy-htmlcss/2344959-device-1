@@ -2667,5 +2667,5 @@ text-transform: uppercase;
 }
 
 .htmlacademy-link:focus-visible {
-  outline: 2px #8b2ba3 solid;
+  outline: 2px solid #AF4FFF;
 }
