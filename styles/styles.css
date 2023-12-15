@@ -775,8 +775,8 @@ body {
   content: "";
   position: relative;
   background-image: url(../images/delivery-human-images.svg);
-  left: 80px;
-  top: 50px;
+  left: 40px;
+  top: 58px;
   width: 136px;
   height: 165px;
 }
