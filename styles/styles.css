@@ -1114,14 +1114,27 @@ tbody {
   font-style: normal;
   font-weight: 800;
   line-height: 50px;
+  margin-top: 50px;
+  margin-bottom: 12px;
 }
 
 .select {
   display: flex;
-  padding: 20px 40px;
+  padding: 15px 40px;
   align-items: center;
   background-color: #F0F0F0;
   width: 840px;
+}
+
+.select-text {
+  margin-right: auto;
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
 }
 
 .select-control {
@@ -1134,6 +1147,7 @@ tbody {
   line-height: 30px;
   border: none;
   background-color: #F0F0F0;
+  outline: none;
 }
 
 .select-control:hover {
@@ -1159,6 +1173,7 @@ tbody {
   opacity: 0.2;
   width: 30px;
   height: 30px;
+  padding-right: 0;
 }
 
 .button-icons-catalog:hover {
@@ -1178,15 +1193,6 @@ tbody {
 
 }
 
-
-.catalog-filter-title {
-  font-family: Rubik, sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 20px;
-}
-
 .range-bar::before {
   display: block;
   position: relative;
@@ -1195,17 +1201,6 @@ tbody {
   border-bottom: 2px solid #000;
   right: -2px;
   top: 66px;
-}
-
-.select-text {
-  margin-right: 260px;
-  font-family: Raleway;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  letter-spacing: 3.2px;
-  text-transform: uppercase;
 }
 
 .catalog-container {
@@ -1222,8 +1217,7 @@ tbody {
 }
 
 .filter-catalog {
-  padding-left: 60px;
-  padding-right: 60px;
+  padding: 0 53px;
   width: 320px;
 }
 
@@ -1233,8 +1227,8 @@ tbody {
   gap: 40px;
   width: 840px;
   list-style-type: none;
-  margin-bottom: 44px;
-  padding-top: 70px;
+  margin-bottom: 42px;
+  padding-top: 45px;
   background-color: rgb(255, 255, 255);
 }
 
@@ -1561,6 +1555,7 @@ tbody {
   display: grid;
   grid-column: 1/3;
   overflow: hidden;
+  margin-bottom: 5px;
 }
 
 .product-new + .div-product-card::after {
@@ -1768,12 +1763,6 @@ tbody {
   outline: 2px solid #AF4FFF;
 }
 
-.catalog-filter-group {
-  border: none;
-  padding-left: 0;
-  margin-top: 35px;
-}
-
 .button-catalog-filter {
   color: #000000;
   text-align: center;
@@ -1813,14 +1802,32 @@ tbody {
   pointer-events: none;
 }
 
+.catalog-filter-title {
+  font-family: Rubik, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  padding-left: 7px;
+}
+
 .catalog-filter-list {
   list-style-type: none;
   padding-left: 0;
+  margin-top: 10px;
+}
+
+.catalog-filter-group {
+  border: none;
+  padding-left: 0;
+  margin-top: 45px;
+  margin-left: 0;
+  padding-bottom: 0;
 }
 
 .filter-title {
   margin: 0;
-  padding-top: 25px;
+  padding-top: 30px;
   padding-bottom: 25px;
   font-family: Raleway, sans-serif;
   font-size: 16px;
@@ -1837,12 +1844,12 @@ tbody {
   position: relative;
   width: 200px;
   border-bottom: 2px solid black;
-  top: 45px;
+  top: 57px;
   right: -5px;
 }
 
 .range {
-  margin-top: 30px;
+  margin-top: 22px;
 }
 
 .range-scale {
@@ -1974,6 +1981,7 @@ tbody {
 .control {
   display: flex;
   gap: 16px;
+  margin-bottom: 5px;
 }
 
 .control:hover {
@@ -2069,6 +2077,8 @@ tbody {
   text-decoration: none;
   padding-left: 0;
   gap: 32px;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .breadcrumbs-icons {
@@ -2149,7 +2159,6 @@ tbody {
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
@@ -2501,7 +2510,7 @@ tbody {
   justify-self: end;
   height: 25px;
   margin-right: 100px;
-  margin-top: 25px;
+  margin-top: 35px;
 }
 
 .footer-contacts-address-phone:hover {
@@ -2522,8 +2531,9 @@ tbody {
   display: flex;
   list-style-type: none;
   grid-column: 2/-2;
-  padding: 3;
-  justify-self: s;
+  margin-right: 55px;
+  margin-top: 30px;
+  padding-left: 0;
 }
 
 .social-list {
