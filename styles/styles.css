@@ -1230,15 +1230,7 @@ tbody {
 
 }
 
-.range-bar::before {
-  display: block;
-  position: relative;
-  content: "";
-  width: 200px;
-  border-bottom: 2px solid #000;
-  right: -2px;
-  top: 66px;
-}
+
 
 .catalog-container {
 
@@ -1818,15 +1810,6 @@ text-transform: uppercase;
   width: 220px;
 }
 
-.button-catalog-filter::before {
-  content: "";
-  display: block;
-  position: relative;
-  width: 200px;
-  border-bottom: 2px solid #000;
-  right: 3px;
-  bottom: 155px;
-}
 
 .button-catalog-filter:hover {
   background-color: #FFE17F;
@@ -1870,6 +1853,18 @@ text-transform: uppercase;
   margin-top: 45px;
   margin-left: 0;
   padding-bottom: 0;
+
+}
+
+.catalog-filter-group::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 200px;
+  height: 2px;
+  background-color: #000;
+  top: -43px;
+  right: -5px;
 }
 
 .filter-title {
@@ -1883,16 +1878,6 @@ text-transform: uppercase;
   line-height: normal;
   letter-spacing: 3.2px;
   text-transform: uppercase;
-}
-
-.filter-title::after {
-  display: block;
-  content: "";
-  position: relative;
-  width: 200px;
-  border-bottom: 2px solid black;
-  top: 57px;
-  right: -5px;
 }
 
 .range {
