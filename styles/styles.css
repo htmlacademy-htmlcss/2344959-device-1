@@ -215,6 +215,10 @@ body {
   width: 1160px;
 }
 
+.subnav:focus-within .link::after {
+ background-image: url(../images/minus.svg);
+}
+
 .subnav-list {
   display: block;
   list-style-type: none;
@@ -273,9 +277,6 @@ body {
   opacity: 0.3;
 }
 
-.link:active::after {
-  display: none;
-}
 
 .link:hover::after {
   border: 2px solid #000000;
@@ -1496,25 +1497,6 @@ text-transform: uppercase;
   color: #ffffff;
   outline: 2px solid #AF4FFF;
   border-bottom: none;
-}
-
-.search-catalog {
-  font-family: Rubik, sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  list-style-type: none;
-  text-decoration: none;
-  border-radius: 50px 0 0 50px;
-  border: 2px solid #000;
-  width: 359px;
-  height: 40px;
-  align-items: center;
-  background-color: #FFE17F;
-  background-image: url(../images/search-icon.svg);
-  background-repeat: no-repeat;
-  background-position: 5%;
-  padding-left: 45px;
 }
 
 .search-catalog:focus-visible {
