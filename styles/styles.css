@@ -115,7 +115,6 @@ body {
   background-position: 5%;
   padding-left: 40px;
   width: 359px;
-
 }
 
 .search::placeholder {
@@ -425,7 +424,7 @@ body {
   z-index: 1;
   width: 320px;
   padding: 20px;
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: "Rubik", sans-serif;
   color: #FFF;
   background-color: #ffffff;
   background: #000;
@@ -575,7 +574,7 @@ body {
 
 .popover-button {
   text-align: center;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -1541,7 +1540,7 @@ tbody {
 
 .authorization-catalog {
   display: flex;
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -1584,7 +1583,7 @@ tbody {
   text-align: center;
   width: 220px;
   height: 40px;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -1663,7 +1662,7 @@ tbody {
 
 .product-card-price {
   margin: 0;
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -2146,7 +2145,7 @@ tbody {
 }
 
 .breadcrumbs-item {
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -2376,7 +2375,7 @@ tbody {
   background-color: #F0F0F0;
   border: none;
   padding: 20px;
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -2421,7 +2420,7 @@ tbody {
   width: 60px;
   height: 60px;
   border: none;
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 16px;
   font-style: normal;
 }
@@ -2451,7 +2450,7 @@ tbody {
   background-color: #F0F0F0;
   border: none;
   padding: 20px;
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 16px;
   font-style: normal;
 }
@@ -2480,7 +2479,7 @@ tbody {
   height: 60px;
   border: none;
   background-color: #F0F0F0;
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
