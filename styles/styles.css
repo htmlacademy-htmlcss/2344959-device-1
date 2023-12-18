@@ -1056,10 +1056,10 @@ body {
 }
 
 .title {
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-margin-bottom: 18px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 18px;
 }
 
 .button-main {
@@ -1881,7 +1881,7 @@ tbody {
 }
 
 .catalog-filter-group:last-of-type {
- margin-top: 28px;
+  margin-top: 28px;
 }
 
 .catalog-filter-group::before {
