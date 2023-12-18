@@ -54,6 +54,12 @@ body {
   padding: 0;
 }
 
+.page-header {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 1160px;
+}
+
 .navigation {
   position: relative;
   background-size: 100% auto;
@@ -883,8 +889,7 @@ body {
   flex-direction: column;
   text-decoration: none;
   width: 160px;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
 }
 
 .product-title {
@@ -1483,12 +1488,15 @@ tbody {
 .page-footer {
   color: #ffffff;
   background-color: #444;
+  padding-top: 62px;
+  padding-bottom: 62px;
 }
 
 .footer-inner {
   display: grid;
-  grid-template-columns: 400px 1fr 400px;
-  margin-top: 62px;
+  grid-template-columns: 240px 1fr 240px;
+  column-gap: 20px;
+  row-gap: 35px;
 }
 
 .button-footer {
@@ -2171,17 +2179,21 @@ tbody {
 
 .contacts-address-text {
   font-style: normal;
-  padding-top: 10px;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
 }
 
-.contacts-address-text::after {
+.page-footer::after {
   display: block;
   content: "";
   position: relative;
   width: 80px;
   height: 7px;
   background-color: #FFC700;
-  top: 50px;
+  top: -10px;
+  right: -347px;
 }
 
 .contacts-address {
@@ -2541,9 +2553,8 @@ tbody {
   color: rgb(255, 255, 255);
   grid-column: 3/-1;
   justify-self: end;
+  margin-top: 7px;
   height: 25px;
-  margin-right: 95px;
-  margin-top: 40px;
 }
 
 .footer-contacts-address-phone:hover {
@@ -2564,20 +2575,23 @@ tbody {
   display: flex;
   list-style-type: none;
   grid-column: 2/-2;
-  margin-right: 85px;
-  margin-top: 30px;
-  padding-left: 0;
   gap: 35px;
+  justify-self: center;
+  letter-spacing: 3.6px;
+  margin: 0;
+  padding: 0;
 }
 
 .social-list {
   display: flex;
+  flex-wrap: wrap;
   grid-column: 2/2;
   list-style-type: none;
   justify-content: center;
+  align-content: center;
   gap: 15px;
-  padding-left: 0;
-  padding-right: 95px;
+  padding: 0;
+  margin: 0;
 }
 
 .social-link {
@@ -2641,7 +2655,6 @@ tbody {
   display: block;
   width: 115px;
   height: 33px;
-  margin-right: 93px;
   fill: #FFC700;
   margin-top: 10px;
 }
