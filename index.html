@@ -304,22 +304,19 @@
 
         <div class="delivery-delivery">
           <a href="#" class="delivery container">
-            <svg class="delivery-svg" width="125" height="100" role="img" aria-label="Иконка доставки"
-              viewBox="0 0 125 100" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 0h125v100H0z" />
-              <g clip-path="url(#a)" fill="#000">
-                <path
-                  d="m85.7 50.4-6.5-8.2c-.3-.4-.7-.6-1.2-.6h-8.3v-5.1c0-.8-.7-1.5-1.5-1.5H40.5c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5h26.2v21.7H54.8c-.6-1.9-2.4-3.3-4.5-3.3-2.6 0-4.8 2.2-4.8 4.8 0 2.6 2.2 4.8 4.8 4.8 2.1 0 3.9-1.4 4.5-3.3h13.4c.8 0 1.5-.7 1.5-1.5V44.6h7.6l5.7 7.3v7.9h-2.2c-.6-1.9-2.4-3.3-4.5-3.3-2.6 0-4.8 2.2-4.8 4.8 0 2.6 2.1 4.8 4.8 4.8 2.1 0 3.9-1.4 4.5-3.3h3.7c.8 0 1.5-.7 1.5-1.5v-9.9c0-.4-.1-.7-.3-1ZM50.3 63c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.9 1.8-1.8 1.8Zm26.1 0c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.9 1.8-1.8 1.8Z" />
-                <path
-                  d="M58.4 44.6c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5H43.8c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5h14.6ZM56.7 49.7c0-.8-.7-1.5-1.5-1.5H40.5c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5h14.7c.8 0 1.5-.7 1.5-1.5Z" />
+            <span class="delivery-text">Доставим редкий товар под заказ</span>
+            <svg class="delivery-svg" width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20.5" cy="20" r="20" fill="#DCDCDC" fill-opacity="0.5"/>
+              <g opacity="0.3" clip-path="url(#clip0_47202_719)">
+              <path d="M21 14H19V16H21V14Z" fill="black"/>
+              <path d="M21 18H19V26H21V18Z" fill="black"/>
               </g>
               <defs>
-                <clipPath id="a">
-                  <path transform="translate(39 35)" d="M0 0h47v31H0z" />
-                </clipPath>
+              <clipPath id="clip0_47202_719">
+              <rect width="2" height="12" fill="white" transform="translate(19 14)"/>
+              </clipPath>
               </defs>
-            </svg>
-            <span class="delivery-text">Доставим редкий товар под заказ</span>
+              </svg>
           </a>
         </div>
 
@@ -477,7 +474,7 @@
               </p>
               <div class="form-item">
                 <span class="label-modal">
-                  <label class="label-modal">Количество:</label>
+                  <label class="label-modal" for="quantity">Количество:</label>
                   <span class="tooltip">
                     <button class="tooltip-toggle" type="button"><span class="visually-hidden">Кнопка с подсказкой</span></button>
                     <span class="tooltip-text">Постараемся найти, сколько нужно. Привезём сколько получится по
@@ -487,7 +484,7 @@
                 </span>
                 <p class="div-button">
                   <button class="mini-button" type="button">-<span class="visually-hidden">Уменьшить количество</span></button>
-                  <input class="mini-input" value="1" placeholder="1">
+                  <input class="mini-input" value="1" placeholder="1" id="quantity">
                   <button class="mini-button" type="button">+<span class="visually-hidden">Увеличить количество</span></button>
               </div>
             </div>

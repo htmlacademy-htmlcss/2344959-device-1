@@ -213,7 +213,7 @@ body {
 
 .subnav-content {
   background-color: rgba(255, 225, 127, 1);
-  display: flex;
+  display: none;
   position: absolute;
   z-index: 1;
   top: 167px;
@@ -401,6 +401,7 @@ body {
 
 .navigation-list-service {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   list-style-type: none;
   margin-left: auto;
@@ -1294,11 +1295,12 @@ tbody {
 
 .delivery-delivery {
   margin: 70px;
-  margin-right: 73px;
+  margin-right: 68px;
 }
 
 .delivery {
-  display: flex;
+  display: grid;
+  grid-template-columns: 125px 1fr 125px;
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
@@ -1307,14 +1309,23 @@ tbody {
   text-decoration: none;
   color: #000000;
   background-color: #f0f0f0;
+  padding-top: 3px;
+}
+
+.delivery::before {
+  content: "";
+  display: block;
+  background-image: url("../images/car-delivery.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 125px;
+  height: 100px;
+  background-color: #FFE17F;
 }
 
 .delivery-svg {
-  fill: #ffe17f;
-}
-
-.delivery-svg:hover {
-  fill: #ffc700;
+  margin-left: 43px;
+  margin-top: 30px;
 }
 
 .delivery:active {
@@ -1331,7 +1342,6 @@ tbody {
 
 .delivery-text {
   align-self: center;
-  margin-left: 200px;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   font-style: normal;
