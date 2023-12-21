@@ -66,12 +66,12 @@ body {
   background-repeat: no-repeat;
   padding-left: 60px;
   padding-right: 60px;
-  background: linear-gradient(to bottom, #FFFFFF 10%, #FFE17F 10%, #FFE17F 100%);
+  background: linear-gradient(to bottom, #ffffff 10%, #ffe17f 10%, #ffe17f 100%);
 }
 
 .navigation-logo {
   display: block;
-  fill: #000;
+  fill: #000000;
   vertical-align: top;
   width: 145px;
   height: 36px;
@@ -86,7 +86,7 @@ body {
 }
 
 .navigation-logo:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
 }
 
 .logo {
@@ -99,18 +99,18 @@ body {
 }
 
 .search {
-  font-family: Rubik, sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   list-style-type: none;
   text-decoration: none;
   border-radius: 50px 0 0 50px;
-  border: 2px solid #000;
-  background-color: #FFE17F;
+  border: 2px solid #000000;
+  background-color: #ffe17f;
   flex-grow: 1;
   min-height: 40px;
-  background-image: url(../images/search-icon.svg);
+  background-image: url("../images/search-icon.svg");
   background-repeat: no-repeat;
   background-position: 5%;
   padding-left: 40px;
@@ -122,12 +122,12 @@ body {
 }
 
 .search:hover {
-  color: black;
+  color: #000000;
 }
 
 .search-label:focus-within {
   position: relative;
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 2px;
   z-index: 1;
 }
@@ -137,20 +137,20 @@ body {
 }
 
 .search:disabled {
-  color: #EBEBEB;
-  border-color: #EBEBEB;
+  color: #ebebeB;
+  border-color: #ebebeb;
 }
 
 .button-search {
   position: relative;
-  font-family: Rubik, sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   list-style-type: none;
   text-decoration: none;
   border-radius: 0 50px 50px 0;
-  border: 2px solid #000;
+  border: 2px solid #000000;
   min-width: 160px;
   max-width: 200px;
   background-color: #FFE17F;
@@ -162,7 +162,7 @@ body {
   content: "";
   position: absolute;
   inset: -4px;
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
 }
 
 .button-search:not(:disabled):hover {
@@ -190,18 +190,18 @@ body {
 }
 
 .link {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-style: normal;
   text-decoration: none;
   font-weight: 800;
-  color: black;
+  color: #000000;
   text-transform: uppercase;
   letter-spacing: 3.6px;
   display: flex;
   align-items: center;
   height: 53px;
-  background-color: #FFE17F;
+  background-color: #ffe17f;
   border: none;
   margin-top: 25px;
   padding: 0;
@@ -211,29 +211,42 @@ body {
   display: flex;
 }
 
+.subnav {
+  position: relative;
+}
+
 .subnav-content {
   background-color: rgba(255, 225, 127, 1);
   display: none;
+  flex-wrap: wrap;
   position: absolute;
   z-index: 1;
-  top: 167px;
-  left: 0%;
+  top: 100%;
+  left: -60px;
   width: 1160px;
+  padding: 0 60px;
+  gap: 58px;
+  align-items: start;
+  padding-left: 60px;
+  padding-bottom: 54px;
 }
 
 .subnav:focus-within .link::after {
-  background-image: url(../images/minus.svg);
+  background-image: url("../images/minus.svg");
 }
 
 .subnav-list {
-  display: block;
+  display: grid;
   list-style-type: none;
-  padding-bottom: 80px;
-  padding-left: 65px;
+ padding: 0;
+ margin: 0;
+ min-width: 155px;
+ max-width: 200px;
+ gap: 7px;
 }
 
 .subnav-link {
-  font-family: Rubik, sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -241,6 +254,7 @@ body {
   color: rgba(0, 0, 0, 1);
   text-decoration: none;
   padding-bottom: 3px;
+  padding-top: 4px;
 }
 
 .subnav-link:hover {
@@ -252,7 +266,7 @@ body {
 }
 
 .subnav-link:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
 }
 
 .subnav-link:disabled {
@@ -260,22 +274,22 @@ body {
 }
 
 .current {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #000000;
   outline-offset: 2px;
 }
 
 .link:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 1px;
 }
 
 .link::after {
   content: "";
   display: block;
-  background-image: url(../images/plus-1.svg);
+  background-image: url("../images/plus-1.svg");
   background-repeat: no-repeat;
   background-position: center;
-  border: 2px solid #444;
+  border: 2px solid rgba(0, 0, 0, 1);
   border-radius: 50px;
   width: 50px;
   height: 50px;
@@ -295,11 +309,11 @@ body {
 }
 
 .navigation-link {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-style: normal;
   text-decoration: none;
-  color: black;
+  color: #000000;
   text-transform: uppercase;
   letter-spacing: 3.6px;
   padding-bottom: 4px;
@@ -315,16 +329,16 @@ body {
 }
 
 .navigation-link:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
 }
 
 .navigation-link.current {
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #000000;
 
 }
 
 .user-name::before {
-  background-image: url(../images/icon-authorization-1.svg);
+  background-image: url("../images/icon-authorization-1.svg");
   content: "";
   width: 15px;
   height: 12px;
@@ -343,12 +357,12 @@ body {
   display: flex;
   gap: 10px;
   align-items: center;
-  font-family: Rubik, sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
-  color: black;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -358,15 +372,16 @@ body {
 }
 
 .navigation-link-user:hover {
-  color: #444;
+  color: #000000;
+  opacity: 0.6;
 }
 
 .navigation-link-user:active {
-  color: #F0F0F0;
+  color: #f0f0f0;
 }
 
 .navigation-link-user:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
 }
 
 .navigation-form {
@@ -375,7 +390,7 @@ body {
 }
 
 .search-label:focus-within {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 2px;
   position: relative;
 }
@@ -394,16 +409,17 @@ body {
   gap: 36px;
 }
 
-
-
 .navigation-list-service {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   list-style-type: none;
   margin-left: auto;
   margin-top: 40px;
-  gap: 45px;
+  gap: 18px 45px;
   padding: 0;
+  max-width: 710px;
+  justify-content: end;
 }
 
 .authorization {
@@ -418,18 +434,18 @@ body {
 }
 
 .popover {
+  display: none;
   position: absolute;
   top: 120%;
-  right: -50%;
+  right: -76%;
   z-index: 1;
   width: 320px;
   padding: 20px;
   font-family: "Rubik", sans-serif;
-  color: #FFF;
+  color: #ffffff;
   background-color: #ffffff;
-  background: #000;
+  background: #000000;
   min-height: 307px;
-  display: none;
 }
 
 .popover:hover + .popover::before,
@@ -456,6 +472,9 @@ body {
 }
 
 .popover-list {
+  display: grid;
+  gap: 37px;
+  margin-bottom: 8px;
   list-style-type: none;
   padding: 0;
 }
@@ -467,7 +486,6 @@ body {
 .cart-item {
   display: flex;
   align-items: center;
-  padding: 20px;
 
 }
 
@@ -478,7 +496,7 @@ body {
 .popover-link {
   display: flex;
   align-items: center;
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   height: 47px;
   margin-right: 30px;
@@ -493,7 +511,7 @@ body {
 }
 
 .popover-link:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
@@ -523,7 +541,7 @@ body {
 }
 
 .cart-item-button:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
@@ -539,13 +557,13 @@ body {
   height: 44px;
   padding-left: 20px;
   padding-right: 20px;
-  margin: 20px;
-  margin-top: 10px;
-  background-color: #1A1A1A;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  background-color: #1a1a1a;
 }
 
 .popover-div-text {
-  font-family: Rubik, sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -553,28 +571,29 @@ body {
 }
 
 .popover-text {
-  font-family: Rubik, sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
   margin-left: 23px;
+  margin-top: 7px;
 }
 
 .cart-item-price {
   margin: 0;
   text-align: right;
-  font-family: Rubik, sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .popover-button {
   text-align: center;
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -583,13 +602,13 @@ body {
   text-transform: uppercase;
   color: #000000;
   background-color: #ffffff;
-  padding: 10px 20px;
+  padding: 10px 23px;
   border: none;
   height: 50px;
 }
 
 .popover-button:hover {
-  background-color: #FFE17F;
+  background-color: #ffe17f;
 }
 
 .popover-button:active {
@@ -598,7 +617,7 @@ body {
 }
 
 .popover-button:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
@@ -607,7 +626,7 @@ body {
 }
 
 .user-1::before {
-  background-image: url(../images/icon-navigation-1.svg);
+  background-image: url("../images/icon-navigation-1.svg");
   content: "";
   width: 10px;
   height: 12px;
@@ -623,7 +642,7 @@ body {
 }
 
 .user-2::before {
-  background-image: url(../images/icon-navigation-2.svg);
+  background-image: url("../images/icon-navigation-2.svg");
   content: "";
   width: 16px;
   height: 14px;
@@ -671,14 +690,14 @@ body {
 
 .slide-active {
   display: flex;
-  background: linear-gradient(to bottom, #FFE17F 127px, #FFFFFF 127px);
+  background: linear-gradient(to bottom, #ffe17f 127px, #ffffff 127px);
 }
 
 .slide-content-1::before {
   content: "";
   width: 250px;
   height: 135px;
-  background-image: url(../images/nambers-01.svg);
+  background-image: url("../images/nambers-01.svg");
   background-repeat: no-repeat;
   display: block;
   margin-top: 10px;
@@ -689,7 +708,7 @@ body {
   content: "";
   width: 250px;
   height: 135px;
-  background-image: url(../images/nambers-02.svg);
+  background-image: url("../images/nambers-02.svg");
   background-repeat: no-repeat;
   display: block;
   margin-top: 10px;
@@ -700,7 +719,7 @@ body {
   content: "";
   width: 250px;
   height: 135px;
-  background-image: url(../images/nambers-03.svg);
+  background-image: url("../images/nambers-03.svg");
   background-repeat: no-repeat;
   display: block;
   margin-top: 10px;
@@ -720,7 +739,7 @@ body {
 
 .slide {
   display: none;
-  background: linear-gradient(to bottom, #FFE17F 127px, #FFFFFF 127px);
+  background: linear-gradient(to bottom, #ffe17f 127px, #ffffff 127px);
   padding-right: 49px;
 }
 
@@ -734,12 +753,12 @@ body {
 
 .slider-arrow {
   position: absolute;
-  top: 33%;
+  top: 35%;
   width: 20px;
   height: 60px;
   border: none;
   background-color: transparent;
-  background-image: url(../images/arrow.svg);
+  background-image: url("../images/arrow.svg");
 }
 
 .slider-arrow:hover {
@@ -751,7 +770,7 @@ body {
 }
 
 .slider-arrow:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
 
 }
 
@@ -772,7 +791,7 @@ body {
   position: relative;
   width: 12px;
   height: 12px;
-  border: 2px solid #000;
+  border: 2px solid #000000;
   border-radius: 6px;
   background-color: transparent;
   padding: 0;
@@ -782,7 +801,7 @@ body {
   content: "";
   position: absolute;
   inset: -4px;
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
 }
 
 .slider-point:hover {
@@ -798,7 +817,7 @@ body {
 }
 
 .slider-point-current {
-  background-color: #000;
+  background-color: #000000;
 }
 
 .block-active {
@@ -806,11 +825,22 @@ body {
   margin-left: 120px;
 }
 
+.button-block-current::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 7px;
+  height: 319px;
+  background-color: #000000;
+  bottom: 355%;
+  left: 102%;
+}
+
 .block-active::after {
   content: "";
   position: relative;
-  background-image: url(../images/delivery-human-images.svg);
-  left: 40px;
+  background-image: url("../images/delivery-human-images.svg");
+  left: 104px;
   top: 58px;
   width: 136px;
   height: 165px;
@@ -818,12 +848,13 @@ body {
 
 .block-guarantee {
   display: none;
+  margin-left: 120px;
 }
 
 .block-guarantee::after {
   content: "";
   position: relative;
-  background-image: url(../images/guarantee-image.svg);
+  background-image: url("../images/guarantee-image.svg");
   left: 50px;
   top: 40px;
   width: 136px;
@@ -832,12 +863,13 @@ body {
 
 .block-credit {
   display: none;
+  margin-left: 120px;
 }
 
 .block-credit::after {
   content: "";
   position: relative;
-  background-image: url(../images/credit-image.svg);
+  background-image: url("../images/credit-image.svg");
   left: 50px;
   top: 40px;
   width: 136px;
@@ -851,13 +883,13 @@ body {
   font-weight: 800;
   line-height: 50px;
   text-transform: none;
-  margin-bottom: 29px;
+  margin-bottom: 33px;
   margin-top: 55px;
 }
 
 .block-text {
   max-width: 530px;
-  margin: 0;
+  margin-left: 2px;
 }
 
 .block-image {
@@ -877,6 +909,7 @@ body {
 
 .products {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   padding-left: 0;
   margin-top: 70px;
@@ -884,6 +917,41 @@ body {
   background-color: #ffffff;
   gap: 40px;
 }
+
+.product-link::before {
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffe17f;
+  width: 160px;
+  height: 160px;
+}
+
+.product-1::before {
+  background-image: url("../images/image-svg-1.svg");
+}
+
+.product-2::before {
+  background-image: url("../images/image-svg-2.svg");
+}
+
+.product-3::before {
+  background-image: url("../images/image-svg-3.svg");
+}
+
+.product-4::before {
+  background-image: url("../images/image-svg-4.svg");
+}
+
+.product-5::before {
+  background-image: url("../images/image-svg-5.svg");
+}
+
+.product-6::before {
+  background-image: url("../images/image-svg-6.svg");
+}
+
 
 .product-link {
   display: flex;
@@ -894,19 +962,15 @@ body {
 }
 
 .product-title {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
   line-height: 24px;
   letter-spacing: -0.36px;
-  color: #000;
+  color: #000000;
   margin-top: 32px;
   margin-bottom: 10px;
-}
-
-.product-item:hover {
-  color: #444;
 }
 
 .product-link:active {
@@ -914,26 +978,17 @@ body {
 }
 
 .product-link:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 2px;
-
 }
 
-.product-image {
-  background-color: #FFE17F;
-}
-
-.product-image:hover {
-  background-color: #FFC700;
-}
-
-.product-image:active {
-  background-color: #FFE17F;
+.product-link:hover::before {
+  background-color: #ffc700;
 }
 
 .service-inner {
   display: flex;
-  background: linear-gradient(to bottom, transparent 23%, #F0F0F0 23%, #F0F0F0 100%, transparent 100%);
+  background: linear-gradient(to bottom, transparent 23%, #f0f0f0 23%, #f0f0f0 100%, transparent 100%);
   width: 100%;
   justify-content: center;
   padding-bottom: 120px;
@@ -953,7 +1008,7 @@ body {
 .button-block {
   color: #000000;
   text-align: center;
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   letter-spacing: 3.6px;
   font-size: 18px;
   font-weight: 800;
@@ -961,22 +1016,22 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   border-color: transparent;
-  background: linear-gradient(to bottom, transparent 40%, #FFE17F 40%, #FFE17F 60%, transparent 60%);
+  background: linear-gradient(to bottom, transparent 40%, #ffe17f 40%, #ffe17f 60%, transparent 60%);
   height: 40px;
   display: inline-block;
   width: 160px;
 }
 
 .button-block:hover {
-  background-color: #FFE17F;
+  background-color: #ffe17f;
 }
 
 .button-block:active {
-  background: linear-gradient(to bottom, #FFC700 100%, #FFC700 100%);
+  background: linear-gradient(to bottom, #ffe700 100%, #ffc700 100%);
 }
 
 .button-block:focus-visible {
-  border: solid 2px #AF4FFF;
+  border: solid 2px #af4fff;
   outline: none;
 }
 
@@ -988,28 +1043,17 @@ body {
   display: inline-block;
   text-align: start;
   background-color: #000000;
-  color: #FFE17F;
-  background: linear-gradient(to top, black 100%, black 100%);
+  color: #ffe17f;
+  background: linear-gradient(to top, #000000 100%, #000000 100%);
   padding-top: 9px;
   padding-left: 15px;
   width: 280px;
   height: 40px;
 }
 
-.button-block-current::after {
-  content: "";
-  display: block;
-  position: relative;
-  width: 7px;
-  height: 319px;
-  background-color: #000;
-  bottom: 350%;
-  left: 101%;
-}
-
 .button-block-current:focus-visible {
   box-shadow:
-    0 0 0 2px #AF4FFF,
+    0 0 0 2px #af4fff,
     0 0 0 3px transparent;
 }
 
@@ -1017,17 +1061,13 @@ body {
   margin-bottom: 35px;
 }
 
-.contact {
-  margin-left: 145px;
-}
-
 .contact-title {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 50px;
   font-style: normal;
   font-weight: 800;
   line-height: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
 }
 
 .contact-title::before {
@@ -1036,7 +1076,7 @@ body {
   position: relative;
   width: 84px;
   height: 7px;
-  background-color: #000;
+  background-color: #000000;
   bottom: 40px;
 }
 
@@ -1046,12 +1086,13 @@ body {
 }
 
 .text {
-  font-family: Rubik, sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
   margin-bottom: 25px;
+  margin-top: 0;
 }
 
 .title {
@@ -1064,7 +1105,7 @@ body {
 .button-main {
   color: #000000;
   text-align: center;
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   letter-spacing: 3.6px;
   font-size: 18px;
   font-style: normal;
@@ -1073,23 +1114,23 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   border-color: transparent;
-  background: linear-gradient(to top, transparent 40%, #FFE17F 40%, #FFE17F 60%, transparent 20%);
+  background: linear-gradient(to top, transparent 40%, #ffe17f 40%, #ffe17f 60%, transparent 20%);
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 230px;
-  margin-top: 30px;
-  margin-left: 24px;
+  width: 210px;
+  margin-top: 28px;
+  margin-left: 9px;
 }
 
 .button-main:hover {
-  background-color: #FFE17F;
+  background-color: #ffe17f;
 }
 
 .button-main:active {
-  background-color: #FFC700;
-  background: linear-gradient(to top, #FFC700 100%, #FFC700 100%);
+  background-color: #ffc700;
+  background: linear-gradient(to top, #ffc700 100%, #ffc700 100%);
 }
 
 .button-main:disabled {
@@ -1097,13 +1138,13 @@ body {
 }
 
 .button-main:focus-visible {
-  border: solid 2px #AF4FFF;
+  border: solid 2px #af4fff;
   outline: none;
 }
 
 .contacts-phone {
   font-style: normal;
-  color: black;
+  color: #000000;
 }
 
 .contacts-phone:hover {
@@ -1115,25 +1156,25 @@ body {
 }
 
 .contacts-phone:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   border: none;
 }
 
 .button-button:hover {
-  background: #FFE17F;
+  background: #ffe17f;
 }
 
 .button-button:active {
-  background: #FFC700;
+  background: #ffc700;
 }
 
 .button-button:focus-visible {
-  outline: #AF4FFF solid 2px;
+  outline: #af4fff solid 2px;
 }
 
 .button-current {
   background-color: #000000;
-  color: #FFE17F;
+  color: #ffe17f;
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -1145,9 +1186,10 @@ body {
 
 .table {
   margin-top: 50px;
+
 }
 
-tbody {
+.table-body {
   display: flex;
 }
 
@@ -1158,7 +1200,7 @@ tbody {
 }
 
 .table-row-1 {
-  font-family: Rubik, sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
@@ -1167,7 +1209,7 @@ tbody {
 }
 
 .table-row-2 {
-  font-family: Rubik, sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -1179,7 +1221,7 @@ tbody {
 }
 
 .inner-header-title {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 50px;
   font-style: normal;
   font-weight: 800;
@@ -1190,15 +1232,15 @@ tbody {
 
 .select {
   display: flex;
-  padding: 15px 40px;
+  padding: 11px 40px;
   align-items: center;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   width: 840px;
 }
 
 .select-text {
   margin-right: auto;
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 800;
@@ -1208,7 +1250,7 @@ tbody {
 }
 
 .select-control {
-  font-family: Rubik, sans-serif;
+  font-family: "Rubik", sans-serif;
   width: 141px;
   height: 30px;
   font-size: 18px;
@@ -1216,8 +1258,9 @@ tbody {
   font-weight: 400;
   line-height: 30px;
   border: none;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   appearance: none;
+  padding-left: 2px;
 }
 
 .select-control:hover {
@@ -1229,8 +1272,8 @@ tbody {
 }
 
 .select-control:focus-visible {
-  outline: 2px solid #AF4FFF;
-  color: #000;
+  outline: 2px solid #af4fff;
+  color: #000000;
 }
 
 .icons-catalog {
@@ -1238,36 +1281,63 @@ tbody {
 }
 
 .button-icons-catalog {
+  display: inline-flex;
   border: none;
-  fill: #000;
-  opacity: 0.2;
   width: 30px;
   height: 30px;
   padding-right: 0;
+  background-color: transparent;
 }
 
-.button-icons-catalog:hover {
+.button-icons-catalog::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.iconka-1::after {
+background-image: url("../images/iconka-select.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.iconka-2::after {
+  background-image: url("../images/iconka-select.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+}
+
+.iconka-1:hover::after {
   opacity: 0.5;
 }
 
-.button-icons-catalog:active {
+.iconka-2:hover::after {
+  opacity: 0.5;
+}
+
+.iconka-1:active::after {
   opacity: 1;
-  fill: #000;
+  fill: #000000;
+}
+
+.iconka-2:active::after {
+  opacity: 1;
+  fill: #000000;
 }
 
 .button-icons-catalog:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   fill: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  outline-offset: 4px;
-
+  outline-offset: 2px;
 }
 
-
-
 .catalog-container {
-
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 
 .catalog-inner {
@@ -1289,22 +1359,19 @@ tbody {
   gap: 40px;
   width: 840px;
   list-style-type: none;
-  margin-bottom: 42px;
-  padding-top: 45px;
+  margin-bottom: 43px;
+  padding-top: 50px;
   background-color: rgb(255, 255, 255);
+  row-gap: 40px;
 }
 
 .slider-advantages {
   display: flex;
 }
 
-.delivery-delivery {
-  margin: 70px;
-  margin-right: 73px;
-}
-
 .delivery {
-  display: flex;
+  display: grid;
+  grid-template-columns: 125px 1fr 125px;
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
@@ -1312,15 +1379,34 @@ tbody {
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
+  gap: 50px;
+  margin-top: 76px;
+  margin-bottom: 70px;
+}
+
+.delivery::before {
+  content: "";
+  display: block;
+  background-image: url("../images/car-delivery.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 125px;
+  background-color: #ffe17f;
+}
+
+.delivery:hover::before {
+  background-color: #ffc700;
 }
 
 .delivery-svg {
-  fill: #FFE17F;
+  justify-self: center;
+  align-self: center;
+  opacity: 0.3;
 }
 
 .delivery-svg:hover {
-  fill: #FFC700;
+  opacity: 1;
 }
 
 .delivery:active {
@@ -1328,7 +1414,8 @@ tbody {
 }
 
 .delivery:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
 
 .delivery-image {
@@ -1337,20 +1424,68 @@ tbody {
 
 .delivery-text {
   align-self: center;
-  margin-left: 200px;
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
   letter-spacing: 4px;
   text-transform: uppercase;
+  padding: 40px 0;
 }
 
 .appointment {
   display: flex;
   margin: 70px auto;
-  margin-top: 70px;
+  gap: 110px;
+}
+
+.appointment-button {
+  color: #000000;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 3.6px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-color: transparent;
+  background: linear-gradient(to top, transparent 40%, #ffe17f 40%, #ffe17f 60%, transparent 20%);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 22px;
+  width: 230px;
+}
+
+.appointment-button:hover {
+  background-color: #ffe17f;
+}
+
+.appointment-button:active {
+  background-color: #ffc700;
+  background: linear-gradient(to top, #ffc700 100%, #ffc700 100%);
+}
+
+.appointment-button:disabled {
+  opacity: 0.3;
+}
+
+.appointment-button:focus-visible {
+  border: solid 2px #af4fff;
+  outline: none;
+}
+
+.about {
+  width: 520px;
+}
+
+.contact {
+  width: 532px;
 }
 
 .pagination-page {
@@ -1368,7 +1503,7 @@ tbody {
 }
 
 .subscribe {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 
 .subscribe-inner {
@@ -1381,16 +1516,15 @@ tbody {
   padding-top: 27px;
   align-items: center;
   justify-content: center;
-  margin-bottom: 43px;
+  margin-bottom: 36px;
 }
 
 .subscribe2 {
   margin: 0 auto;
   width: 1400px;
   display: flex;
-  margin-bottom: 72px;
-  margin-top: 61px;
-  padding-bottom: 27px;
+  margin-top: 63px;
+  padding-bottom: 57px;
 }
 
 .subscribe2-text::before {
@@ -1398,7 +1532,7 @@ tbody {
   position: relative;
   width: 16px;
   height: 17px;
-  background-image: url(../images/icon-green.svg);
+  background-image: url("../images/icon-green.svg");
   top: 23px;
   right: 30px;
   display: block;
@@ -1417,8 +1551,8 @@ tbody {
   border: transparent;
   width: 557px;
   padding-left: 10px;
-  background-color: #F0F0F0;
-  border-bottom: 3px solid #C4C4C4;
+  background-color: #f0f0f0;
+  border-bottom: 3px solid #c4c4c4;
 }
 
 .button {
@@ -1428,16 +1562,17 @@ tbody {
   font-style: normal;
   font-weight: 800;
   line-height: normal;
-  border-color: #C4C4C4;
+  border-color: #c4c4c4;
   letter-spacing: 3.6px;
   text-transform: uppercase;
   min-width: 253px;
-  border: 3px solid #C4C4C4;
+  border: 3px solid #c4c4c4;
+  background: #f0f0f0;
 }
 
 .button:hover {
   background-color: #000000;
-  color: #F0F0F0;
+  color: #f0f0f0;
   border-color: #000000;
 }
 
@@ -1449,7 +1584,7 @@ tbody {
 
 .button:focus-visible {
   box-shadow:
-    0 0 0 2px #AF4FFF,
+    0 0 0 2px #af4fff,
     0 0 0 3px #000000;
 }
 
@@ -1459,11 +1594,13 @@ tbody {
   font-style: normal;
   font-weight: 800;
   line-height: 50px;
+  margin-left: 7px;
 }
 
 .text-subscribe {
   width: 560px;
-  margin-left: 253px;
+  margin-left: 254px;
+  margin-top: 22px;
 }
 
 .subscribe2-text {
@@ -1478,6 +1615,7 @@ tbody {
   font-weight: 700;
   line-height: 20px;
   list-style-type: none;
+  margin-bottom: 8px;
 }
 
 .item::before {
@@ -1487,7 +1625,7 @@ tbody {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #FFC700;
+  background-color: #ffc700;
   right: 38px;
   top: 15px;
 }
@@ -1498,10 +1636,9 @@ tbody {
 
 .page-footer {
   color: #ffffff;
-  background-color: #444;
+  background-color: #444444;
   padding-top: 62px;
   padding-bottom: 62px;
-  margin-top: -43px;
 }
 
 .footer-inner {
@@ -1519,18 +1656,18 @@ tbody {
 }
 
 .button-footer:hover {
-  color: #FFC700;
-  border-bottom: 2px solid #FFC700;
+  color: #ffc700;
+  border-bottom: 2px solid #ffc700;
 }
 
 .button-footer:active {
-  color: #FFC700;
-  border-bottom: 2px solid #FFC700;
+  color: #ffc700;
+  border-bottom: 2px solid #ffc700;
 }
 
 .button-footer:focus-visible {
   color: #ffffff;
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   border-bottom: none;
 }
 
@@ -1540,7 +1677,7 @@ tbody {
 
 .authorization-catalog {
   display: flex;
-  font-family: Rubik, sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -1579,11 +1716,11 @@ tbody {
   grid-column: 1/2;
   align-self: center;
   justify-self: center;
-  background: rgba(240, 240, 240, 0.80) linear-gradient(to bottom, transparent 16%, #FFE17F 16%, #FFE17F 37%, transparent 37%);
+  background: rgba(240, 240, 240, 0.80) linear-gradient(to bottom, transparent 16%, #ffe17f 16%, #ffe17f 37%, transparent 37%);
   text-align: center;
   width: 220px;
   height: 40px;
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -1591,7 +1728,7 @@ tbody {
   letter-spacing: 3.6px;
   text-transform: uppercase;
   opacity: 0;
-  color: #000;
+  color: #000000;
   box-shadow: 0 0 0 100vw rgba(240, 240, 240, 0.80);
   z-index: 2;
 }
@@ -1622,7 +1759,7 @@ tbody {
   justify-self: end;
   margin-right: 27px;
   margin-top: 27px;
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 800;
@@ -1642,7 +1779,7 @@ tbody {
 }
 
 .product-card-link:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 3px;
 }
 
@@ -1652,7 +1789,7 @@ tbody {
 }
 
 .product-card-title {
-  max-width: 225px;
+  max-width: 203px;
   margin: 0;
   grid-column: 1/2;
   grid-row: 2/3;
@@ -1662,7 +1799,7 @@ tbody {
 
 .product-card-price {
   margin: 0;
-  font-family: Rubik, sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -1698,7 +1835,7 @@ tbody {
 }
 
 .pagination-link:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   color: rgb(68, 68, 68, 0.3);
 }
 
@@ -1727,17 +1864,17 @@ tbody {
 }
 
 .pagination {
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
   display: flex;
   list-style-type: none;
   align-items: center;
-  margin: 44px 20px 116px 44px;
+  margin: 44px 20px 78px 40px;
   max-width: 760px;
   justify-content: space-between;
 }
 
 .pagination-button {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -1747,27 +1884,29 @@ tbody {
   color: #000000;
   text-decoration: none;
   padding: 25px;
+  padding-right: 20px;
 }
 
 .pagination-button:hover {
-  background-color: #DCDCDC;
+  background-color: #dcdcdc;
 }
 
 .pagination-button:active {
-  color: #444;
+  color: #444444;
 }
 
 .pagination-button:focus-visible {
   outline-offset: 2px;
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
 }
 
 .pagination-disabled {
-  color: #DCDCDC;
+  color: #444444;
+  opacity: 0.3;
 }
 
 .pagination-disabled:hover {
-  background-color: #DCDCDC;
+  background-color: #dcdcdc;
   color: #000000;
 }
 
@@ -1777,13 +1916,12 @@ tbody {
 
 .pagination-disabled:focus-visible {
   outline-offset: 2px;
-  outline: 2px solid #AF4FFF;
-  color: black;
+  outline: 2px solid #af4fff;
+  color: #000000;
 }
 
 .button-catalog {
   display: block;
-  border-color: #E5E5E5;
   background-color: #ffffff;
   text-align: center;
   font-family: "Raleway", sans-serif;
@@ -1795,8 +1933,8 @@ tbody {
   letter-spacing: 3.2px;
   width: 760px;
   margin-left: 40px;
-  padding: 18px 39px;
-  border: 3px solid #E5E5E5;
+  padding: 15px 39px;
+  border: 3px solid #e5e5e5;
   outline: none;
 }
 
@@ -1811,13 +1949,13 @@ tbody {
 
 .button-catalog:focus-visible {
   outline-offset: 2px;
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
 }
 
 .button-catalog-filter {
   color: #000000;
   text-align: center;
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   letter-spacing: 3.6px;
   font-size: 18px;
   font-style: normal;
@@ -1826,7 +1964,7 @@ tbody {
   text-transform: uppercase;
   text-decoration: none;
   border-color: transparent;
-  background: linear-gradient(to bottom, transparent 40%, #FFE17F 40%, #FFE17F 60%, transparent 60%);
+  background: linear-gradient(to bottom, transparent 40%, #ffe17f 40%, #ffe17f 60%, transparent 60%);
   height: 40px;
   display: inline-block;
   width: 220px;
@@ -1836,18 +1974,18 @@ tbody {
 
 
 .button-catalog-filter:hover {
-  background-color: #FFE17F;
+  background-color: #ffe17f;
 
 }
 
 .button-catalog-filter:active {
-  background-color: #FFC700;
-  background: linear-gradient(to bottom, #FFC700 100%, #FFC700 100%);
+  background-color: #ffc700;
+  background: linear-gradient(to bottom, #ffc700 100%, #ffc700 100%);
 
 }
 
 .button-catalog-filter:focus-visible {
-  border: solid 2px #AF4FFF;
+  border: solid 2px #af4fff;
   outline: none;
 }
 
@@ -1857,7 +1995,7 @@ tbody {
 }
 
 .catalog-filter-title {
-  font-family: Rubik, sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -1889,7 +2027,7 @@ tbody {
   position: relative;
   width: 200px;
   height: 2px;
-  background-color: #000;
+  background-color: #000000;
   top: -43px;
   right: -5px;
 }
@@ -1898,7 +2036,8 @@ tbody {
   margin: 0;
   padding-top: 30px;
   padding-bottom: 30px;
-  font-family: Raleway, sans-serif;
+  padding-left: 8px;
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 800;
@@ -1908,13 +2047,13 @@ tbody {
 }
 
 .range {
-  margin-top: 22px;
+  margin-top: 19px;
 }
 
 .range-scale {
   position: relative;
   height: 2px;
-  margin-bottom: 16px;
+  margin-bottom: 11px;
   background-color: rgba(220, 220, 220, 1);
   border-radius: 2px;
   width: 200px;
@@ -1923,7 +2062,7 @@ tbody {
 .range-bar {
   position: absolute;
   height: 2px;
-  background-color: #000;
+  background-color: #000000;
 }
 
 .range-toggle {
@@ -1941,11 +2080,11 @@ tbody {
 
 .range-toggle:hover {
   border-color: rgba(0, 0, 0, 0.5);
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
 }
 
 .range-toggle:active {
-  background-color: #000;
+  background-color: #000000;
   outline: none;
   border: none;
   opacity: 1;
@@ -1960,13 +2099,13 @@ tbody {
 }
 
 .toggle-min {
-  top: -8px;
-  left: -6px;
+  top: -11px;
+  left: -4px;
 }
 
 .toggle-max {
-  top: -8px;
-  right: -15px;
+  top: -11px;
+  right: -16px;
 }
 
 .range-wrapper-inputs {
@@ -1976,7 +2115,7 @@ tbody {
 
 .catalog-filter-label {
   display: flex;
-  font-family: Rubik, sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -1993,12 +2132,13 @@ tbody {
 
 .range-input {
   width: 55px;
-  padding: 0 5px;
+  padding: 0 8px;
+  padding-bottom: 8px;
   font: inherit;
   background-color: transparent;
   border: none;
   appearance: textfield;
-  font-family: Rubik, sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -2028,13 +2168,13 @@ tbody {
   align-items: center;
   justify-content: center;
   appearance: none;
-  border: 2px solid #CCCCCC;
+  border: 2px solid #cccccc;
   width: 20px;
   height: 20px;
   border-radius: 20%;
   position: relative;
   outline: none;
-  border-color: #000;
+  border-color: #000000;
 }
 
 .control {
@@ -2066,7 +2206,7 @@ tbody {
 .control-input:checked::before {
   display: flex;
   content: "";
-  background-image: url(../images/tick-filter-list.svg);
+  background-image: url("../images/tick-filter-list.svg");
   background-repeat: no-repeat;
   background-position: center;
   width: 10px;
@@ -2076,7 +2216,7 @@ tbody {
 .control-input:focus-visible::after {
   content: "";
   position: absolute;
-  border: 2px solid #AF4FFF;
+  border: 2px solid #af4fff;
   inset: -6px;
 }
 
@@ -2089,7 +2229,7 @@ tbody {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  border: 2px solid #444;
+  border: 2px solid #444444;
   outline: none;
 }
 
@@ -2112,7 +2252,7 @@ tbody {
 .control-input-radio:focus-visible::after {
   content: "";
   position: absolute;
-  border: 2px solid #AF4FFF;
+  border: 2px solid #af4fff;
   inset: -6px;
 }
 
@@ -2132,7 +2272,7 @@ tbody {
 .breadcrumbs {
   display: flex;
   list-style-type: none;
-  color: #000;
+  color: #000000;
   text-decoration: none;
   padding-left: 0;
   gap: 32px;
@@ -2145,7 +2285,7 @@ tbody {
 }
 
 .breadcrumbs-item {
-  font-family: Rubik, sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -2156,13 +2296,13 @@ tbody {
 }
 
 .breadcrumbs-link {
-  color: #000;
+  color: #000000;
   list-style-type: none;
   text-decoration: none;
 }
 
 .breadcrumbs-item:not(:last-child)::after {
-  background-image: url(../images/breadcrumbs.svg);
+  background-image: url("../images/breadcrumbs.svg");
   content: "";
   position: relative;
   width: 4px;
@@ -2172,11 +2312,11 @@ tbody {
 }
 
 .breadcrumbs-link:hover {
-  color: #DCDCDC;
+  color: #dcdcdc;
 }
 
 .breadcrumbs-link:active {
-  color: #DCDCDC;
+  color: #dcdcdc;
   opacity: 0.8;
 }
 
@@ -2210,9 +2350,9 @@ tbody {
   position: relative;
   width: 80px;
   height: 7px;
-  background-color: #FFC700;
-  top: -10px;
-  right: -347px;
+  background-color: #ffc700;
+  top: -14px;
+  right: -381px;
 }
 
 .contacts-address {
@@ -2225,27 +2365,28 @@ tbody {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #ffffff;
   display: none;
 }
 
 .modal-body {
   position: relative;
   margin: auto;
-  padding: 72px 70px;
+  padding: 62px 70px;
   background-color: #ffffff;
-  border: 10px solid black;
+  border: 10px solid #000000;
 }
 
 .modal-block {
   width: 920px;
+  height: 568px;
 }
 
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 12%;
-  right: 7%;
+  top: 74px;
+  right: 68px;
   width: 26px;
   height: 26px;
   background-color: #ffffff;
@@ -2265,16 +2406,15 @@ tbody {
 }
 
 .modal-close-button:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
 .modal-title {
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 31px;
   color: #000000;
-  text-transform: uppercase;
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 50px;
   font-style: normal;
   font-weight: 800;
@@ -2284,7 +2424,7 @@ tbody {
 .field-group {
   display: flex;
   gap: 40px;
-  margin-bottom: 42px;
+  margin-bottom: 27px;
 }
 
 .form-item {
@@ -2293,7 +2433,7 @@ tbody {
 }
 
 .label-modal {
-  font-family: Rubik, sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -2323,7 +2463,7 @@ tbody {
 
 .tooltip-toggle {
   border: none;
-  background-color: #FFE17F;
+  background-color: #ffe17f;
   width: 26px;
   height: 26px;
   padding: 0;
@@ -2335,7 +2475,7 @@ tbody {
   content: "";
   position: relative;
   display: block;
-  background-image: url(../images/icons-modal.svg);
+  background-image: url("../images/icons-modal.svg");
   background-repeat: no-repeat;
   width: 4px;
   height: 12px;
@@ -2348,7 +2488,7 @@ tbody {
   position: absolute;
   background-color: #000000;
   color: #ffffff;
-  font-family: Rubik, sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -2372,10 +2512,10 @@ tbody {
 .input-modal {
   width: 360px;
   height: 60px;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   border: none;
   padding: 20px;
-  font-family: Rubik, sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -2388,16 +2528,16 @@ tbody {
 }
 
 .input-modal:focus-within {
-  border: 2px solid #AF4FFF;
+  border: 2px solid #af4fff;
   outline: none;
 }
 
 .error {
-  border: 2px solid #FF3D3D;
+  border: 2px solid #ff3d3d;
 }
 
 .span-text {
-  font-family: Rubik, sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -2405,7 +2545,7 @@ tbody {
 }
 
 .span-error {
-  color: #FF3D3D;
+  color: #ff3d3d;
 }
 
 .div-button {
@@ -2420,9 +2560,10 @@ tbody {
   width: 60px;
   height: 60px;
   border: none;
-  font-family: Rubik, sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-style: normal;
+  background: #f0f0f0;
 }
 
 .mini-button:hover {
@@ -2434,7 +2575,7 @@ tbody {
 }
 
 .mini-button:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: -2px;
 }
 
@@ -2447,10 +2588,10 @@ tbody {
 .mini-input {
   width: 60px;
   height: 60px;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   border: none;
   padding: 20px;
-  font-family: Rubik, sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-style: normal;
 }
@@ -2460,7 +2601,7 @@ tbody {
 }
 
 .mini-input:focus-visible {
-  border: 2px solid #AF4FFF;
+  border: 2px solid #af4fff;
   outline: none;
 }
 
@@ -2475,11 +2616,11 @@ tbody {
 
 .comment-modal {
   width: 540px;
-  margin-top: 14px;
+  margin-top: 8px;
   height: 60px;
   border: none;
-  background-color: #F0F0F0;
-  font-family: Rubik, sans-serif;
+  background-color: #f0f0f0;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -2492,7 +2633,7 @@ tbody {
 }
 
 .comment-modal:focus-within {
-  border: 2px solid #AF4FFF;
+  border: 2px solid #af4fff;
   outline: none;
 }
 
@@ -2500,7 +2641,7 @@ tbody {
   width: 200px;
   color: #000000;
   text-align: center;
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   letter-spacing: 3.6px;
   font-size: 18px;
   font-style: normal;
@@ -2509,24 +2650,24 @@ tbody {
   text-transform: uppercase;
   text-decoration: none;
   border-color: transparent;
-  background: linear-gradient(to bottom, transparent 40%, #FFE17F 40%, #FFE17F 60%, transparent 60%);
+  background: linear-gradient(to bottom, transparent 40%, #ffe17f 40%, #ffe17f 60%, transparent 60%);
   height: 40px;
   display: inline-block;
 }
 
 .button-modal:hover {
-  background-color: #FFE17F;
+  background-color: #ffe17f;
 
 }
 
 .button-modal:active {
-  background-color: #FFC700;
-  background: linear-gradient(to bottom, #FFC700 100%, #FFC700 100%);
+  background-color: #ffc700;
+  background: linear-gradient(to bottom, #ffc700 100%, #ffc700 100%);
 
 }
 
 .button-modal:focus-visible {
-  border: solid 2px #AF4FFF;
+  border: solid 2px #af4fff;
   outline: none;
 }
 
@@ -2544,7 +2685,7 @@ tbody {
   display: block;
   width: 145px;
   height: 36px;
-  fill: #FFC700;
+  fill: #ffc700;
 }
 
 .logo-footer-link:hover {
@@ -2558,11 +2699,11 @@ tbody {
 }
 
 .logo-footer-link:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
 }
 
 .footer-contacts-address-phone {
-  font-family: Rubik, sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -2572,29 +2713,32 @@ tbody {
   color: rgb(255, 255, 255);
   grid-column: 3/-1;
   justify-self: end;
-  margin-top: 7px;
+  margin-top: 9px;
+  margin-right: 4px;
   height: 25px;
 }
 
 .footer-contacts-address-phone:hover {
-  color: #FFC700;
+  color: #ffc700;
 }
 
 .footer-contacts-address-phone:active {
-  color: #FFC700;
+  color: #ffc700;
   opacity: 0.3;
 }
 
 .footer-contacts-address-phone:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   border: none;
 }
 
 .footer-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px 35px;
+  max-width: 500px;
   list-style-type: none;
   grid-column: 2/-2;
-  gap: 35px;
   justify-self: center;
   letter-spacing: 3.6px;
   margin: 0;
@@ -2610,7 +2754,8 @@ tbody {
   align-content: center;
   gap: 15px;
   padding: 0;
-  margin: 0;
+  margin-bottom: -20px;
+  margin-top: 0;
 }
 
 .social-link {
@@ -2620,17 +2765,17 @@ tbody {
   justify-content: center;
   width: 40px;
   height: 40px;
-  background: #444;
+  background: #444444;
   border-radius: 50%;
   outline: none;
 }
 
 .social-link:hover {
-  background: #FFC700;
+  background: #ffc700;
 }
 
 .social-link:active {
-  background: #FFC700;
+  background: #ffc700;
 }
 
 .social-link::after {
@@ -2649,7 +2794,7 @@ tbody {
 }
 
 .social-link:focus-visible:before {
-  border: 2px solid #AF4FFF;
+  border: 2px solid #af4fff;
   outline: none;
 }
 
@@ -2658,15 +2803,15 @@ tbody {
 }
 
 .telegramm::after {
-  background-image: url(../images/telegramm.svg);
+  background-image: url("../images/telegramm.svg");
 }
 
 .youtube::after {
-  background-image: url(../images/youtube.svg);
+  background-image: url("../images/youtube.svg");
 }
 
 .twitter::after {
-  background-image: url(../images/twitter.svg);
+  background-image: url("../images/twitter.svg");
 }
 
 .htmlacademy-link {
@@ -2674,12 +2819,12 @@ tbody {
   display: block;
   width: 115px;
   height: 33px;
-  fill: #FFC700;
+  fill: #ffc700;
   margin-top: 10px;
 }
 
 .htmlacademy-link:hover {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .htmlacademy-link:active {
@@ -2687,5 +2832,5 @@ tbody {
 }
 
 .htmlacademy-link:focus-visible {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
 }
