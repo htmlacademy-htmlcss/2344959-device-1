@@ -409,8 +409,6 @@ body {
   gap: 36px;
 }
 
-
-
 .navigation-list-service {
   display: flex;
   flex-wrap: wrap;
@@ -436,6 +434,7 @@ body {
 }
 
 .popover {
+  display: none;
   position: absolute;
   top: 120%;
   right: -76%;
@@ -746,7 +745,6 @@ body {
 
 .slide-text {
   margin-bottom: 48px;
-  max-height: 150px;
 }
 
 .img-slider {
@@ -827,6 +825,17 @@ body {
   margin-left: 120px;
 }
 
+.button-block-current::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 7px;
+  height: 319px;
+  background-color: #000000;
+  bottom: 355%;
+  left: 102%;
+}
+
 .block-active::after {
   content: "";
   position: relative;
@@ -839,6 +848,7 @@ body {
 
 .block-guarantee {
   display: none;
+  margin-left: 120px;
 }
 
 .block-guarantee::after {
@@ -853,6 +863,7 @@ body {
 
 .block-credit {
   display: none;
+  margin-left: 120px;
 }
 
 .block-credit::after {
@@ -1040,17 +1051,6 @@ body {
   height: 40px;
 }
 
-.button-block-current::after {
-  content: "";
-  display: block;
-  position: relative;
-  width: 7px;
-  height: 319px;
-  background-color: #000000;
-  bottom: 355%;
-  left: 102%;
-}
-
 .button-block-current:focus-visible {
   box-shadow:
     0 0 0 2px #af4fff,
@@ -1091,7 +1091,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   margin-top: 0;
 }
 
@@ -1186,9 +1186,10 @@ body {
 
 .table {
   margin-top: 50px;
+
 }
 
-tbody {
+.table-body {
   display: flex;
 }
 
@@ -1280,19 +1281,50 @@ tbody {
 }
 
 .button-icons-catalog {
+  display: inline-flex;
   border: none;
-  fill: #000000;
-  opacity: 0.2;
   width: 30px;
   height: 30px;
   padding-right: 0;
+  background-color: transparent;
 }
 
-.button-icons-catalog:hover {
+.button-icons-catalog::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.iconka-1::after {
+background-image: url("../images/iconka-select.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.iconka-2::after {
+  background-image: url("../images/iconka-select.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+}
+
+.iconka-1:hover::after {
   opacity: 0.5;
 }
 
-.button-icons-catalog:active {
+.iconka-2:hover::after {
+  opacity: 0.5;
+}
+
+.iconka-1:active::after {
+  opacity: 1;
+  fill: #000000;
+}
+
+.iconka-2:active::after {
   opacity: 1;
   fill: #000000;
 }
@@ -1301,7 +1333,7 @@ tbody {
   outline: 2px solid #af4fff;
   fill: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  outline-offset: 4px;
+  outline-offset: 2px;
 }
 
 .catalog-container {
@@ -1349,7 +1381,7 @@ tbody {
   color: #000000;
   background-color: #f0f0f0;
   gap: 50px;
-  margin-top: 70px;
+  margin-top: 76px;
   margin-bottom: 70px;
 }
 
@@ -1406,6 +1438,46 @@ tbody {
   display: flex;
   margin: 70px auto;
   gap: 110px;
+}
+
+.appointment-button {
+  color: #000000;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 3.6px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-color: transparent;
+  background: linear-gradient(to top, transparent 40%, #ffe17f 40%, #ffe17f 60%, transparent 20%);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 22px;
+  width: 230px;
+}
+
+.appointment-button:hover {
+  background-color: #ffe17f;
+}
+
+.appointment-button:active {
+  background-color: #ffc700;
+  background: linear-gradient(to top, #ffc700 100%, #ffc700 100%);
+}
+
+.appointment-button:disabled {
+  opacity: 0.3;
+}
+
+.appointment-button:focus-visible {
+  border: solid 2px #af4fff;
+  outline: none;
 }
 
 .about {

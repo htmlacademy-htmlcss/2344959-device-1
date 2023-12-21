@@ -145,6 +145,7 @@
               под стандартную камеру.</p>
             <a href="#" class="button-main">Подробнее</a>
             <table class="table">
+              <tbody class="table-body">
               <tr class="table-column">
                 <td class="table-row-1">800 м</td>
                 <td class="table-row-2">Дальность полета</td>
@@ -153,6 +154,7 @@
                 <td class="table-row-1">50 м</td>
                 <td class="table-row-2">Радиус поражения</td>
               </tr>
+              </tbody>
             </table>
           </div>
         </section>
@@ -163,11 +165,13 @@
             <p class="slide-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
               соблюдать диету.</p>
             <a href="#" class="button-main">Подробнее</a>
+            <tbody class="table-body">
             <table class="table">
               <tr class="table-column">
                 <td class="table-row-1">48 часов</td>
                 <td class="table-row-2">Без подзарядки</td>
               </tr>
+           </tbody>
             </table>
           </div>
         </section>
@@ -178,8 +182,8 @@
             <p class="slide-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров
               длиной и весом всего 5 кг.</p>
             <a href="#" class="button-main">Подробнее</a>
+            <tbody class="table-body">
             <table class="table">
-              <tbody>
                 <tr class="table-column">
                   <td class="table-row-1">8,5 м</td>
                   <td class="table-row-2">Длина палки</td>
@@ -318,7 +322,7 @@
               <li class="item">СДИК</li>
               <li class="item">ТоксБерри</li>
             </ul>
-            <a href="#" class="button-main">Подробнее о нас</a>
+            <a href="#" class="appointment-button">Подробнее о нас</a>
           </div>
           <div class="contact">
             <h2 class="contact-title">Контакты</h2>
@@ -340,7 +344,7 @@
                 <dd class="time">с 10:00 до 19:00</dd>
               </div>
             </dl>
-            <a href="#" class="button-main">Напишите нам<span class="visually-hidden">Напишите нам</span></a>
+            <a href="#" class="appointment-button">Напишите нам<span class="visually-hidden">Напишите нам</span></a>
           </div>
         </div>
         <section class="subscribe">
@@ -352,7 +356,7 @@
             </div>
             <div class="subscribe2">
               <form class="form-subscribe" action="#">
-                <input class="email" type="email" placeholder="Ваш e-mail">
+                <input class="email" type="email" placeholder="Ваш e-mail" required>
                 <button class="button" type="submit">Подписаться</button>
               </form>
               <p class="subscribe2-text">Это бесплатно</p>
@@ -444,12 +448,12 @@
             <div class="field-group">
               <p class="form-item">
                 <label class="label-modal" for="name">Ваше имя:</label>
-                <input class="input-modal" type="text" id="name" name="name" placeholder="Введите имя">
+                <input class="input-modal" type="text" id="name" name="name" placeholder="Введите имя" required>
                 <span class="span-text">Добавьте имя</span>
               </p>
               <p class="form-item">
                 <label class="label-modal" for="email">Ваш e-mail:</label>
-                <input class="input-modal error" type="email" id="email" name="email" placeholder="почта">
+                <input class="input-modal error" type="email" id="email" name="email" placeholder="почта" required>
                 <span class="span-text span-error">Забавный у вас адрес</span>
                 <!-- При ошибке добавлять класс "error" для инпута и класс "span-error" для подписи внизу (span-text) -->
               </p>
@@ -457,7 +461,7 @@
             <div class="modal-div">
               <p class="form-item">
                 <label class="label-modal" for="message">Что нужно привезти:</label>
-                <input class="comment-modal" type="text" id="message" name="comment" placeholder="В свободной форме">
+                <input class="comment-modal" type="text" id="message" name="comment" placeholder="В свободной форме" required>
               </p>
               <div class="form-item">
                 <span class="label-modal">
